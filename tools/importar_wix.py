@@ -194,6 +194,36 @@ def convertir(wix_slug, datos):
     return secciones
 
 
+def ajustar_inicio(secciones):
+    """Mejoras de diseño del inicio sobre la posición de Wix (se aplican después de agregar el héroe)."""
+    # Héroe: la foto (1600×785) ocupa toda la sección con su proporción completa, sin franja vacía debajo;
+    # los textos y el botón de cita quedan en un bloque alineado a la derecha, dentro de la foto.
+    s0 = secciones[0]
+    s0['h'] = round(ANCHO * 785 / 1600)
+    posiciones = {'Cirujano General': (560, 118), 'Alta Especialidad': (458, 281), 'Atención médica': (543, 416)}
+    for it in s0['items']:
+        if it.get('heroe'): it['h'] = s0['h']
+        elif it['k'] == 'btn': it['x'], it['y'] = 876, 492
+        elif it['k'] == 'texto':
+            for inicio, (x, y) in posiciones.items():
+                if inicio in it['html']: it['x'], it['y'] = x, y
+    # Padecimientos: fondo continuo detrás del título y título "Enfermedades del estómago" en un renglón
+    s1 = secciones[1]
+    s1['bg'] = 'rgb(247, 247, 244)'
+    for it in s1['items']:
+        if it['k'] == 'texto' and 'Enfermedades del estómago' in it['html']: it['x'], it['w'] = 44, 560
+        # "Ver padecimientos" del colon: su subtítulo ocupa dos renglones, se separa un poco
+        if it.get('tipo') == 'desplegable' and it['x'] > ANCHO / 2: it['y'] += 14
+    # Tarjeta de quistes y lipomas: en Wix tiene botón "Más información" (con sus dos páginas)
+    quistes = next(i for i in s1['items'] if i['k'] == 'texto' and 'Quistes, Lipomas' in i['html'])
+    opciones = [{'t': re.sub(r'<[^>]+>', '', i['html']), 'href': i['enlace']} for i in s1['items'] if i.get('padre') == quistes['padre'] and i.get('enlace')]
+    s1['items'].append({'k': 'btn', 'x': 1042, 'y': 2296, 'w': 153, 'h': 36, 't': 'Más información', 'href': '', 'tipo': 'desplegable', 'opciones': opciones})
+    anidar(s1['items'])
+    # Testimonio centrado, como en Wix
+    for it in secciones[6]['items']:
+        if it['k'] == 'texto' and 'excelente ser humano' in it['html']: it['align'] = 'center'
+
+
 if __name__ == '__main__':
     os.makedirs(SALIDA, exist_ok=True); os.makedirs(IMG, exist_ok=True)
     for f in sorted(os.listdir(WIX)):
@@ -217,6 +247,7 @@ if __name__ == '__main__':
                 if it['k'] == 'texto' and it['y'] > 150:
                     it['color'] = 'rgb(255, 255, 255)'; it['align'] = 'right'; it.pop('fondo', None)   # van sobre la foto del héroe
                 if it.get('padre') is None and it['k'] != 'img': it['padre'] = None
+            ajustar_inicio(secciones)
         with open(os.path.join(SALIDA, (slug or 'inicio') + '.json'), 'w', encoding='utf-8') as fh:
             json.dump({'slug': slug, 'wix': wix_slug, 'secciones': secciones}, fh, ensure_ascii=False)
         print(f'{slug or "inicio":42} {len(secciones):3} secciones {sum(len(s["items"]) for s in secciones):4} elementos')

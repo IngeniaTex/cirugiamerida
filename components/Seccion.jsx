@@ -19,6 +19,27 @@ function luminancia(rgb) {
 
 const tamano = fs => (fs >= 40 ? 't-xl' : fs >= 28 ? 't-l' : fs >= 21 ? 't-m' : 't-s');
 
+// Botones del mismo renglón (misma caja y misma altura en Wix): van juntos en una fila con separación fija,
+// centrada donde estaban, para que no se encimen cuando el texto es más ancho que en Wix.
+function agruparBotones(items) {
+  const filas = new Map();
+  for (const it of items) {
+    if (it.k !== 'btn' || it.tipo === 'cita') continue;
+    const clave = `${it.padre}|${Math.round(it.y / 12)}`;
+    filas.set(clave, [...(filas.get(clave) || []), it]);
+  }
+  const fuera = new Set();
+  const nuevas = [];
+  for (const botones of filas.values()) {
+    if (botones.length < 2) continue;
+    botones.sort((a, b) => a.x - b.x).forEach(b => fuera.add(b));
+    const x = botones[0].x, y = Math.min(...botones.map(b => b.y));
+    nuevas.push({ k: 'fila', id: Math.min(...botones.map(b => b.id)), padre: botones[0].padre, orden: Math.min(...botones.map(b => b.orden)),
+      x, y, w: Math.max(...botones.map(b => b.x + b.w)) - x, h: Math.max(...botones.map(b => b.h)), botones });
+  }
+  return [...items.filter(i => !fuera.has(i)), ...nuevas];
+}
+
 function Elemento({ it, todos, fondo, prioridad }) {
   const hijos = todos.filter(o => o.padre === it.id).sort((a, b) => a.id - b.id);
   const estilo = { '--ax': it.x, '--ay': it.y, '--w': it.w, '--h': it.h, zIndex: it.id + 1, order: it.orden };
@@ -59,9 +80,18 @@ function Elemento({ it, todos, fondo, prioridad }) {
       ? <a className={clases.join(' ')} style={estilo} href={it.href} target={it.href.startsWith('http') ? '_blank' : undefined} rel="noopener">{img}</a>
       : <figure className={clases.join(' ')} style={estilo}>{img}</figure>;
   }
+  if (it.k === 'fila') {
+    // El primer botón de la fila es el principal (relleno); los demás, secundarios (contorno)
+    return (
+      <div className={clases.join(' ')} style={estilo}>
+        {it.botones.map((b, i) => <Elemento key={b.id} it={{ ...b, secundario: i > 0 }} todos={todos} fondo={fondo} prioridad={prioridad} />)}
+      </div>
+    );
+  }
   if (it.k === 'btn') {
     const claro = luminancia(fondo) < 0.45;
     clases.push('revelar', it.tipo === 'cita' ? 'btn-cita' : claro ? 'btn-claro' : 'btn-oscuro');
+    if (it.secundario) clases.push('btn-sec');
     if (it.tipo === 'desplegable') return <Desplegable clase={clases.join(' ')} estilo={estilo} texto={it.t} opciones={it.opciones} />;
     const externo = it.href.startsWith('http');
     return (
@@ -79,7 +109,8 @@ export default function Seccion({ s, n }) {
   const conFaq = s.items.some(i => i.k === 'faq');
   // Orden en celular: por renglones de arriba a abajo y, en el mismo renglón, de izquierda a derecha
   [...s.items].sort((a, b) => (Math.abs(a.y - b.y) < 24 ? a.x - b.x : a.y - b.y)).forEach((it, k) => { it.orden = k; });
-  const raiz = s.items.filter(i => i.padre == null).sort((a, b) => a.id - b.id);
+  const items = agruparBotones(s.items);
+  const raiz = items.filter(i => i.padre == null).sort((a, b) => a.id - b.id);
   return (
     <section className={'wx' + (conFaq ? ' wx-flujo' : '')} style={{ background: s.bg && s.bg !== 'rgba(0, 0, 0, 0)' ? s.bg : undefined }}
       id={conFaq ? 'preguntas-frecuentes' : undefined}>
@@ -87,7 +118,7 @@ export default function Seccion({ s, n }) {
       {s.velo && <div className="wx-velo" aria-hidden="true" />}
       <div className="wx-marco">
         <div className="wx-lienzo" style={{ '--h': s.h }}>
-          {raiz.map(it => <Elemento key={it.id} it={it} todos={s.items} fondo={s.bg} prioridad={n === 0} />)}
+          {raiz.map(it => <Elemento key={it.id} it={it} todos={items} fondo={s.bg} prioridad={n === 0} />)}
         </div>
       </div>
     </section>
