@@ -1,0 +1,416 @@
+{
+ "_nota": "Configuración de cada página: menú, metadatos (de METATITULOS.docx y de cada bloque), imágenes (claves de imagenes.json, en el orden en que aparecen en el sitio de Wix) y botones de páginas relacionadas (con los textos de Wix). El texto de la página está en paginas/<contenido>.json.",
+ "servicios": [
+  {
+   "slug": "cirugia-laparoscopica-merida",
+   "menu": "Cirugía Laparoscópica en Mérida",
+   "titulo": "Cirugía Laparoscópica en Mérida | Cirugía de Mínima Invasión | Dr. Joel Dorantes",
+   "descripcion": "Cirugía laparoscópica en Mérida por cirujano general certificado con Alta Especialidad en Cirugía Laparoscópica Avanzada. Menor dolor y recuperación más rápida",
+   "hero": "torre-laparoscopia",
+   "imagenes": [
+    "recuperacion-caminando",
+    "faro-del-mayab"
+   ],
+   "consulta": "consulta-hernia"
+  },
+  {
+   "slug": "piedras-en-la-vesicula-merida",
+   "menu": "Vesícula Biliar",
+   "titulo": "Piedras en la Vesícula en Mérida | Síntomas y Tratamiento",
+   "descripcion": "¿Dolor después de comer o molestias en la parte superior derecha del abdomen? Conoce los síntomas, diagnóstico y tratamiento de las piedras en la vesícula en Mérida.",
+   "hero": "vesicula-higado",
+   "imagenes": [
+    "ultrasonido-vesicula",
+    "laparoscopia-quirofano"
+   ],
+   "relacionados": [
+    {
+     "texto": "Conoce más sobre el tratamiento con cirugía",
+     "slug": "cirugia-vesicula-merida"
+    }
+   ]
+  },
+  {
+   "slug": "cirugia-vesicula-merida",
+   "menu": "Cirugía de Vesícula en Mérida",
+   "oculta": true,
+   "padre": "piedras-en-la-vesicula-merida",
+   "titulo": "Cirugía de Vesícula en Mérida | Laparoscopía | Dr. Joel Dorantes",
+   "descripcion": "Cirugía de vesícula en Mérida por cirujano general certificado. Alta especialidad en cirugía laparoscópica avanzada. Atención a pacientes particulares y aseguradoras.",
+   "hero": "laparoscopia-quirofano",
+   "imagenes": [
+    "recuperacion-caminando",
+    "cemom-interior"
+   ],
+   "consulta": "consulta-hernia",
+   "relacionados": [
+    {
+     "texto": "Conoce más sobre la enfermedad",
+     "slug": "piedras-en-la-vesicula-merida"
+    },
+    {
+     "texto": "Conoce más sobre la laparoscopía",
+     "slug": "cirugia-laparoscopica-merida"
+    }
+   ]
+  },
+  {
+   "slug": "hernias-merida",
+   "menu": "Hernias",
+   "titulo": "Hernias en Mérida | Diagnóstico y Tratamiento | Dr. Joel Dorantes",
+   "descripcion": "¿Tienes una bolita en la ingle, abdomen u ombligo? Conoce los síntomas, tipos de hernias y opciones de tratamiento con un cirujano general certificado en Mérida.",
+   "hero": "hernia-ilustracion",
+   "imagenes": [
+    "hombre-dolor-abdominal",
+    "laparoscopia-quirofano"
+   ],
+   "consulta": "consulta-hernia",
+   "relacionados": [
+    {
+     "texto": "Conoce más sobre el tratamiento con cirugía",
+     "slug": "operacion-hernia-merida"
+    }
+   ]
+  },
+  {
+   "slug": "operacion-hernia-merida",
+   "menu": "Operación de Hernia en Mérida",
+   "oculta": true,
+   "padre": "hernias-merida",
+   "titulo": "Operación de Hernia en Mérida | Cirugía Laparoscópica y Convencional",
+   "descripcion": "Cirugía de hernia en Mérida por cirujano general certificado. Tratamiento de hernias inguinales, umbilicales y abdominales mediante cirugía convencional o laparoscópica.",
+   "hero": "laparoscopia-quirofano",
+   "imagenes": [
+    "recuperacion-laparoscopica",
+    "cemom-interior"
+   ],
+   "consulta": "consulta-anatomia",
+   "relacionados": [
+    {
+     "texto": "Conoce más sobre la Hernia",
+     "slug": "hernias-merida"
+    }
+   ]
+  },
+  {
+   "slug": "apendicitis-merida",
+   "menu": "Apendicitis aguda",
+   "titulo": "Apendicitis en Mérida | Síntomas y Atención Oportuna | Dr. Joel Dorantes",
+   "descripcion": "¿Dolor en el lado derecho del abdomen? Conoce los síntomas de la apendicitis, cuándo acudir a urgencias y las opciones de tratamiento en Mérida.",
+   "hero": "apendice",
+   "imagenes": [
+    "laparoscopia-quirofano"
+   ],
+   "consulta": "consulta-hernia",
+   "relacionados": [
+    {
+     "texto": "Conoce más sobre el tratamiento con cirugía",
+     "slug": "cirugia-apendicitis-merida"
+    }
+   ]
+  },
+  {
+   "slug": "cirugia-apendicitis-merida",
+   "menu": "Cirugía de Apendicitis en Mérida",
+   "oculta": true,
+   "padre": "apendicitis-merida",
+   "titulo": "Cirugía de Apendicitis en Mérida | Cirugía Laparoscópica | Dr. Joel Dorantes",
+   "descripcion": "Tratamiento de apendicitis en Mérida por cirujano general certificado. Cirugía laparoscópica, atención de urgencias, pacientes particulares y aseguradoras.",
+   "hero": "laparoscopia-quirofano",
+   "imagenes": [
+    "recuperacion-caminando",
+    "cemom-interior"
+   ],
+   "consulta": "consulta-hernia",
+   "relacionados": [
+    {
+     "texto": "Conoce más sobre la Apendicitis aguda",
+     "slug": "apendicitis-merida"
+    },
+    {
+     "texto": "Conoce más sobre la laparoscopía",
+     "slug": "cirugia-laparoscopica-merida"
+    }
+   ]
+  },
+  {
+   "slug": "lipomas-merida",
+   "menu": "Lipomas",
+   "titulo": "Lipomas en Mérida | Tratamiento de Bolitas de Grasa | Dr. Joel Dorantes",
+   "descripcion": "¿Tienes una bolita de grasa en la espalda, brazo o cuello? Conoce qué es un lipoma, cuándo retirarlo y las opciones de tratamiento en Mérida.",
+   "hero": "lipoma-ilustracion",
+   "imagenes": [
+    "examen-brazo",
+    "lipoma-brazo",
+    "lipoma-brazo-2"
+   ],
+   "consulta": "consulta-lipoma",
+   "relacionados": [
+    {
+     "texto": "Conoce más sobre otros tumores de la piel",
+     "slug": "quistes-piel-merida"
+    }
+   ]
+  },
+  {
+   "slug": "quistes-piel-merida",
+   "menu": "Quistes",
+   "titulo": "Quistes y Tumores de la Piel en Mérida | Diagnóstico y Tratamiento",
+   "descripcion": "¿Tienes un quiste o una bolita en la piel? Valoración y tratamiento de quistes, lesiones y tumores benignos de la piel por cirujano general certificado en Mérida.",
+   "hero": "bulto-espalda",
+   "imagenes": [
+    "bulto-espalda-2",
+    "sala-operaciones"
+   ],
+   "consulta": "consulta-lipoma",
+   "subimagenes": {
+    "Quistes del cuero cabelludo": "quiste-cuero-cabelludo",
+    "Quistes en la espalda": "quiste-espalda",
+    "Quistes en cuello y tronco": "quiste-cuello",
+    "Quiste sebáceo": "quiste-brazo"
+   },
+   "relacionados": [
+    {
+     "texto": "Lipomas",
+     "slug": "lipomas-merida"
+    }
+   ]
+  },
+  {
+   "slug": "reflujo-gastroesofagico-merida",
+   "menu": "Reflujo",
+   "titulo": "Reflujo Gastroesofágico en Mérida | Agruras Frecuentes | Dr. Joel Dorantes",
+   "descripcion": "¿Tienes agruras frecuentes o ardor en el pecho? Conoce los síntomas, causas y opciones de tratamiento para el reflujo gastroesofágico en Mérida.",
+   "hero": "reflujo-estomago",
+   "alimentos": [
+    "collage-comidas"
+   ],
+   "imagenes": [
+    "vaso-agua",
+    "capsulas"
+   ],
+   "consulta": "consulta-reflujo",
+   "relacionados": [
+    {
+     "texto": "Conoce más sobre el tratamiento con cirugía",
+     "slug": "cirugia-reflujo-gastroesofagico-merida"
+    },
+    {
+     "texto": "Dieta para Reflujo y Gastritis",
+     "slug": "dieta-para-reflujo-y-gastritis"
+    }
+   ]
+  },
+  {
+   "slug": "cirugia-reflujo-gastroesofagico-merida",
+   "menu": "Cirugía para Reflujo Gastroesofágico",
+   "oculta": true,
+   "padre": "reflujo-gastroesofagico-merida",
+   "titulo": "Cirugía para Reflujo Gastroesofágico en Mérida | Hernia Hiatal y Laparoscopía",
+   "descripcion": "Tratamiento quirúrgico del reflujo gastroesofágico y hernia hiatal en Mérida. Cirujano general certificado con alta especialidad en cirugía laparoscópica avanzada.",
+   "hero": "laparoscopia-quirofano",
+   "imagenes": [
+    "recuperacion-laparoscopica",
+    "torre-endoscopia"
+   ],
+   "consulta": "consulta-anatomia",
+   "relacionados": [
+    {
+     "texto": "Reflujo",
+     "slug": "reflujo-gastroesofagico-merida"
+    },
+    {
+     "texto": "Conoce más sobre la laparoscopía",
+     "slug": "cirugia-laparoscopica-merida"
+    }
+   ]
+  },
+  {
+   "slug": "gastritis-merida",
+   "menu": "Gastritis",
+   "titulo": "Gastritis en Mérida | Tratamiento para Ardor de Estómago | Dr. Joel Dorantes",
+   "descripcion": "¿Tienes ardor de estómago o dolor después de comer? Conoce los síntomas, causas y opciones de tratamiento para la gastritis en Mérida",
+   "hero": "estomago",
+   "alimentos": [
+    "cerveza",
+    "refresco-cola",
+    "cafe-para-llevar",
+    "pizza",
+    "chiles-habaneros"
+   ],
+   "imagenes": [
+    "examen-abdominal",
+    "vaso-agua",
+    "capsulas",
+    "torre-endoscopia"
+   ],
+   "consulta": "consulta-reflujo",
+   "relacionados": [
+    {
+     "texto": "Conoce otras causas de dolor",
+     "slug": "piedras-en-la-vesicula-merida"
+    },
+    {
+     "texto": "Alimentos mejor tolerados en la gastritis",
+     "slug": "dieta-para-reflujo-y-gastritis"
+    }
+   ]
+  },
+  {
+   "slug": "intestino-irritable-merida",
+   "menu": "Intestino Irritable",
+   "titulo": "Intestino Irritable en Mérida | Síntomas y Tratamiento",
+   "descripcion": "¿Tienes dolor abdominal, gases, diarrea o estreñimiento? Conoce los síntomas del intestino irritable y solicita una valoración médica en Mérida.",
+   "hero": "intestino-3d",
+   "alimentos": [
+    "cerveza",
+    "refresco-cola",
+    "cafe-para-llevar",
+    "pizza",
+    "chiles-habaneros"
+   ],
+   "imagenes": [
+    "dolor-abdominal",
+    "sala-operaciones"
+   ],
+   "consulta": "consulta-colon",
+   "relacionados": [
+    {
+     "texto": "Alimentos recomendados",
+     "slug": "dieta-baja-en-fodmap"
+    }
+   ]
+  },
+  {
+   "slug": "colitis-merida",
+   "menu": "Colitis",
+   "titulo": "Colitis en Mérida | Inflamación Intestinal y Tratamiento | Dr. Joel Dorantes",
+   "descripcion": "¿Tienes inflamación abdominal, gases o dolor tipo cólico? Conoce los síntomas, causas y opciones de tratamiento para la colitis en Mérida.",
+   "hero": "colon",
+   "alimentos": [
+    "frijoles",
+    "refresco-cola",
+    "pizza-2",
+    "leche"
+   ],
+   "imagenes": [
+    "examen-abdominal",
+    "vaso-agua",
+    "capsulas",
+    "endoscopio"
+   ],
+   "consulta": "consulta-colon",
+   "relacionados": [
+    {
+     "texto": "Conoce otras causas de dolor",
+     "slug": "intestino-irritable-merida"
+    },
+    {
+     "texto": "Otras causas de dolor",
+     "slug": "piedras-en-la-vesicula-merida"
+    }
+   ]
+  },
+  {
+   "slug": "diarrea-y-estrenimiento-merida",
+   "menu": "Diarrea y Estreñimiento",
+   "titulo": "Diarrea y Estreñimiento en Mérida | Cambios en las Evacuaciones | Dr. Joel Dorantes",
+   "descripcion": "¿Tienes diarrea frecuente, estreñimiento o cambios en tus evacuaciones? Conoce las causas más comunes y cuándo acudir a valoración médica en Mérida.",
+   "hero": "colon",
+   "imagenes": [
+    "estres",
+    "examen-abdominal",
+    "plato-saludable",
+    "vaso-agua",
+    "capsulas"
+   ],
+   "consulta": "consulta-colon",
+   "relacionados": [
+    {
+     "texto": "Alimentos recomendados",
+     "slug": "dietas-especiales"
+    },
+    {
+     "texto": "Conocer más sobre intestino irritable",
+     "slug": "intestino-irritable-merida"
+    }
+   ]
+  }
+ ],
+ "dietas": [
+  {
+   "slug": "dieta-blanda",
+   "menu": "Dieta blanda",
+   "tarjeta": "Dieta blanda",
+   "imagenTarjeta": "card-dieta-blanda",
+   "titulo": "Dieta Blanda: Qué Comer y Qué Evitar | Dr. Joel Dorantes",
+   "descripcion": "¿Qué puedes comer en una dieta blanda? Conoce los alimentos permitidos, cuáles evitar y las recomendaciones para cuidar tu digestión y recuperación.",
+   "hero": "pollo-arroz-perejil",
+   "imagenes": [
+    "platano-manzana-cocidos",
+    "verduras-vapor",
+    "mole-poblano",
+    "cafe-negro"
+   ]
+  },
+  {
+   "slug": "dieta-para-reflujo-y-gastritis",
+   "menu": "Dieta para Reflujo y Gastritis",
+   "tarjeta": "Dieta para Reflujo y Gastritis",
+   "imagenTarjeta": "card-dieta-reflujo",
+   "titulo": "Dieta para Reflujo y Gastritis: Qué Comer y Evitar",
+   "descripcion": "¿Tienes reflujo o gastritis? Conoce qué alimentos puedes comer, cuáles conviene evitar y qué hábitos pueden ayudarte a disminuir la acidez y las molestias.",
+   "hero": "pollo-salmon",
+   "imagenes": [
+    "platano-manzana-cocidos",
+    "verduras-vapor",
+    "chocolate",
+    "cafe-negro"
+   ]
+  },
+  {
+   "slug": "dieta-para-diarrea",
+   "menu": "Dieta para Diarrea",
+   "tarjeta": "Dieta para la diarrea",
+   "imagenTarjeta": "card-dieta-diarrea",
+   "titulo": "Dieta para la Diarrea: Qué Comer y Qué Evitar",
+   "descripcion": "¿Tienes diarrea? Descubre qué alimentos puedes comer, cuáles conviene evitar, cómo mantenerte hidratado y cuándo es importante acudir al médico.",
+   "hero": "pollo-salmon-limon",
+   "imagenes": [
+    "pollo-arroz-perejil",
+    "platano-manzana-cocidos",
+    "nueces",
+    "legumbres"
+   ]
+  },
+  {
+   "slug": "dieta-para-estrenimiento",
+   "menu": "Dieta para Estreñimiento",
+   "tarjeta": "Dieta para estreñimiento",
+   "imagenTarjeta": "card-dieta-estrenimiento",
+   "titulo": "Dieta para Estreñimiento: Qué Comer y Qué Evitar",
+   "descripcion": "¿Qué comer para aliviar el estreñimiento? Conoce los alimentos ricos en fibra, cuáles limitar y las recomendaciones para mejorar el tránsito intestinal.",
+   "hero": "cereales-integrales",
+   "imagenes": [
+    "legumbres",
+    "nueces",
+    "hamburguesa"
+   ]
+  },
+  {
+   "slug": "dieta-baja-en-fodmap",
+   "menu": "Dieta baja en FODMAP",
+   "tarjeta": "Dieta baja en FODMAP",
+   "imagenTarjeta": "card-dieta-fodmap",
+   "titulo": "Dieta Baja en FODMAP: Qué Comer y Qué Evitar",
+   "descripcion": "¿Tienes colon irritable? Conoce la dieta baja en FODMAP, qué alimentos puedes comer, cuáles limitar y cómo reducir gases e inflamación abdominal.",
+   "hero": "verduras-frescas",
+   "imagenes": [
+    "frutas-tropicales",
+    "arroz-tortillas",
+    "cebolla-ajo",
+    "legumbres"
+   ]
+  }
+ ]
+}

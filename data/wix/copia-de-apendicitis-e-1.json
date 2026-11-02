@@ -1,0 +1,836 @@
+{
+ "secciones": [
+  {
+   "top": 166,
+   "h": 1012,
+   "w": 1440,
+   "bg": "rgba(0, 0, 0, 0)",
+   "bgImg": "",
+   "items": [
+    {
+     "k": "caja",
+     "x": 0,
+     "y": 0,
+     "w": 1440,
+     "h": 1012,
+     "bg": "rgb(23, 59, 74)",
+     "bimg": "",
+     "rad": "0px",
+     "borde": "",
+     "sombra": 0
+    },
+    {
+     "k": "caja",
+     "x": 60,
+     "y": 60,
+     "w": 889,
+     "h": 892,
+     "bg": "rgb(220, 232, 236)",
+     "bimg": "",
+     "rad": "0px",
+     "borde": "",
+     "sombra": 0
+    },
+    {
+     "k": "texto",
+     "x": 230,
+     "y": 107,
+     "w": 541,
+     "h": 207,
+     "html": "<h2 data-f=\"56\" data-c=\"rgb(49, 90, 107)\" data-a=\"start\">Cirugía Laparoscópica en Mérida</h2>",
+     "fs": 56,
+     "lh": "normal",
+     "color": "rgb(49, 90, 107)",
+     "align": "start",
+     "fw": "400",
+     "ls": "normal"
+    },
+    {
+     "k": "texto",
+     "x": 230,
+     "y": 347,
+     "w": 541,
+     "h": 64,
+     "html": "<p data-f=\"20\" data-c=\"rgb(23, 59, 74)\" data-a=\"start\">Cirugía de mínima invasión para una recuperación más rápida</p>",
+     "fs": 20,
+     "lh": "normal",
+     "color": "rgb(23, 59, 74)",
+     "align": "start",
+     "fw": "400",
+     "ls": "normal"
+    },
+    {
+     "k": "texto",
+     "x": 230,
+     "y": 451,
+     "w": 541,
+     "h": 435,
+     "html": "<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\">La cirugía laparoscópica ha transformado la forma en que se realizan muchos procedimientos quirúrgicos.</p>\n\n<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\"></p>\n\n<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\">Gracias a esta técnica, actualmente es posible realizar diversas cirugías mediante pequeñas incisiones, utilizando una cámara de alta definición e instrumentos especializados.</p>\n\n<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\"></p>\n\n<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\">Esto permite que muchos pacientes experimenten una recuperación más rápida, menos dolor postoperatorio y mejores resultados estéticos.</p>\n\n<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\"></p>\n\n<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\" data-b=\"1\">Soy el Dr. Joel Antonio Dorantes González, Cirujano General Certificado y con Alta Especialidad en Cirugía Laparoscópica Avanzada, y realizo procedimientos de mínima invasión en hospitales de Mérida para el tratamiento de diversas enfermedades abdominales y digestivas.</p>",
+     "fs": 18,
+     "lh": "25.2px",
+     "color": "rgb(82, 79, 79)",
+     "align": "start",
+     "fw": "400",
+     "ls": "normal"
+    },
+    {
+     "k": "caja",
+     "x": 985,
+     "y": 60,
+     "w": 359,
+     "h": 941,
+     "bg": "rgb(255, 255, 255)",
+     "bimg": "",
+     "rad": "0px",
+     "borde": "",
+     "sombra": 0
+    },
+    {
+     "k": "img",
+     "x": 977,
+     "y": 179,
+     "w": 731,
+     "h": 731,
+     "src": "1da153_c0a363fdc30342249ecaef0067b90e0f~mv2.png",
+     "alt": "",
+     "fit": "cover",
+     "rad": "0px",
+     "link": ""
+    }
+   ]
+  },
+  {
+   "top": 1178,
+   "h": 465,
+   "w": 1440,
+   "bg": "rgb(255, 255, 255)",
+   "bgImg": "",
+   "items": [
+    {
+     "k": "texto",
+     "x": 230,
+     "y": 42,
+     "w": 980,
+     "h": 69,
+     "html": "<h2 data-f=\"56\" data-c=\"rgb(23, 59, 74)\" data-a=\"center\">¿Qué es la cirugía laparoscópica?</h2>",
+     "fs": 56,
+     "lh": "normal",
+     "color": "rgb(23, 59, 74)",
+     "align": "center",
+     "fw": "400",
+     "ls": "normal"
+    },
+    {
+     "k": "texto",
+     "x": 405,
+     "y": 155,
+     "w": 629,
+     "h": 245,
+     "html": "<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\">La cirugía laparoscópica es una técnica de mínima invasión que permite realizar procedimientos quirúrgicos a través de pequeñas incisiones.</p>\n\n<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\"></p>\n\n<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\">Durante la cirugía se utiliza una cámara que transmite imágenes de alta definición a un monitor, permitiendo al cirujano visualizar el interior del abdomen con gran precisión.</p>\n\n<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\"></p>\n\n<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\">Los instrumentos especializados se introducen a través de pequeñas incisiones para realizar el procedimiento de forma segura.</p>",
+     "fs": 18,
+     "lh": "25.2px",
+     "color": "rgb(82, 79, 79)",
+     "align": "start",
+     "fw": "400",
+     "ls": "normal"
+    }
+   ]
+  },
+  {
+   "top": 1643,
+   "h": 1328,
+   "w": 1440,
+   "bg": "rgb(249, 240, 232)",
+   "bgImg": "",
+   "items": [
+    {
+     "k": "caja",
+     "x": 0,
+     "y": 0,
+     "w": 480,
+     "h": 1328,
+     "bg": "rgb(23, 59, 74)",
+     "bimg": "",
+     "rad": "0px",
+     "borde": "",
+     "sombra": 0
+    },
+    {
+     "k": "caja",
+     "x": 480,
+     "y": 0,
+     "w": 960,
+     "h": 1328,
+     "bg": "rgb(220, 232, 236)",
+     "bimg": "",
+     "rad": "0px",
+     "borde": "",
+     "sombra": 0
+    },
+    {
+     "k": "texto",
+     "x": 642,
+     "y": 28,
+     "w": 596,
+     "h": 207,
+     "html": "<h2 data-f=\"56\" data-c=\"rgb(23, 59, 74)\" data-a=\"start\">¿Cuáles son los beneficios de la cirugía laparoscópica?</h2>",
+     "fs": 56,
+     "lh": "normal",
+     "color": "rgb(23, 59, 74)",
+     "align": "start",
+     "fw": "400",
+     "ls": "normal"
+    },
+    {
+     "k": "linea",
+     "x": 665,
+     "y": 261,
+     "w": 60,
+     "h": 5,
+     "color": "rgb(160, 121, 109)"
+    },
+    {
+     "k": "texto",
+     "x": 665,
+     "y": 288,
+     "w": 490,
+     "h": 435,
+     "html": "<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\">Muchos pacientes pueden beneficiarse de esta técnica.</p>\n\n<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\"></p>\n\n<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\">Entre sus principales ventajas se encuentran:</p>\n\n<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\"></p>\n\n<ul>\n<li data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\">\n<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\">Menor dolor después de la cirugía.</p>\n</li>\n<li data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\">\n<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\">Cicatrices más pequeñas.</p>\n</li>\n<li data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\">\n<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\">Menor tiempo de hospitalización.</p>\n</li>\n<li data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\">\n<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\">Recuperación más rápida.</p>\n</li>\n<li data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\">\n<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\">Regreso más temprano a las actividades habituales.</p>\n</li>\n<li data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\">\n<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\">Menor riesgo de ciertas complicaciones postoperatorias.</p>\n</li>\n<li data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\">\n<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\">Mejor resultado estético.</p>\n</li>\n</ul>\n\n<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\"></p>\n\n<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\">Sin embargo, cada paciente debe ser valorado individualmente para determinar si es candidato a este tipo de cirugía.</p>",
+     "fs": 18,
+     "lh": "25.2px",
+     "color": "rgb(82, 79, 79)",
+     "align": "start",
+     "fw": "400",
+     "ls": "normal"
+    },
+    {
+     "k": "img",
+     "x": 351,
+     "y": 789,
+     "w": 874,
+     "h": 491,
+     "src": "1da153_b5425d10b8e14b2e9e4e9e5bc03b9eb1~mv2.png",
+     "alt": "",
+     "fit": "cover",
+     "rad": "0px",
+     "link": ""
+    }
+   ]
+  },
+  {
+   "top": 2971,
+   "h": 1131,
+   "w": 1440,
+   "bg": "rgb(247, 247, 244)",
+   "bgImg": "",
+   "items": [
+    {
+     "k": "texto",
+     "x": 230,
+     "y": 26,
+     "w": 980,
+     "h": 165,
+     "html": "<h2 data-f=\"56\" data-c=\"rgb(49, 90, 107)\" data-a=\"center\">¿Qué procedimientos realizo mediante laparoscopía?</h2>",
+     "fs": 56,
+     "lh": "78.4px",
+     "color": "rgb(49, 90, 107)",
+     "align": "center",
+     "fw": "400",
+     "ls": "normal"
+    },
+    {
+     "k": "texto",
+     "x": 405,
+     "y": 204,
+     "w": 629,
+     "h": 884,
+     "html": "<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\">El diagnóstico se basa en:</p>\n\n<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\"></p>\n\n<h3 data-f=\"20\" data-c=\"rgb(49, 90, 107)\" data-a=\"start\" data-b=\"1\">Cirugía de vesícula</h3>\n\n<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\">La cirugía para retirar la vesícula biliar es uno de los procedimientos laparoscópicos más frecuentes.</p>\n\n<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\"></p>\n\n<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\">Esta técnica permite tratar las piedras en la vesícula mediante pequeñas incisiones y una recuperación generalmente más rápida.</p>\n\n<p data-f=\"15\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\"></p>\n\n<h3 data-f=\"20\" data-c=\"rgb(242, 131, 130)\" data-a=\"start\">&nbsp;</h3>\n\n<h3 data-f=\"20\" data-c=\"rgb(49, 90, 107)\" data-a=\"start\" data-b=\"1\">Cirugía de hernias</h3>\n\n<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\">Algunas hernias pueden repararse mediante cirugía laparoscópica.</p>\n\n<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\">&nbsp;</p>\n\n<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\">La indicación depende del tipo de hernia, sus características y las condiciones particulares de cada paciente.</p>\n\n<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\"></p>\n\n<h3 data-f=\"20\" data-c=\"rgb(242, 131, 130)\" data-a=\"start\">&nbsp;</h3>\n\n<h3 data-f=\"20\" data-c=\"rgb(49, 90, 107)\" data-a=\"start\" data-b=\"1\">Cirugía de apendicitis</h3>\n\n<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\">Muchos pacientes con apendicitis pueden beneficiarse de una cirugía laparoscópica para retirar el apéndice inflamado.</p>\n\n<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\"></p>\n\n<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\"></p>\n\n<h3 data-f=\"20\" data-c=\"rgb(49, 90, 107)\" data-a=\"start\" data-b=\"1\">Tratamiento quirúrgico del reflujo gastroesofágico</h3>\n\n<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\">En pacientes seleccionados, algunos procedimientos para el tratamiento del reflujo gastroesofágico y la hernia hiatal pueden realizarse mediante cirugía laparoscópica.</p>\n\n<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\"></p>\n\n<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\"></p>\n\n<h3 data-f=\"20\" data-c=\"rgb(49, 90, 107)\" data-a=\"start\" data-b=\"1\">Otros procedimientos abdominales</h3>\n\n<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\">En pacientes seleccionados, algunos procedimientos para el tratamiento del reflujo gastroesofágico y la hernia hiatal pueden realizarse mediante cirugía laparoscópica.</p>",
+     "fs": 18,
+     "lh": "25.2px",
+     "color": "rgb(82, 79, 79)",
+     "align": "start",
+     "fw": "400",
+     "ls": "normal"
+    }
+   ]
+  },
+  {
+   "top": 4102,
+   "h": 847,
+   "w": 1440,
+   "bg": "rgb(255, 255, 255)",
+   "bgImg": "",
+   "items": [
+    {
+     "k": "caja",
+     "x": 420,
+     "y": 77,
+     "w": 600,
+     "h": 760,
+     "bg": "rgb(49, 90, 107)",
+     "bimg": "",
+     "rad": "0px",
+     "borde": "",
+     "sombra": 0
+    },
+    {
+     "k": "texto",
+     "x": 473,
+     "y": 129,
+     "w": 494,
+     "h": 276,
+     "html": "<h1 data-f=\"56\" data-c=\"rgb(255, 255, 255)\" data-a=\"center\">¿Todos los pacientes pueden operarse por laparoscopía?</h1>",
+     "fs": 56,
+     "lh": "normal",
+     "color": "rgb(255, 255, 255)",
+     "align": "center",
+     "fw": "400",
+     "ls": "normal"
+    },
+    {
+     "k": "texto",
+     "x": 519,
+     "y": 450,
+     "w": 416,
+     "h": 326,
+     "html": "<p data-f=\"18\" data-c=\"rgb(255, 255, 255)\" data-a=\"start\">No siempre.</p>\n\n<p data-f=\"18\" data-c=\"rgb(255, 255, 255)\" data-a=\"start\"></p>\n\n<p data-f=\"18\" data-c=\"rgb(255, 255, 255)\" data-a=\"start\">La decisión depende de factores como:</p>\n\n<ul>\n<li data-f=\"18\" data-c=\"rgb(255, 255, 255)\" data-a=\"start\">\n<p data-f=\"18\" data-c=\"rgb(255, 255, 255)\" data-a=\"start\">Diagnóstico.</p>\n</li>\n<li data-f=\"18\" data-c=\"rgb(255, 255, 255)\" data-a=\"start\">\n<p data-f=\"18\" data-c=\"rgb(255, 255, 255)\" data-a=\"start\">Antecedentes médicos.</p>\n</li>\n<li data-f=\"18\" data-c=\"rgb(255, 255, 255)\" data-a=\"start\">\n<p data-f=\"18\" data-c=\"rgb(255, 255, 255)\" data-a=\"start\">Cirugías previas.</p>\n</li>\n<li data-f=\"18\" data-c=\"rgb(255, 255, 255)\" data-a=\"start\">\n<p data-f=\"18\" data-c=\"rgb(255, 255, 255)\" data-a=\"start\">Estado general de salud.</p>\n</li>\n<li data-f=\"18\" data-c=\"rgb(255, 255, 255)\" data-a=\"start\">\n<p data-f=\"18\" data-c=\"rgb(255, 255, 255)\" data-a=\"start\">Características particulares de la enfermedad.</p>\n</li>\n</ul>\n\n<p data-f=\"18\" data-c=\"rgb(255, 255, 255)\" data-a=\"start\"></p>\n\n<p data-f=\"18\" data-c=\"rgb(255, 255, 255)\" data-a=\"start\">Durante la consulta se determinará si la cirugía laparoscópica es la mejor opción para tu caso.</p>",
+     "fs": 18,
+     "lh": "25.2px",
+     "color": "rgb(255, 255, 255)",
+     "align": "start",
+     "fw": "400",
+     "ls": "normal"
+    }
+   ]
+  },
+  {
+   "top": 4950,
+   "h": 1234,
+   "w": 1440,
+   "bg": "rgb(233, 232, 227)",
+   "bgImg": "",
+   "items": [
+    {
+     "k": "texto",
+     "x": 230,
+     "y": 33,
+     "w": 980,
+     "h": 69,
+     "html": "<h2 data-f=\"56\" data-c=\"rgb(23, 59, 74)\" data-a=\"center\">¿Cómo es la recuperación?</h2>",
+     "fs": 56,
+     "lh": "normal",
+     "color": "rgb(23, 59, 74)",
+     "align": "center",
+     "fw": "400",
+     "ls": "normal"
+    },
+    {
+     "k": "texto",
+     "x": 405,
+     "y": 140,
+     "w": 629,
+     "h": 324,
+     "html": "<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\">La recuperación suele ser más rápida en comparación con muchos procedimientos abiertos tradicionales.</p>\n\n<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\"></p>\n\n<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\">La mayoría de los pacientes:</p>\n\n<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\"></p>\n\n<ul>\n<li data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\">\n<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\">Comienza a caminar pocas horas después de la cirugía.</p>\n</li>\n<li data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\">\n<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\">Reinicia progresivamente su alimentación.</p>\n</li>\n<li data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\">\n<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\">Regresa a casa en un periodo corto.</p>\n</li>\n<li data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\">\n<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\">Retoma sus actividades habituales de manera gradual.</p>\n</li>\n</ul>\n\n<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\">&nbsp;</p>\n\n<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\">El tiempo exacto de recuperación dependerá del procedimiento realizado y de las características individuales de cada paciente.</p>",
+     "fs": 18,
+     "lh": "25.2px",
+     "color": "rgb(82, 79, 79)",
+     "align": "start",
+     "fw": "400",
+     "ls": "normal"
+    },
+    {
+     "k": "caja",
+     "x": 161,
+     "y": 513,
+     "w": 1123,
+     "h": 559,
+     "bg": "rgb(49, 90, 107)",
+     "bimg": "",
+     "rad": "0px",
+     "borde": "",
+     "sombra": 0
+    },
+    {
+     "k": "img",
+     "x": 187,
+     "y": 537,
+     "w": 1066,
+     "h": 513,
+     "src": "1da153_4d6345ac330642399b4ae61f17274a8e~mv2.png",
+     "alt": "Edificio Faro del Mayab al atardecer.png",
+     "fit": "cover",
+     "rad": "0px",
+     "link": ""
+    },
+    {
+     "k": "img",
+     "x": 524,
+     "y": 1101,
+     "w": 374,
+     "h": 133,
+     "src": "1da153_98e11fb3817743698389498ed9efc7d6~mv2.png",
+     "alt": "Imagen de ChatGPT 28 sept 2026, 04_13_52 p.m..png",
+     "fit": "cover",
+     "rad": "0px",
+     "link": ""
+    }
+   ]
+  },
+  {
+   "top": 6184,
+   "h": 1094,
+   "w": 1440,
+   "bg": "rgb(247, 247, 244)",
+   "bgImg": "",
+   "items": [
+    {
+     "k": "texto",
+     "x": 230,
+     "y": 48,
+     "w": 980,
+     "h": 69,
+     "html": "<h2 data-f=\"56\" data-c=\"rgb(49, 90, 107)\" data-a=\"center\">¿Por qué atenderte conmigo?</h2>",
+     "fs": 56,
+     "lh": "normal",
+     "color": "rgb(49, 90, 107)",
+     "align": "center",
+     "fw": "400",
+     "ls": "normal"
+    },
+    {
+     "k": "texto",
+     "x": 391,
+     "y": 143,
+     "w": 658,
+     "h": 109,
+     "html": "<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"center\">Me he preparado para ofrecerte una atención quirúrgica profesional, segura y personalizada. Mi formación como Cirujano General y en Cirugía Laparoscópica Avanzada me permite acompañarte desde el diagnóstico y la decisión de operarte, hasta tu cirugía y recuperación.</p>",
+     "fs": 18,
+     "lh": "25.2px",
+     "color": "rgb(82, 79, 79)",
+     "align": "center",
+     "fw": "400",
+     "ls": "normal"
+    },
+    {
+     "k": "caja",
+     "x": 72,
+     "y": 310,
+     "w": 648,
+     "h": 389,
+     "bg": "rgb(220, 232, 236)",
+     "bimg": "",
+     "rad": "0px",
+     "borde": "",
+     "sombra": 0
+    },
+    {
+     "k": "img",
+     "x": 72,
+     "y": 310,
+     "w": 344,
+     "h": 344,
+     "src": "1da153_136aac1925b94ee999650659f6812f81~mv2.png",
+     "alt": "Imagen de ChatGPT 27 sept 2026, 07_54_25 p.m..png",
+     "fit": "cover",
+     "rad": "0px",
+     "link": ""
+    },
+    {
+     "k": "texto",
+     "x": 432,
+     "y": 362,
+     "w": 258,
+     "h": 49,
+     "html": "<p data-f=\"18\" data-c=\"rgb(49, 90, 107)\" data-a=\"start\" data-b=\"1\">Cirujano General Certificado</p>",
+     "fs": 18,
+     "lh": "22.4px",
+     "color": "rgb(49, 90, 107)",
+     "align": "start",
+     "fw": "700",
+     "ls": "normal"
+    },
+    {
+     "k": "texto",
+     "x": 432,
+     "y": 431,
+     "w": 233,
+     "h": 190,
+     "html": "<h3 data-f=\"18\" data-c=\"rgb(50, 65, 88)\" data-a=\"start\">Cuento con certificación vigente por el Consejo Mexicano de Cirugía General y pertenezco a asociaciones nacionales de cirugía general y cirugía endoscópica.</h3>",
+     "fs": 18,
+     "lh": "25.2px",
+     "color": "rgb(50, 65, 88)",
+     "align": "start",
+     "fw": "400",
+     "ls": "normal"
+    },
+    {
+     "k": "caja",
+     "x": 720,
+     "y": 310,
+     "w": 648,
+     "h": 389,
+     "bg": "rgb(220, 232, 236)",
+     "bimg": "",
+     "rad": "0px",
+     "borde": "",
+     "sombra": 0
+    },
+    {
+     "k": "img",
+     "x": 720,
+     "y": 310,
+     "w": 344,
+     "h": 344,
+     "src": "1da153_c0a363fdc30342249ecaef0067b90e0f~mv2.png",
+     "alt": "Imagen de ChatGPT 28 sept 2026, 06_32_48 a.m..png",
+     "fit": "cover",
+     "rad": "0px",
+     "link": ""
+    },
+    {
+     "k": "texto",
+     "x": 1080,
+     "y": 362,
+     "w": 258,
+     "h": 47,
+     "html": "<p data-f=\"18\" data-c=\"rgb(49, 90, 107)\" data-a=\"start\" data-b=\"1\">Alta Especialidad en Cirugía Laparoscópica</p>",
+     "fs": 18,
+     "lh": "22.4px",
+     "color": "rgb(49, 90, 107)",
+     "align": "start",
+     "fw": "700",
+     "ls": "normal"
+    },
+    {
+     "k": "texto",
+     "x": 1080,
+     "y": 429,
+     "w": 233,
+     "h": 190,
+     "html": "<h3 data-f=\"18\" data-c=\"rgb(50, 65, 88)\" data-a=\"start\">Realicé un Postgrado de Alta Especialidad en Cirugía Laparoscópica Avanzada, con entrenamiento específico en procedimientos de mínima invasión.</h3>",
+     "fs": 18,
+     "lh": "25.2px",
+     "color": "rgb(50, 65, 88)",
+     "align": "start",
+     "fw": "400",
+     "ls": "normal"
+    },
+    {
+     "k": "caja",
+     "x": 72,
+     "y": 699,
+     "w": 648,
+     "h": 389,
+     "bg": "rgb(220, 232, 236)",
+     "bimg": "",
+     "rad": "0px",
+     "borde": "",
+     "sombra": 0
+    },
+    {
+     "k": "img",
+     "x": 72,
+     "y": 699,
+     "w": 344,
+     "h": 344,
+     "src": "1da153_e07088e9d98a4d1fb91e14d4c7729f6b~mv2.png",
+     "alt": "Consulta médica sobre hernia abdominal.png",
+     "fit": "cover",
+     "rad": "0px",
+     "link": ""
+    },
+    {
+     "k": "texto",
+     "x": 432,
+     "y": 751,
+     "w": 258,
+     "h": 49,
+     "html": "<p data-f=\"18\" data-c=\"rgb(49, 90, 107)\" data-a=\"start\" data-b=\"1\">Experiencia en cirugía digestiva y abdominal</p>",
+     "fs": 18,
+     "lh": "22.4px",
+     "color": "rgb(49, 90, 107)",
+     "align": "start",
+     "fw": "700",
+     "ls": "normal"
+    },
+    {
+     "k": "texto",
+     "x": 432,
+     "y": 820,
+     "w": 233,
+     "h": 109,
+     "html": "<h3 data-f=\"18\" data-c=\"rgb(50, 65, 88)\" data-a=\"start\">Atención de enfermedades quirúrgicas frecuentes mediante técnicas modernas y seguras.</h3>",
+     "fs": 18,
+     "lh": "25.2px",
+     "color": "rgb(50, 65, 88)",
+     "align": "start",
+     "fw": "400",
+     "ls": "normal"
+    },
+    {
+     "k": "caja",
+     "x": 720,
+     "y": 699,
+     "w": 648,
+     "h": 389,
+     "bg": "rgb(220, 232, 236)",
+     "bimg": "",
+     "rad": "0px",
+     "borde": "",
+     "sombra": 0
+    },
+    {
+     "k": "img",
+     "x": 720,
+     "y": 699,
+     "w": 344,
+     "h": 344,
+     "src": "1da153_c5e983bbe28a484f9e0d5c1843e81009~mv2.png",
+     "alt": "Imagen de ChatGPT 28 sept 2026, 06_55_19 a.m..png",
+     "fit": "cover",
+     "rad": "0px",
+     "link": ""
+    },
+    {
+     "k": "texto",
+     "x": 1080,
+     "y": 751,
+     "w": 258,
+     "h": 47,
+     "html": "<p data-f=\"18\" data-c=\"rgb(49, 90, 107)\" data-a=\"start\" data-b=\"1\">Atención de urgencias quirúrgicas</p>",
+     "fs": 18,
+     "lh": "22.4px",
+     "color": "rgb(49, 90, 107)",
+     "align": "start",
+     "fw": "700",
+     "ls": "normal"
+    },
+    {
+     "k": "texto",
+     "x": 1080,
+     "y": 818,
+     "w": 233,
+     "h": 136,
+     "html": "<h3 data-f=\"18\" data-c=\"rgb(50, 65, 88)\" data-a=\"start\">Valoración y tratamiento oportuno de pacientes con enfermedades digestivas que requieren manejo quirúrgico.</h3>",
+     "fs": 18,
+     "lh": "25.2px",
+     "color": "rgb(242, 131, 130)",
+     "align": "start",
+     "fw": "400",
+     "ls": "normal"
+    }
+   ]
+  },
+  {
+   "top": 7278,
+   "h": 844,
+   "w": 1440,
+   "bg": "rgb(220, 232, 235)",
+   "bgImg": "",
+   "items": [
+    {
+     "k": "caja",
+     "x": 40,
+     "y": 35,
+     "w": 1360,
+     "h": 766,
+     "bg": "rgb(247, 247, 244)",
+     "bimg": "",
+     "rad": "0px",
+     "borde": "",
+     "sombra": 0
+    },
+    {
+     "k": "texto",
+     "x": 258,
+     "y": 93,
+     "w": 925,
+     "h": 70,
+     "html": "<h3 data-f=\"57\" data-c=\"rgb(49, 90, 107)\" data-a=\"start\">Planea tu cirugía</h3>",
+     "fs": 57,
+     "lh": "normal",
+     "color": "rgb(242, 131, 130)",
+     "align": "start",
+     "fw": "400",
+     "ls": "normal"
+    },
+    {
+     "k": "texto",
+     "x": 258,
+     "y": 207,
+     "w": 233,
+     "h": 41,
+     "html": "<p data-f=\"22\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\">Hospitales en Mérida</p>",
+     "fs": 22,
+     "lh": "39.6px",
+     "color": "rgb(82, 79, 79)",
+     "align": "start",
+     "fw": "400",
+     "ls": "normal"
+    },
+    {
+     "k": "texto",
+     "x": 541,
+     "y": 207,
+     "w": 619,
+     "h": 163,
+     "html": "<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\">Dependiendo de las necesidades del paciente, la cirugía puede realizarse en diversos hospitales de Mérida que cuenten con la infraestructura adecuada para este tipo de procedimientos.</p>\n\n<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\"></p>\n\n<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\">Durante la consulta se determinará cuál es la mejor opción considerando tu caso particular, tu cobertura médica y tus preferencias.</p>",
+     "fs": 18,
+     "lh": "25.2px",
+     "color": "rgb(82, 79, 79)",
+     "align": "start",
+     "fw": "400",
+     "ls": "normal"
+    },
+    {
+     "k": "texto",
+     "x": 258,
+     "y": 435,
+     "w": 233,
+     "h": 81,
+     "html": "<p data-f=\"22\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\">Pacientes particulares y aseguradoras</p>",
+     "fs": 22,
+     "lh": "39.6px",
+     "color": "rgb(82, 79, 79)",
+     "align": "start",
+     "fw": "400",
+     "ls": "normal"
+    },
+    {
+     "k": "texto",
+     "x": 541,
+     "y": 435,
+     "w": 627,
+     "h": 163,
+     "html": "<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\">Atiendo tanto pacientes particulares como pacientes con seguro de gastos médicos mayores.</p>\n\n<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\"></p>\n\n<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\">Si cuentas con aseguradora, durante la consulta podemos orientarte respecto a la documentación médica necesaria para los trámites correspondientes.</p>",
+     "fs": 18,
+     "lh": "25.2px",
+     "color": "rgb(82, 79, 79)",
+     "align": "start",
+     "fw": "400",
+     "ls": "normal"
+    },
+    {
+     "k": "texto",
+     "x": 258,
+     "y": 674,
+     "w": 233,
+     "h": 41,
+     "html": "<p data-f=\"22\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\">Formas de pago</p>",
+     "fs": 22,
+     "lh": "39.6px",
+     "color": "rgb(82, 79, 79)",
+     "align": "start",
+     "fw": "400",
+     "ls": "normal"
+    },
+    {
+     "k": "texto",
+     "x": 541,
+     "y": 674,
+     "w": 619,
+     "h": 105,
+     "html": "<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\">Para mayor comodidad, contamos con diferentes opciones de pago, incluyendo pago con tarjeta bancaria.</p>",
+     "fs": 18,
+     "lh": "25.2px",
+     "color": "rgb(82, 79, 79)",
+     "align": "start",
+     "fw": "400",
+     "ls": "normal"
+    }
+   ]
+  },
+  {
+   "top": 8122,
+   "h": 865,
+   "w": 1440,
+   "bg": "rgb(220, 232, 236)",
+   "bgImg": "",
+   "items": [
+    {
+     "k": "faq",
+     "x": 242,
+     "y": 29,
+     "w": 980,
+     "h": 806
+    }
+   ]
+  },
+  {
+   "top": 8987,
+   "h": 398,
+   "w": 1440,
+   "bg": "rgb(250, 250, 250)",
+   "bgImg": "",
+   "items": [
+    {
+     "k": "texto",
+     "x": 230,
+     "y": 40,
+     "w": 980,
+     "h": 82,
+     "html": "<h2 data-f=\"56\" data-c=\"rgb(22, 59, 74)\" data-a=\"center\">Agenda una valoración</h2>",
+     "fs": 56,
+     "lh": "78.4px",
+     "color": "rgb(160, 121, 109)",
+     "align": "center",
+     "fw": "400",
+     "ls": "normal"
+    },
+    {
+     "k": "texto",
+     "x": 405,
+     "y": 142,
+     "w": 629,
+     "h": 100,
+     "html": "<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"center\">Si te han recomendado una cirugía o deseas conocer si eres candidato a un procedimiento de mínima invasión, agenda una consulta para recibir una valoración personalizada.</p>",
+     "fs": 18,
+     "lh": "32.4px",
+     "color": "rgb(82, 79, 79)",
+     "align": "center",
+     "fw": "400",
+     "ls": "normal"
+    },
+    {
+     "k": "img",
+     "x": 527,
+     "y": 243,
+     "w": 374,
+     "h": 133,
+     "src": "1da153_98e11fb3817743698389498ed9efc7d6~mv2.png",
+     "alt": "Imagen de ChatGPT 28 sept 2026, 04_13_52 p.m..png",
+     "fit": "cover",
+     "rad": "0px",
+     "link": ""
+    }
+   ]
+  }
+ ],
+ "faq": [
+  {
+   "q": "¿La cirugía laparoscópica duele menos?",
+   "a": "Muchos pacientes experimentan menos dolor postoperatorio en comparación con algunas técnicas abiertas tradicionales.",
+   "ah": "<div class=\"sIwn0eJ\"><div style=\"direction:ltr\" class=\"sBuQfDg oytk1I5---layout-8-collapse\">Muchos pacientes experimentan menos dolor postoperatorio en comparación con algunas técnicas abiertas tradicionales.</div></div>"
+  },
+  {
+   "q": "¿Las cicatrices son más pequeñas?",
+   "a": "Sí. La cirugía se realiza mediante pequeñas incisiones.",
+   "ah": "<div class=\"sIwn0eJ\"><div style=\"direction:ltr\" class=\"sBuQfDg oytk1I5---layout-8-collapse\">Sí. La cirugía se realiza mediante pequeñas incisiones.</div></div>"
+  },
+  {
+   "q": "¿La recuperación es más rápida?",
+   "a": "En muchos casos sí, aunque depende del procedimiento realizado y de las condiciones de cada paciente.",
+   "ah": "<div class=\"sIwn0eJ\"><div style=\"direction:ltr\" class=\"sBuQfDg oytk1I5---layout-8-collapse\">En muchos casos sí, aunque depende del procedimiento realizado y de las condiciones de cada paciente.</div></div>"
+  },
+  {
+   "q": "¿Todas las cirugías pueden hacerse por laparoscopía?",
+   "a": "No. La indicación depende de cada enfermedad y de la valoración médica.",
+   "ah": "<div class=\"sIwn0eJ\"><div style=\"direction:ltr\" class=\"sBuQfDg oytk1I5---layout-8-collapse\">No.&nbsp;La indicación depende de cada enfermedad y de la valoración médica.</div></div>"
+  },
+  {
+   "q": "¿Es una cirugía segura?",
+   "a": "Cuando es realizada por un cirujano capacitado y en un hospital adecuado, la cirugía laparoscópica es una técnica ampliamente utilizada y segura.",
+   "ah": "<div class=\"sIwn0eJ\"><div style=\"direction:ltr\" class=\"sBuQfDg oytk1I5---layout-8-collapse\">Cuando es realizada por un cirujano capacitado y en un hospital adecuado, la cirugía laparoscópica es una técnica ampliamente utilizada y segura.</div></div>"
+  }
+ ]
+}

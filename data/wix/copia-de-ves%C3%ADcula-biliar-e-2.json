@@ -1,0 +1,991 @@
+{
+ "secciones": [
+  {
+   "top": 166,
+   "h": 838,
+   "w": 1440,
+   "bg": "rgba(0, 0, 0, 0)",
+   "bgImg": "a3c153_2a6de96c3b09433b9398306603a20e1a~mv2.jpg",
+   "items": [
+    {
+     "k": "caja",
+     "x": 0,
+     "y": 0,
+     "w": 1440,
+     "h": 838,
+     "bg": "rgb(23, 59, 74)",
+     "bimg": "",
+     "rad": "0px",
+     "borde": "",
+     "sombra": 0
+    },
+    {
+     "k": "caja",
+     "x": 60,
+     "y": 60,
+     "w": 889,
+     "h": 718,
+     "bg": "rgb(220, 232, 236)",
+     "bimg": "",
+     "rad": "0px",
+     "borde": "",
+     "sombra": 0
+    },
+    {
+     "k": "texto",
+     "x": 230,
+     "y": 112,
+     "w": 541,
+     "h": 69,
+     "html": "<h2 data-f=\"56\" data-c=\"rgb(49, 90, 107)\" data-a=\"start\">Lipomas en Mérida</h2>",
+     "fs": 56,
+     "lh": "normal",
+     "color": "rgb(49, 90, 107)",
+     "align": "start",
+     "fw": "400",
+     "ls": "normal"
+    },
+    {
+     "k": "texto",
+     "x": 230,
+     "y": 209,
+     "w": 541,
+     "h": 32,
+     "html": "<p data-f=\"20\" data-c=\"rgb(23, 59, 74)\" data-a=\"start\">¿Tienes una bolita debajo de la piel?</p>",
+     "fs": 20,
+     "lh": "normal",
+     "color": "rgb(23, 59, 74)",
+     "align": "start",
+     "fw": "400",
+     "ls": "normal"
+    },
+    {
+     "k": "texto",
+     "x": 230,
+     "y": 281,
+     "w": 469,
+     "h": 354,
+     "html": "<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\">Los lipomas son una de las causas más frecuentes de aparición de bolitas debajo de la piel.</p>\n\n<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\"></p>\n\n<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\">Muchas personas los descubren por casualidad al tocarse el cuello, la espalda, los brazos, el abdomen o los hombros. En la mayoría de los casos son benignos, pero siempre es importante que sean valorados por un médico para confirmar el diagnóstico.</p>\n\n<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\"></p>\n\n<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\">Soy el Dr. Joel Antonio Dorantes González, Cirujano General Certificado en Mérida, y realizo la valoración y tratamiento de lipomas mediante procedimientos seguros y personalizados.</p>",
+     "fs": 18,
+     "lh": "25.2px",
+     "color": "rgb(82, 79, 79)",
+     "align": "start",
+     "fw": "400",
+     "ls": "normal"
+    },
+    {
+     "k": "btn",
+     "x": 230,
+     "y": 677,
+     "w": 346,
+     "h": 45,
+     "t": "Conoce más sobre otros tumores",
+     "href": "https://joeldorantes.wixsite.com/cirugiamerida/copia-de-vesícula-biliar-t-2",
+     "bg": "rgba(229, 235, 250, 0)",
+     "color": "rgb(0, 0, 0)",
+     "borde": "1px rgb(255, 255, 255)",
+     "rad": "60px",
+     "fs": 10,
+     "icono": true
+    },
+    {
+     "k": "caja",
+     "x": 949,
+     "y": 60,
+     "w": 431,
+     "h": 718,
+     "bg": "rgb(230, 216, 208)",
+     "bimg": "a3c153_2a6de96c3b09433b9398306603a20e1a~mv2.jpg",
+     "rad": "0px",
+     "borde": "",
+     "sombra": 0
+    },
+    {
+     "k": "caja",
+     "x": 985,
+     "y": 60,
+     "w": 359,
+     "h": 711,
+     "bg": "rgb(255, 255, 255)",
+     "bimg": "",
+     "rad": "0px",
+     "borde": "",
+     "sombra": 0
+    },
+    {
+     "k": "img",
+     "x": 874,
+     "y": 301,
+     "w": 600,
+     "h": 284,
+     "src": "1da153_4d4baa9406924bebafc2493cd9a1c537~mv2.png",
+     "alt": "",
+     "fit": "cover",
+     "rad": "0px",
+     "link": ""
+    }
+   ]
+  },
+  {
+   "top": 1004,
+   "h": 570,
+   "w": 1440,
+   "bg": "rgb(255, 255, 255)",
+   "bgImg": "",
+   "items": [
+    {
+     "k": "texto",
+     "x": 230,
+     "y": 25,
+     "w": 980,
+     "h": 69,
+     "html": "<h2 data-f=\"56\" data-c=\"rgb(23, 59, 74)\" data-a=\"center\">¿Qué es un lipoma?</h2>",
+     "fs": 56,
+     "lh": "normal",
+     "color": "rgb(23, 59, 74)",
+     "align": "center",
+     "fw": "400",
+     "ls": "normal"
+    },
+    {
+     "k": "texto",
+     "x": 405,
+     "y": 123,
+     "w": 629,
+     "h": 408,
+     "html": "<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\">Un lipoma es un crecimiento formado por tejido graso que aparece debajo de la piel.</p>\n\n<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\"></p>\n\n<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\">Generalmente se presenta como una bolita blanda, móvil y de crecimiento lento.</p>\n\n<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\"></p>\n\n<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\">Puede aparecer prácticamente en cualquier parte del cuerpo, aunque es más frecuente en:</p>\n\n<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\"></p>\n\n<ul>\n<li data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\">\n<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\">Espalda.</p>\n</li>\n<li data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\">\n<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\">Hombros.</p>\n</li>\n<li data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\">\n<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\">Brazos.</p>\n</li>\n<li data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\">\n<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\">Cuello.</p>\n</li>\n<li data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\">\n<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\">Abdomen.</p>\n</li>\n<li data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\">\n<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\">Muslos</p>\n</li>\n</ul>",
+     "fs": 18,
+     "lh": "25.2px",
+     "color": "rgb(82, 79, 79)",
+     "align": "start",
+     "fw": "400",
+     "ls": "normal"
+    }
+   ]
+  },
+  {
+   "top": 1574,
+   "h": 573,
+   "w": 1440,
+   "bg": "rgb(249, 240, 232)",
+   "bgImg": "",
+   "items": [
+    {
+     "k": "caja",
+     "x": 0,
+     "y": 0,
+     "w": 480,
+     "h": 573,
+     "bg": "rgb(23, 59, 74)",
+     "bimg": "",
+     "rad": "0px",
+     "borde": "",
+     "sombra": 0
+    },
+    {
+     "k": "caja",
+     "x": 480,
+     "y": 0,
+     "w": 960,
+     "h": 573,
+     "bg": "rgb(220, 232, 236)",
+     "bimg": "",
+     "rad": "0px",
+     "borde": "",
+     "sombra": 0
+    },
+    {
+     "k": "texto",
+     "x": 642,
+     "y": 31,
+     "w": 596,
+     "h": 138,
+     "html": "<h2 data-f=\"56\" data-c=\"rgb(23, 59, 74)\" data-a=\"start\">¿Cómo se siente un lipoma?</h2>",
+     "fs": 56,
+     "lh": "normal",
+     "color": "rgb(23, 59, 74)",
+     "align": "start",
+     "fw": "400",
+     "ls": "normal"
+    },
+    {
+     "k": "linea",
+     "x": 665,
+     "y": 194,
+     "w": 60,
+     "h": 5,
+     "color": "rgb(160, 121, 109)"
+    },
+    {
+     "k": "texto",
+     "x": 665,
+     "y": 219,
+     "w": 490,
+     "h": 297,
+     "html": "<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\">Muchas personas describen el lipoma como:</p>\n\n<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\"></p>\n\n<ul>\n<li data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\">\n<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\">Una bolita suave.</p>\n</li>\n<li data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\">\n<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\">Una bolita que se mueve al tocarla.</p>\n</li>\n<li data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\">\n<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\">Una protuberancia debajo de la piel.</p>\n</li>\n<li data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\">\n<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\">Un crecimiento lento que aumenta gradualmente de tamaño.</p>\n</li>\n</ul>\n\n<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\">&nbsp;</p>\n\n<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\">La mayoría no causa dolor, aunque algunos pueden generar molestias dependiendo de su tamaño o ubicación.</p>",
+     "fs": 18,
+     "lh": "25.2px",
+     "color": "rgb(82, 79, 79)",
+     "align": "start",
+     "fw": "400",
+     "ls": "normal"
+    }
+   ]
+  },
+  {
+   "top": 2147,
+   "h": 724,
+   "w": 1440,
+   "bg": "rgb(255, 255, 255)",
+   "bgImg": "",
+   "items": [
+    {
+     "k": "caja",
+     "x": 420,
+     "y": 47,
+     "w": 600,
+     "h": 629,
+     "bg": "rgb(49, 90, 107)",
+     "bimg": "",
+     "rad": "0px",
+     "borde": "",
+     "sombra": 0
+    },
+    {
+     "k": "texto",
+     "x": 473,
+     "y": 119,
+     "w": 494,
+     "h": 138,
+     "html": "<h1 data-f=\"56\" data-c=\"rgb(255, 255, 255)\" data-a=\"center\">¿Cuáles son los síntomas?</h1>",
+     "fs": 56,
+     "lh": "normal",
+     "color": "rgb(255, 255, 255)",
+     "align": "center",
+     "fw": "400",
+     "ls": "normal"
+    },
+    {
+     "k": "texto",
+     "x": 519,
+     "y": 307,
+     "w": 402,
+     "h": 299,
+     "html": "<p data-f=\"18\" data-c=\"rgb(255, 255, 255)\" data-a=\"start\">En muchos casos el único síntoma es la presencia de la bolita.</p>\n\n<p data-f=\"18\" data-c=\"rgb(255, 255, 255)\" data-a=\"start\"></p>\n\n<p data-f=\"18\" data-c=\"rgb(255, 255, 255)\" data-a=\"start\">Sin embargo, algunas personas pueden presentar:</p>\n\n<p data-f=\"18\" data-c=\"rgb(255, 255, 255)\" data-a=\"start\"></p>\n\n<ul>\n<li data-f=\"18\" data-c=\"rgb(255, 255, 255)\" data-a=\"start\">\n<p data-f=\"18\" data-c=\"rgb(255, 255, 255)\" data-a=\"start\">Sensación de presión.</p>\n</li>\n<li data-f=\"18\" data-c=\"rgb(255, 255, 255)\" data-a=\"start\">\n<p data-f=\"18\" data-c=\"rgb(255, 255, 255)\" data-a=\"start\">Molestias al acostarse sobre la zona.</p>\n</li>\n<li data-f=\"18\" data-c=\"rgb(255, 255, 255)\" data-a=\"start\">\n<p data-f=\"18\" data-c=\"rgb(255, 255, 255)\" data-a=\"start\">Incomodidad por razones estéticas.</p>\n</li>\n<li data-f=\"18\" data-c=\"rgb(255, 255, 255)\" data-a=\"start\">\n<p data-f=\"18\" data-c=\"rgb(255, 255, 255)\" data-a=\"start\">Dolor ocasional cuando el crecimiento comprime estructuras cercanas.</p>\n</li>\n</ul>",
+     "fs": 18,
+     "lh": "25.2px",
+     "color": "rgb(82, 79, 79)",
+     "align": "start",
+     "fw": "400",
+     "ls": "normal"
+    }
+   ]
+  },
+  {
+   "top": 2871,
+   "h": 1230,
+   "w": 1440,
+   "bg": "rgb(233, 232, 227)",
+   "bgImg": "",
+   "items": [
+    {
+     "k": "texto",
+     "x": 230,
+     "y": 33,
+     "w": 980,
+     "h": 138,
+     "html": "<h2 data-f=\"56\" data-c=\"rgb(23, 59, 74)\" data-a=\"center\">¿Cómo saber si realmente es un lipoma?</h2>",
+     "fs": 56,
+     "lh": "normal",
+     "color": "rgb(23, 59, 74)",
+     "align": "center",
+     "fw": "400",
+     "ls": "normal"
+    },
+    {
+     "k": "texto",
+     "x": 405,
+     "y": 209,
+     "w": 629,
+     "h": 454,
+     "html": "<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\">No todas las bolitas debajo de la piel son lipomas.</p>\n\n<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\"></p>\n\n<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\">Existen otros problemas que pueden producir lesiones similares, por lo que es importante realizar una valoración médica.</p>\n\n<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\"></p>\n\n<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\">Durante la consulta se realiza:</p>\n\n<h3 data-f=\"18\" data-c=\"rgb(242, 131, 130)\" data-a=\"start\">&nbsp;</h3>\n\n<h3 data-f=\"22\" data-c=\"rgb(22, 59, 74)\" data-a=\"start\">Historia clínica</h3>\n\n<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\">Se analiza cuándo apareció, si ha crecido y si produce molestias.</p>\n\n<h3 data-f=\"22\" data-c=\"rgb(242, 131, 130)\" data-a=\"start\">&nbsp;</h3>\n\n<h3 data-f=\"22\" data-c=\"rgb(22, 59, 74)\" data-a=\"start\">Exploración física</h3>\n\n<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\">Permite evaluar tamaño, consistencia y características de la lesión.</p>\n\n<h3 data-f=\"22\" data-c=\"rgb(242, 131, 130)\" data-a=\"start\">&nbsp;</h3>\n\n<h3 data-f=\"22\" data-c=\"rgb(22, 59, 74)\" data-a=\"start\">Estudios complementarios</h3>\n\n<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\">En algunos casos pueden solicitarse estudios de imagen para obtener mayor información.</p>",
+     "fs": 18,
+     "lh": "25.2px",
+     "color": "rgb(82, 79, 79)",
+     "align": "start",
+     "fw": "400",
+     "ls": "normal"
+    },
+    {
+     "k": "img",
+     "x": 369,
+     "y": 712,
+     "w": 764,
+     "h": 509,
+     "src": "1da153_12fbd8786a06471992c4ecaf6fb10c09~mv2.png",
+     "alt": "Examen médico del brazo con estetoscopio.png",
+     "fit": "cover",
+     "rad": "0px",
+     "link": ""
+    }
+   ]
+  },
+  {
+   "top": 4101,
+   "h": 473,
+   "w": 1440,
+   "bg": "rgb(247, 247, 244)",
+   "bgImg": "",
+   "items": [
+    {
+     "k": "texto",
+     "x": 230,
+     "y": 26,
+     "w": 980,
+     "h": 82,
+     "html": "<h2 data-f=\"56\" data-c=\"rgb(49, 90, 107)\" data-a=\"center\">¿Los lipomas son peligrosos?</h2>",
+     "fs": 56,
+     "lh": "78.4px",
+     "color": "rgb(160, 121, 109)",
+     "align": "center",
+     "fw": "400",
+     "ls": "normal"
+    },
+    {
+     "k": "texto",
+     "x": 405,
+     "y": 108,
+     "w": 629,
+     "h": 324,
+     "html": "<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\">La mayoría de los lipomas son benignos.</p>\n\n<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\"></p>\n\n<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\">Sin embargo, es recomendable acudir a valoración médica cuando:</p>\n\n<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\"></p>\n\n<ul>\n<li data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\">\n<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\">La bolita aumenta de tamaño.</p>\n</li>\n<li data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\">\n<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\">Produce dolor.</p>\n</li>\n<li data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\">\n<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\">Cambia rápidamente.</p>\n</li>\n<li data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\">\n<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\">Limita movimientos.</p>\n</li>\n<li data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\">\n<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\">Genera preocupación al paciente.</p>\n</li>\n</ul>\n\n<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\">&nbsp;</p>\n\n<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\">La revisión médica permite establecer un diagnóstico adecuado y definir si requiere tratamiento.</p>",
+     "fs": 18,
+     "lh": "25.2px",
+     "color": "rgb(82, 79, 79)",
+     "align": "start",
+     "fw": "400",
+     "ls": "normal"
+    }
+   ]
+  },
+  {
+   "top": 4574,
+   "h": 594,
+   "w": 1440,
+   "bg": "rgba(0, 0, 0, 0)",
+   "bgImg": "",
+   "items": [
+    {
+     "k": "caja",
+     "x": 0,
+     "y": 0,
+     "w": 1440,
+     "h": 594,
+     "bg": "rgb(220, 232, 236)",
+     "bimg": "",
+     "rad": "0px",
+     "borde": "",
+     "sombra": 0
+    },
+    {
+     "k": "caja",
+     "x": 60,
+     "y": 60,
+     "w": 889,
+     "h": 474,
+     "bg": "rgb(247, 247, 244)",
+     "bimg": "",
+     "rad": "0px",
+     "borde": "",
+     "sombra": 0
+    },
+    {
+     "k": "texto",
+     "x": 230,
+     "y": 110,
+     "w": 541,
+     "h": 138,
+     "html": "<h2 data-f=\"56\" data-c=\"rgb(49, 90, 107)\" data-a=\"start\">¿Los lipomas desaparecen solos?</h2>",
+     "fs": 56,
+     "lh": "normal",
+     "color": "rgb(49, 90, 107)",
+     "align": "start",
+     "fw": "400",
+     "ls": "normal"
+    },
+    {
+     "k": "texto",
+     "x": 230,
+     "y": 297,
+     "w": 469,
+     "h": 136,
+     "html": "<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\">Generalmente no.</p>\n\n<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\"></p>\n\n<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\">Una vez que aparecen suelen permanecer y en algunos casos continúan creciendo lentamente con el paso del tiempo.</p>",
+     "fs": 18,
+     "lh": "25.2px",
+     "color": "rgb(82, 79, 79)",
+     "align": "start",
+     "fw": "400",
+     "ls": "normal"
+    },
+    {
+     "k": "btn",
+     "x": 442,
+     "y": 459,
+     "w": 346,
+     "h": 45,
+     "t": "Conoce más sobre otros tumores de la piel",
+     "href": "https://joeldorantes.wixsite.com/cirugiamerida/copia-de-vesícula-biliar-t-2",
+     "bg": "rgba(229, 235, 250, 0)",
+     "color": "rgb(0, 0, 0)",
+     "borde": "1px rgb(255, 255, 255)",
+     "rad": "60px",
+     "fs": 10,
+     "icono": true
+    },
+    {
+     "k": "caja",
+     "x": 949,
+     "y": 60,
+     "w": 431,
+     "h": 474,
+     "bg": "rgb(233, 232, 227)",
+     "bimg": "",
+     "rad": "0px",
+     "borde": "",
+     "sombra": 0
+    }
+   ]
+  },
+  {
+   "top": 5168,
+   "h": 517,
+   "w": 1440,
+   "bg": "rgb(255, 255, 255)",
+   "bgImg": "",
+   "items": [
+    {
+     "k": "texto",
+     "x": 230,
+     "y": 34,
+     "w": 980,
+     "h": 69,
+     "html": "<h2 data-f=\"56\" data-c=\"rgb(23, 59, 74)\" data-a=\"center\">¿Cuándo conviene retirarlos?</h2>",
+     "fs": 56,
+     "lh": "normal",
+     "color": "rgb(23, 59, 74)",
+     "align": "center",
+     "fw": "400",
+     "ls": "normal"
+    },
+    {
+     "k": "texto",
+     "x": 405,
+     "y": 141,
+     "w": 629,
+     "h": 324,
+     "html": "<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\">La decisión depende de cada paciente.</p>\n\n<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\"></p>\n\n<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\">Algunas razones frecuentes para retirarlos son:</p>\n\n<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\"></p>\n\n<ul>\n<li data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\">\n<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\">Crecimiento progresivo.</p>\n</li>\n<li data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\">\n<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\">Molestias o dolor.</p>\n</li>\n<li data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\">\n<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\">Problemas estéticos.</p>\n</li>\n<li data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\">\n<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\">Dudas diagnósticas.</p>\n</li>\n<li data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\">\n<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\">Limitación funcional.</p>\n</li>\n</ul>\n\n<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\">&nbsp;</p>\n\n<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\">Durante la consulta se revisarán las ventajas y consideraciones de cada opción.</p>",
+     "fs": 18,
+     "lh": "25.2px",
+     "color": "rgb(82, 79, 79)",
+     "align": "start",
+     "fw": "400",
+     "ls": "normal"
+    }
+   ]
+  },
+  {
+   "top": 5685,
+   "h": 654,
+   "w": 1440,
+   "bg": "rgb(249, 240, 232)",
+   "bgImg": "",
+   "items": [
+    {
+     "k": "caja",
+     "x": 0,
+     "y": 0,
+     "w": 719,
+     "h": 654,
+     "bg": "rgb(247, 247, 244)",
+     "bimg": "",
+     "rad": "0px",
+     "borde": "",
+     "sombra": 0
+    },
+    {
+     "k": "texto",
+     "x": 118,
+     "y": 51,
+     "w": 485,
+     "h": 164,
+     "html": "<h2 data-f=\"56\" data-c=\"rgb(37, 71, 87)\" data-a=\"center\">¿Cómo se retira un lipoma?</h2>",
+     "fs": 56,
+     "lh": "normal",
+     "color": "rgb(160, 121, 109)",
+     "align": "center",
+     "fw": "400",
+     "ls": "normal"
+    },
+    {
+     "k": "texto",
+     "x": 144,
+     "y": 243,
+     "w": 445,
+     "h": 245,
+     "html": "<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\">Cuando está indicado, el tratamiento consiste en retirar el lipoma mediante un procedimiento quirúrgico.</p>\n\n<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\"></p>\n\n<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\">El objetivo es eliminar completamente la lesión y permitir su análisis cuando sea necesario.</p>\n\n<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\"></p>\n\n<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\">La técnica utilizada dependerá del tamaño, profundidad y localización del lipoma.</p>",
+     "fs": 18,
+     "lh": "25.2px",
+     "color": "rgb(82, 79, 79)",
+     "align": "start",
+     "fw": "400",
+     "ls": "normal"
+    },
+    {
+     "k": "img",
+     "x": 144,
+     "y": 508,
+     "w": 374,
+     "h": 133,
+     "src": "1da153_98e11fb3817743698389498ed9efc7d6~mv2.png",
+     "alt": "Imagen de ChatGPT 28 sept 2026, 04_13_52 p.m..png",
+     "fit": "cover",
+     "rad": "0px",
+     "link": ""
+    },
+    {
+     "k": "caja",
+     "x": 719,
+     "y": 0,
+     "w": 721,
+     "h": 654,
+     "bg": "rgb(247, 247, 244)",
+     "bimg": "",
+     "rad": "0px",
+     "borde": "",
+     "sombra": 0
+    },
+    {
+     "k": "caja",
+     "x": 741,
+     "y": 0,
+     "w": 600,
+     "h": 652,
+     "bg": "rgb(22, 59, 74)",
+     "bimg": "",
+     "rad": "0px",
+     "borde": "",
+     "sombra": 0
+    },
+    {
+     "k": "img",
+     "x": 741,
+     "y": 314,
+     "w": 600,
+     "h": 400,
+     "src": "1da153_5edf0bf630f547d3a327ae9c78b298a6~mv2.png",
+     "alt": "",
+     "fit": "cover",
+     "rad": "0px",
+     "link": ""
+    },
+    {
+     "k": "img",
+     "x": 741,
+     "y": 0,
+     "w": 600,
+     "h": 356,
+     "src": "1da153_bc8c23e6588c44d1ad64c7dec6ed7bd1~mv2.png",
+     "alt": "",
+     "fit": "cover",
+     "rad": "0px",
+     "link": ""
+    },
+    {
+     "k": "img",
+     "x": 860,
+     "y": 361,
+     "w": 139,
+     "h": 133,
+     "src": "1da153_1ba7e5ef86c5471eaa98690a65c3135d~mv2.png",
+     "alt": "Ícono minimalista de bisturí blanco sobre círculo dorado.png",
+     "fit": "cover",
+     "rad": "0px",
+     "link": ""
+    }
+   ]
+  },
+  {
+   "top": 6339,
+   "h": 561,
+   "w": 1440,
+   "bg": "rgb(250, 250, 250)",
+   "bgImg": "",
+   "items": [
+    {
+     "k": "texto",
+     "x": 230,
+     "y": 33,
+     "w": 980,
+     "h": 165,
+     "html": "<h2 data-f=\"56\" data-c=\"rgb(22, 59, 74)\" data-a=\"center\">Recuperación después del procedimiento</h2>",
+     "fs": 56,
+     "lh": "78.4px",
+     "color": "rgb(160, 121, 109)",
+     "align": "center",
+     "fw": "400",
+     "ls": "normal"
+    },
+    {
+     "k": "texto",
+     "x": 405,
+     "y": 231,
+     "w": 629,
+     "h": 297,
+     "html": "<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\">La recuperación suele ser rápida.</p>\n\n<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\"></p>\n\n<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\">Muchos pacientes regresan a sus actividades habituales en poco tiempo, dependiendo de:</p>\n\n<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\"></p>\n\n<ul>\n<li data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\">\n<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\">Tamaño del lipoma.</p>\n</li>\n<li data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\">\n<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\">Ubicación.</p>\n</li>\n<li data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\">\n<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\">Tipo de procedimiento realizado.</p>\n</li>\n<li data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\">\n<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\">Actividad laboral del paciente.</p>\n</li>\n</ul>\n\n<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\"></p>\n\n<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\">Las recomendaciones específicas se proporcionan de forma individual.</p>",
+     "fs": 18,
+     "lh": "25.2px",
+     "color": "rgb(82, 79, 79)",
+     "align": "start",
+     "fw": "400",
+     "ls": "normal"
+    }
+   ]
+  },
+  {
+   "top": 6900,
+   "h": 1081,
+   "w": 1440,
+   "bg": "rgb(247, 247, 244)",
+   "bgImg": "",
+   "items": [
+    {
+     "k": "texto",
+     "x": 230,
+     "y": 48,
+     "w": 980,
+     "h": 69,
+     "html": "<h2 data-f=\"56\" data-c=\"rgb(49, 90, 107)\" data-a=\"center\">¿Por qué operarte conmigo?</h2>",
+     "fs": 56,
+     "lh": "normal",
+     "color": "rgb(49, 90, 107)",
+     "align": "center",
+     "fw": "400",
+     "ls": "normal"
+    },
+    {
+     "k": "texto",
+     "x": 391,
+     "y": 143,
+     "w": 658,
+     "h": 109,
+     "html": "<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"center\">Me he preparado para ofrecerte una atención quirúrgica profesional, segura y personalizada. Mi formación como Cirujano General y en Cirugía Laparoscópica Avanzada me permite acompañarte desde el diagnóstico y la decisión de operarte, hasta tu cirugía y recuperación.</p>",
+     "fs": 18,
+     "lh": "25.2px",
+     "color": "rgb(82, 79, 79)",
+     "align": "center",
+     "fw": "400",
+     "ls": "normal"
+    },
+    {
+     "k": "caja",
+     "x": 72,
+     "y": 282,
+     "w": 648,
+     "h": 393,
+     "bg": "rgb(220, 232, 236)",
+     "bimg": "",
+     "rad": "0px",
+     "borde": "",
+     "sombra": 0
+    },
+    {
+     "k": "img",
+     "x": 72,
+     "y": 282,
+     "w": 344,
+     "h": 344,
+     "src": "1da153_136aac1925b94ee999650659f6812f81~mv2.png",
+     "alt": "Imagen de ChatGPT 27 sept 2026, 07_54_25 p.m..png",
+     "fit": "cover",
+     "rad": "0px",
+     "link": ""
+    },
+    {
+     "k": "texto",
+     "x": 432,
+     "y": 332,
+     "w": 258,
+     "h": 49,
+     "html": "<p data-f=\"18\" data-c=\"rgb(49, 90, 107)\" data-a=\"start\" data-b=\"1\">Cirujano General Certificado</p>",
+     "fs": 18,
+     "lh": "22.4px",
+     "color": "rgb(49, 90, 107)",
+     "align": "start",
+     "fw": "700",
+     "ls": "normal"
+    },
+    {
+     "k": "texto",
+     "x": 432,
+     "y": 403,
+     "w": 233,
+     "h": 109,
+     "html": "<h3 data-f=\"18\" data-c=\"rgb(50, 65, 88)\" data-a=\"start\">Experiencia en el diagnóstico y tratamiento de lesiones de la piel y tejido subcutáneo.</h3>",
+     "fs": 18,
+     "lh": "25.2px",
+     "color": "rgb(50, 65, 88)",
+     "align": "start",
+     "fw": "400",
+     "ls": "normal"
+    },
+    {
+     "k": "caja",
+     "x": 720,
+     "y": 282,
+     "w": 648,
+     "h": 393,
+     "bg": "rgb(220, 232, 236)",
+     "bimg": "",
+     "rad": "0px",
+     "borde": "",
+     "sombra": 0
+    },
+    {
+     "k": "img",
+     "x": 720,
+     "y": 282,
+     "w": 344,
+     "h": 344,
+     "src": "1da153_e1be06b5374a4b94bc03809828a88721~mv2.png",
+     "alt": "Sala de cirugía moderna y luminosa.png",
+     "fit": "cover",
+     "rad": "0px",
+     "link": ""
+    },
+    {
+     "k": "texto",
+     "x": 1080,
+     "y": 332,
+     "w": 258,
+     "h": 70,
+     "html": "<p data-f=\"18\" data-c=\"rgb(49, 90, 107)\" data-a=\"start\" data-b=\"1\">Cirugía en hospitales y unidades médicas de Mérida</p>",
+     "fs": 18,
+     "lh": "22.4px",
+     "color": "rgb(49, 90, 107)",
+     "align": "start",
+     "fw": "700",
+     "ls": "normal"
+    },
+    {
+     "k": "texto",
+     "x": 1080,
+     "y": 424,
+     "w": 233,
+     "h": 136,
+     "html": "<h3 data-f=\"18\" data-c=\"rgb(50, 65, 88)\" data-a=\"start\">Dependiendo del caso, el procedimiento puede realizarse en diferentes instalaciones médicas de la ciudad.</h3>",
+     "fs": 18,
+     "lh": "25.2px",
+     "color": "rgb(50, 65, 88)",
+     "align": "start",
+     "fw": "400",
+     "ls": "normal"
+    },
+    {
+     "k": "caja",
+     "x": 72,
+     "y": 675,
+     "w": 648,
+     "h": 393,
+     "bg": "rgb(220, 232, 236)",
+     "bimg": "",
+     "rad": "0px",
+     "borde": "",
+     "sombra": 0
+    },
+    {
+     "k": "img",
+     "x": 72,
+     "y": 675,
+     "w": 344,
+     "h": 344,
+     "src": "1da153_34478bb0e931489099ea083499b5c8aa~mv2.png",
+     "alt": "Consulta médica sobre lipoma.png",
+     "fit": "cover",
+     "rad": "0px",
+     "link": ""
+    },
+    {
+     "k": "texto",
+     "x": 432,
+     "y": 725,
+     "w": 258,
+     "h": 24,
+     "html": "<p data-f=\"18\" data-c=\"rgb(49, 90, 107)\" data-a=\"start\" data-b=\"1\">Atención personalizada</p>",
+     "fs": 18,
+     "lh": "22.4px",
+     "color": "rgb(49, 90, 107)",
+     "align": "start",
+     "fw": "700",
+     "ls": "normal"
+    },
+    {
+     "k": "texto",
+     "x": 432,
+     "y": 771,
+     "w": 233,
+     "h": 163,
+     "html": "<h3 data-f=\"18\" data-c=\"rgb(50, 65, 88)\" data-a=\"start\">Valoración individual para determinar el mejor tratamiento en cada caso para obtener el mejor resultado funcional y estético posible.</h3>",
+     "fs": 18,
+     "lh": "25.2px",
+     "color": "rgb(50, 65, 88)",
+     "align": "start",
+     "fw": "400",
+     "ls": "normal"
+    },
+    {
+     "k": "caja",
+     "x": 720,
+     "y": 675,
+     "w": 648,
+     "h": 393,
+     "bg": "rgb(220, 232, 236)",
+     "bimg": "",
+     "rad": "0px",
+     "borde": "",
+     "sombra": 0
+    },
+    {
+     "k": "img",
+     "x": 720,
+     "y": 675,
+     "w": 344,
+     "h": 344,
+     "src": "1da153_0247868716634fde9ce3b3b51599c34d~mv2.png",
+     "alt": "Pago amable en recepción.png",
+     "fit": "cover",
+     "rad": "0px",
+     "link": ""
+    },
+    {
+     "k": "texto",
+     "x": 1080,
+     "y": 725,
+     "w": 258,
+     "h": 70,
+     "html": "<p data-f=\"18\" data-c=\"rgb(49, 90, 107)\" data-a=\"start\" data-b=\"1\">Pacientes particulares y aseguradoras &amp; Pago con tarjeta bancaria</p>",
+     "fs": 18,
+     "lh": "22.4px",
+     "color": "rgb(49, 90, 107)",
+     "align": "start",
+     "fw": "700",
+     "ls": "normal"
+    },
+    {
+     "k": "texto",
+     "x": 1080,
+     "y": 817,
+     "w": 233,
+     "h": 218,
+     "html": "<h3 data-f=\"18\" data-c=\"rgb(50, 65, 88)\" data-a=\"start\">Atención para pacientes particulares y con seguro de gastos médicos mayores.<br>\n<br>\nContamos con opciones de pago mediante tarjeta bancaria.</h3>",
+     "fs": 18,
+     "lh": "25.2px",
+     "color": "rgb(242, 131, 130)",
+     "align": "start",
+     "fw": "400",
+     "ls": "normal"
+    }
+   ]
+  },
+  {
+   "top": 7981,
+   "h": 428,
+   "w": 1440,
+   "bg": "rgb(233, 232, 227)",
+   "bgImg": "",
+   "items": [
+    {
+     "k": "texto",
+     "x": 230,
+     "y": 33,
+     "w": 980,
+     "h": 82,
+     "html": "<h2 data-f=\"56\" data-c=\"rgb(49, 90, 107)\" data-a=\"center\">Agenda una valoración</h2>",
+     "fs": 56,
+     "lh": "78.4px",
+     "color": "rgb(49, 90, 107)",
+     "align": "center",
+     "fw": "400",
+     "ls": "normal"
+    },
+    {
+     "k": "texto",
+     "x": 405,
+     "y": 130,
+     "w": 629,
+     "h": 134,
+     "html": "<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"center\">Si tienes una bolita debajo de la piel, un crecimiento en la espalda, el brazo, el cuello o cualquier otra parte del cuerpo, una valoración médica puede ayudarte a conocer la causa y las opciones de tratamiento disponibles.</p>",
+     "fs": 18,
+     "lh": "32.4px",
+     "color": "rgb(82, 79, 79)",
+     "align": "center",
+     "fw": "400",
+     "ls": "normal"
+    },
+    {
+     "k": "img",
+     "x": 533,
+     "y": 264,
+     "w": 374,
+     "h": 133,
+     "src": "1da153_98e11fb3817743698389498ed9efc7d6~mv2.png",
+     "alt": "Imagen de ChatGPT 28 sept 2026, 04_13_52 p.m..png",
+     "fit": "cover",
+     "rad": "0px",
+     "link": ""
+    }
+   ]
+  },
+  {
+   "top": 8409,
+   "h": 932,
+   "w": 1440,
+   "bg": "rgb(220, 232, 236)",
+   "bgImg": "",
+   "items": [
+    {
+     "k": "faq",
+     "x": 242,
+     "y": 29,
+     "w": 980,
+     "h": 870
+    }
+   ]
+  }
+ ],
+ "faq": [
+  {
+   "q": "¿Un lipoma es cáncer?",
+   "a": "La mayoría de los lipomas son lesiones benignas. Sin embargo, posterior a extirparse pueden enviarse a estudio de patología para confirmar la benignidad.",
+   "ah": "<div class=\"sIwn0eJ\"><div style=\"direction:ltr\" class=\"sBuQfDg oytk1I5---layout-8-collapse\">La mayoría de los lipomas son lesiones benignas. Sin embargo, posterior a extirparse pueden enviarse a estudio de patología para confirmar la benignidad.</div></div>"
+  },
+  {
+   "q": "¿Puede volver a aparecer?",
+   "a": "La evolución depende de cada caso y de las características individuales del paciente.",
+   "ah": "<div class=\"sIwn0eJ\"><div style=\"direction:ltr\" class=\"sBuQfDg oytk1I5---layout-8-collapse\">La evolución depende de cada caso y de las características individuales del paciente.</div></div>"
+  },
+  {
+   "q": "¿Todos los lipomas necesitan cirugía?",
+   "a": "No. La decisión depende de factores como tamaño, síntomas y preferencias del paciente.",
+   "ah": "<div class=\"sIwn0eJ\"><div style=\"direction:ltr\" class=\"sBuQfDg oytk1I5---layout-8-collapse\">No.&nbsp;La decisión depende de factores como tamaño, síntomas y preferencias del paciente.</div></div>"
+  },
+  {
+   "q": "¿Duele retirar un lipoma?",
+   "a": "Actualmente existen medidas para que el procedimiento y la recuperación sean lo más cómodos posible.",
+   "ah": "<div class=\"sIwn0eJ\"><div style=\"direction:ltr\" class=\"sBuQfDg oytk1I5---layout-8-collapse\">Actualmente existen medidas para que el procedimiento y la recuperación sean lo más cómodos posible.</div></div>"
+  },
+  {
+   "q": "¿Qué especialista trata los lipomas?",
+   "a": "El cirujano general es uno de los especialistas capacitados para valorar y tratar este tipo de lesiones.",
+   "ah": "<div class=\"sIwn0eJ\"><div style=\"direction:ltr\" class=\"sBuQfDg oytk1I5---layout-8-collapse\">El cirujano general es uno de los especialistas capacitados para valorar y tratar este tipo de lesiones.</div></div>"
+  }
+ ]
+}

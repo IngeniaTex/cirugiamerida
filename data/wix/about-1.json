@@ -1,0 +1,760 @@
+{
+ "secciones": [
+  {
+   "top": 166,
+   "h": 831,
+   "w": 1440,
+   "bg": "rgba(0, 0, 0, 0)",
+   "bgImg": "a3c153_2a6de96c3b09433b9398306603a20e1a~mv2.jpg",
+   "items": [
+    {
+     "k": "caja",
+     "x": 0,
+     "y": 0,
+     "w": 1440,
+     "h": 831,
+     "bg": "rgb(23, 59, 74)",
+     "bimg": "",
+     "rad": "0px",
+     "borde": "",
+     "sombra": 0
+    },
+    {
+     "k": "caja",
+     "x": 60,
+     "y": 60,
+     "w": 889,
+     "h": 711,
+     "bg": "rgb(220, 232, 236)",
+     "bimg": "",
+     "rad": "0px",
+     "borde": "",
+     "sombra": 0
+    },
+    {
+     "k": "texto",
+     "x": 230,
+     "y": 130,
+     "w": 541,
+     "h": 138,
+     "html": "<h2 data-f=\"56\" data-c=\"rgb(49, 90, 107)\" data-a=\"start\">Piedras en la Vesícula en Mérida</h2>",
+     "fs": 56,
+     "lh": "normal",
+     "color": "rgb(49, 90, 107)",
+     "align": "start",
+     "fw": "400",
+     "ls": "normal"
+    },
+    {
+     "k": "texto",
+     "x": 230,
+     "y": 278,
+     "w": 541,
+     "h": 64,
+     "html": "<p data-f=\"20\" data-c=\"rgb(23, 59, 74)\" data-a=\"start\">¿Tienes dolor después de comer? Podría estar relacionado con tu vesícula.</p>",
+     "fs": 20,
+     "lh": "normal",
+     "color": "rgb(23, 59, 74)",
+     "align": "start",
+     "fw": "400",
+     "ls": "normal"
+    },
+    {
+     "k": "texto",
+     "x": 230,
+     "y": 382,
+     "w": 469,
+     "h": 199,
+     "html": "<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\">Las piedras en la vesícula son una de las causas más frecuentes de dolor abdominal en adultos.&nbsp; &nbsp; &nbsp; </p>\n\n<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\">&nbsp;</p>\n\n<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\">Muchas personas pueden tener piedras durante años sin saberlo, mientras que otras presentan molestias que afectan su calidad de vida y requieren tratamiento.</p>",
+     "fs": 18,
+     "lh": "32.4px",
+     "color": "rgb(82, 79, 79)",
+     "align": "start",
+     "fw": "400",
+     "ls": "normal"
+    },
+    {
+     "k": "btn",
+     "x": 271,
+     "y": 648,
+     "w": 346,
+     "h": 45,
+     "t": "Conoce más sobre el tratamiento con cirugía",
+     "href": "https://joeldorantes.wixsite.com/cirugiamerida/coming-soon-03",
+     "bg": "rgba(229, 235, 250, 0)",
+     "color": "rgb(0, 0, 0)",
+     "borde": "1px rgb(255, 255, 255)",
+     "rad": "60px",
+     "fs": 10,
+     "icono": true
+    },
+    {
+     "k": "caja",
+     "x": 949,
+     "y": 60,
+     "w": 431,
+     "h": 711,
+     "bg": "rgb(230, 216, 208)",
+     "bimg": "a3c153_2a6de96c3b09433b9398306603a20e1a~mv2.jpg",
+     "rad": "0px",
+     "borde": "",
+     "sombra": 0
+    },
+    {
+     "k": "caja",
+     "x": 985,
+     "y": 60,
+     "w": 359,
+     "h": 711,
+     "bg": "rgb(255, 255, 255)",
+     "bimg": "",
+     "rad": "0px",
+     "borde": "",
+     "sombra": 0
+    },
+    {
+     "k": "img",
+     "x": 651,
+     "y": 202,
+     "w": 1042,
+     "h": 494,
+     "src": "1da153_935750dc0a24488ca0442ae888e23265~mv2.png",
+     "alt": "p",
+     "fit": "cover",
+     "rad": "0px",
+     "link": ""
+    }
+   ]
+  },
+  {
+   "top": 997,
+   "h": 404,
+   "w": 1440,
+   "bg": "rgb(255, 255, 255)",
+   "bgImg": "",
+   "items": [
+    {
+     "k": "texto",
+     "x": 230,
+     "y": 37,
+     "w": 980,
+     "h": 69,
+     "html": "<h2 data-f=\"56\" data-c=\"rgb(23, 59, 74)\" data-a=\"center\">¿Qué es la vesícula?</h2>",
+     "fs": 56,
+     "lh": "normal",
+     "color": "rgb(23, 59, 74)",
+     "align": "center",
+     "fw": "400",
+     "ls": "normal"
+    },
+    {
+     "k": "texto",
+     "x": 405,
+     "y": 130,
+     "w": 629,
+     "h": 218,
+     "html": "<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"center\">La vesícula es un pequeño órgano ubicado debajo del hígado. Su función es almacenar la bilis, un líquido que ayuda a la digestión de las grasas.</p>\n\n<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"center\"></p>\n\n<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"center\">En algunas personas pueden formarse pequeñas piedras dentro de la vesícula. Estas piedras pueden variar de tamaño y cantidad.</p>\n\n<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"center\"></p>\n\n<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"center\">Algunas personas nunca presentan síntomas, mientras que otras desarrollan dolor, inflamación y complicaciones.</p>",
+     "fs": 18,
+     "lh": "25.2px",
+     "color": "rgb(82, 79, 79)",
+     "align": "center",
+     "fw": "400",
+     "ls": "normal"
+    }
+   ]
+  },
+  {
+   "top": 1401,
+   "h": 775,
+   "w": 1440,
+   "bg": "rgb(249, 240, 232)",
+   "bgImg": "",
+   "items": [
+    {
+     "k": "caja",
+     "x": 0,
+     "y": 0,
+     "w": 480,
+     "h": 775,
+     "bg": "rgb(23, 59, 74)",
+     "bimg": "",
+     "rad": "0px",
+     "borde": "",
+     "sombra": 0
+    },
+    {
+     "k": "caja",
+     "x": 480,
+     "y": 0,
+     "w": 960,
+     "h": 775,
+     "bg": "rgb(220, 232, 236)",
+     "bimg": "",
+     "rad": "0px",
+     "borde": "",
+     "sombra": 0
+    },
+    {
+     "k": "texto",
+     "x": 643,
+     "y": 52,
+     "w": 596,
+     "h": 207,
+     "html": "<h2 data-f=\"56\" data-c=\"rgb(23, 59, 74)\" data-a=\"start\">¿Cuáles son los síntomas de las piedras en la vesícula?</h2>",
+     "fs": 56,
+     "lh": "normal",
+     "color": "rgb(23, 59, 74)",
+     "align": "start",
+     "fw": "400",
+     "ls": "normal"
+    },
+    {
+     "k": "linea",
+     "x": 665,
+     "y": 289,
+     "w": 60,
+     "h": 5,
+     "color": "rgb(160, 121, 109)"
+    },
+    {
+     "k": "texto",
+     "x": 665,
+     "y": 315,
+     "w": 490,
+     "h": 404,
+     "html": "<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"justify\">Los síntomas más frecuentes incluyen:</p>\n\n<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"justify\"></p>\n\n<ul>\n<li data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"justify\">\n<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"justify\">Dolor en la parte superior derecha del abdomen.</p>\n</li>\n<li data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"justify\">\n<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"justify\">Dolor después de comer alimentos grasosos.</p>\n</li>\n<li data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"justify\">\n<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"justify\">Sensación de pesadez después de las comidas.</p>\n</li>\n<li data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"justify\">\n<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"justify\">Náuseas.</p>\n</li>\n<li data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"justify\">\n<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"justify\">Vómito.</p>\n</li>\n<li data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"justify\">\n<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"justify\">Inflamación abdominal.</p>\n</li>\n<li data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"justify\">\n<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"justify\">Dolor que puede extenderse hacia la espalda o el hombro derecho</p>\n</li>\n</ul>\n\n<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"justify\">&nbsp;</p>\n\n<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"justify\">Los síntomas suelen aparecer con mayor frecuencia después de comidas abundantes o con alto contenido de grasa.</p>",
+     "fs": 18,
+     "lh": "27px",
+     "color": "rgb(82, 79, 79)",
+     "align": "justify",
+     "fw": "400",
+     "ls": "normal"
+    }
+   ]
+  },
+  {
+   "top": 2176,
+   "h": 737,
+   "w": 1440,
+   "bg": "rgb(255, 255, 255)",
+   "bgImg": "",
+   "items": [
+    {
+     "k": "caja",
+     "x": 420,
+     "y": 56,
+     "w": 600,
+     "h": 627,
+     "bg": "rgb(49, 90, 107)",
+     "bimg": "",
+     "rad": "0px",
+     "borde": "",
+     "sombra": 0
+    },
+    {
+     "k": "texto",
+     "x": 473,
+     "y": 128,
+     "w": 494,
+     "h": 138,
+     "html": "<h1 data-f=\"56\" data-c=\"rgb(255, 255, 255)\" data-a=\"center\">¿Cuándo debo preocuparme?</h1>",
+     "fs": 56,
+     "lh": "normal",
+     "color": "rgb(255, 255, 255)",
+     "align": "center",
+     "fw": "400",
+     "ls": "normal"
+    },
+    {
+     "k": "texto",
+     "x": 519,
+     "y": 330,
+     "w": 402,
+     "h": 261,
+     "html": "<p data-f=\"18\" data-c=\"rgb(255, 255, 255)\" data-a=\"justify\">Debes buscar atención médica si presentas:</p>\n\n<ul>\n<li data-f=\"18\" data-c=\"rgb(255, 255, 255)\" data-a=\"justify\">\n<p data-f=\"18\" data-c=\"rgb(255, 255, 255)\" data-a=\"justify\">Dolor intenso que no mejora.</p>\n</li>\n<li data-f=\"18\" data-c=\"rgb(255, 255, 255)\" data-a=\"justify\">\n<p data-f=\"18\" data-c=\"rgb(255, 255, 255)\" data-a=\"justify\">Fiebre.</p>\n</li>\n<li data-f=\"18\" data-c=\"rgb(255, 255, 255)\" data-a=\"justify\">\n<p data-f=\"18\" data-c=\"rgb(255, 255, 255)\" data-a=\"justify\">Escalofríos.</p>\n</li>\n<li data-f=\"18\" data-c=\"rgb(255, 255, 255)\" data-a=\"justify\">\n<p data-f=\"18\" data-c=\"rgb(255, 255, 255)\" data-a=\"justify\">Color amarillo en la piel o en los ojos.</p>\n</li>\n<li data-f=\"18\" data-c=\"rgb(255, 255, 255)\" data-a=\"justify\">\n<p data-f=\"18\" data-c=\"rgb(255, 255, 255)\" data-a=\"justify\">Náuseas o vómitos persistentes.</p>\n</li>\n</ul>\n\n<p data-f=\"18\" data-c=\"rgb(255, 255, 255)\" data-a=\"justify\">Estos síntomas pueden indicar una complicación que requiere valoración médica inmediata.</p>",
+     "fs": 18,
+     "lh": "27px",
+     "color": "rgb(255, 255, 255)",
+     "align": "justify",
+     "fw": "400",
+     "ls": "normal"
+    }
+   ]
+  },
+  {
+   "top": 2913,
+   "h": 1081,
+   "w": 1440,
+   "bg": "rgb(233, 232, 227)",
+   "bgImg": "",
+   "items": [
+    {
+     "k": "texto",
+     "x": 230,
+     "y": 33,
+     "w": 980,
+     "h": 138,
+     "html": "<h2 data-f=\"56\" data-c=\"rgb(23, 59, 74)\" data-a=\"center\">¿Cómo se diagnostican las piedras en la vesícula?</h2>",
+     "fs": 56,
+     "lh": "normal",
+     "color": "rgb(23, 59, 74)",
+     "align": "center",
+     "fw": "400",
+     "ls": "normal"
+    },
+    {
+     "k": "texto",
+     "x": 405,
+     "y": 209,
+     "w": 629,
+     "h": 203,
+     "html": "<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"justify\">La valoración médica incluye:</p>\n\n<ul>\n<li data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"justify\">\n<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"justify\">Historia clínica.</p>\n</li>\n<li data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"justify\">\n<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"justify\">Exploración física.</p>\n</li>\n<li data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"justify\">\n<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"justify\">Estudios de laboratorio cuando son necesarios.</p>\n</li>\n<li data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"justify\">\n<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"justify\">Ultrasonido abdominal.</p>\n</li>\n</ul>\n\n<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"justify\">El ultrasonido suele ser el estudio más utilizado para identificar la presencia de piedras en la vesícula.</p>",
+     "fs": 18,
+     "lh": "27px",
+     "color": "rgb(82, 79, 79)",
+     "align": "justify",
+     "fw": "400",
+     "ls": "normal"
+    },
+    {
+     "k": "caja",
+     "x": 161,
+     "y": 461,
+     "w": 1123,
+     "h": 559,
+     "bg": "rgb(49, 90, 107)",
+     "bimg": "",
+     "rad": "0px",
+     "borde": "",
+     "sombra": 0
+    },
+    {
+     "k": "img",
+     "x": 187,
+     "y": 485,
+     "w": 1066,
+     "h": 513,
+     "src": "1da153_7c4220bc5c4743abaea20faf5124f9e3~mv2.png",
+     "alt": "ChatGPT Image 26 sept 2026, 01_56_33 p.m..png",
+     "fit": "cover",
+     "rad": "0px",
+     "link": ""
+    }
+   ]
+  },
+  {
+   "top": 3994,
+   "h": 409,
+   "w": 1440,
+   "bg": "rgb(247, 247, 244)",
+   "bgImg": "",
+   "items": [
+    {
+     "k": "texto",
+     "x": 230,
+     "y": 26,
+     "w": 980,
+     "h": 165,
+     "html": "<h2 data-f=\"56\" data-c=\"rgb(49, 90, 107)\" data-a=\"center\">¿Las piedras pueden desaparecer solas?</h2>",
+     "fs": 56,
+     "lh": "78.4px",
+     "color": "rgb(160, 121, 109)",
+     "align": "center",
+     "fw": "400",
+     "ls": "normal"
+    },
+    {
+     "k": "texto",
+     "x": 405,
+     "y": 191,
+     "w": 629,
+     "h": 190,
+     "html": "<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\">Generalmente no.</p>\n\n<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\"></p>\n\n<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\">Una vez que las piedras se forman, normalmente permanecen dentro de la vesícula.</p>\n\n<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\"></p>\n\n<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\">Aunque algunas personas pueden pasar largos periodos sin síntomas, otras desarrollan episodios repetidos de dolor o complicaciones.</p>",
+     "fs": 18,
+     "lh": "25.2px",
+     "color": "rgb(82, 79, 79)",
+     "align": "start",
+     "fw": "400",
+     "ls": "normal"
+    }
+   ]
+  },
+  {
+   "top": 4403,
+   "h": 814,
+   "w": 1440,
+   "bg": "rgba(0, 0, 0, 0)",
+   "bgImg": "",
+   "items": [
+    {
+     "k": "caja",
+     "x": 0,
+     "y": 0,
+     "w": 1440,
+     "h": 814,
+     "bg": "rgb(220, 232, 236)",
+     "bimg": "",
+     "rad": "0px",
+     "borde": "",
+     "sombra": 0
+    },
+    {
+     "k": "caja",
+     "x": 60,
+     "y": 60,
+     "w": 889,
+     "h": 694,
+     "bg": "rgb(247, 247, 244)",
+     "bimg": "",
+     "rad": "0px",
+     "borde": "",
+     "sombra": 0
+    },
+    {
+     "k": "texto",
+     "x": 230,
+     "y": 108,
+     "w": 541,
+     "h": 207,
+     "html": "<h2 data-f=\"56\" data-c=\"rgb(49, 90, 107)\" data-a=\"start\">¿Todas las personas con piedras necesitan cirugía?</h2>",
+     "fs": 56,
+     "lh": "normal",
+     "color": "rgb(49, 90, 107)",
+     "align": "start",
+     "fw": "400",
+     "ls": "normal"
+    },
+    {
+     "k": "texto",
+     "x": 230,
+     "y": 361,
+     "w": 469,
+     "h": 272,
+     "html": "<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\">No necesariamente.</p>\n\n<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\"></p>\n\n<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\">La decisión depende de varios factores:</p>\n\n<ul>\n<li data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\">\n<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\">Presencia de síntomas.</p>\n</li>\n<li data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\">\n<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\">Frecuencia de las molestias.</p>\n</li>\n<li data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\">\n<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\">Tamaño y cantidad de piedras.</p>\n</li>\n<li data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\">\n<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\">Existencia de complicaciones.</p>\n</li>\n<li data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\">\n<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\">Estado general de salud del paciente.</p>\n</li>\n<li data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\">\n<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\"></p>\n</li>\n</ul>\n\n<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\">Cada caso debe evaluarse de manera individual.</p>",
+     "fs": 18,
+     "lh": "25.2px",
+     "color": "rgb(82, 79, 79)",
+     "align": "start",
+     "fw": "400",
+     "ls": "normal"
+    },
+    {
+     "k": "btn",
+     "x": 548,
+     "y": 675,
+     "w": 346,
+     "h": 45,
+     "t": "Conoce más sobre el tratamiento con cirugía",
+     "href": "https://joeldorantes.wixsite.com/cirugiamerida/coming-soon-03",
+     "bg": "rgba(229, 235, 250, 0)",
+     "color": "rgb(0, 0, 0)",
+     "borde": "1px rgb(255, 255, 255)",
+     "rad": "60px",
+     "fs": 10,
+     "icono": true
+    },
+    {
+     "k": "caja",
+     "x": 949,
+     "y": 60,
+     "w": 431,
+     "h": 694,
+     "bg": "rgb(233, 232, 227)",
+     "bimg": "",
+     "rad": "0px",
+     "borde": "",
+     "sombra": 0
+    }
+   ]
+  },
+  {
+   "top": 5217,
+   "h": 451,
+   "w": 1440,
+   "bg": "rgb(255, 255, 255)",
+   "bgImg": "",
+   "items": [
+    {
+     "k": "texto",
+     "x": 230,
+     "y": 33,
+     "w": 980,
+     "h": 69,
+     "html": "<h2 data-f=\"56\" data-c=\"rgb(23, 59, 74)\" data-a=\"center\">¿Qué pasa si no me trato?</h2>",
+     "fs": 56,
+     "lh": "normal",
+     "color": "rgb(23, 59, 74)",
+     "align": "center",
+     "fw": "400",
+     "ls": "normal"
+    },
+    {
+     "k": "texto",
+     "x": 405,
+     "y": 135,
+     "w": 629,
+     "h": 270,
+     "html": "<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\">Algunas personas permanecen sin síntomas durante años.</p>\n\n<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\"></p>\n\n<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\">Sin embargo, otras pueden desarrollar:</p>\n\n<ul>\n<li data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\">\n<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\">Episodios repetidos de dolor.</p>\n</li>\n<li data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\">\n<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\">Inflamación de la vesícula.</p>\n</li>\n<li data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\">\n<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\">Infecciones.</p>\n</li>\n<li data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\">\n<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\">Problemas relacionados con el flujo de bilis.</p>\n</li>\n</ul>\n\n<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\">&nbsp;</p>\n\n<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\">Por eso es importante acudir a valoración médica cuando existen molestias.</p>",
+     "fs": 18,
+     "lh": "25.2px",
+     "color": "rgb(82, 79, 79)",
+     "align": "start",
+     "fw": "400",
+     "ls": "normal"
+    }
+   ]
+  },
+  {
+   "top": 5668,
+   "h": 665,
+   "w": 1440,
+   "bg": "rgb(249, 240, 232)",
+   "bgImg": "1da153_c78abf680750451ea2e45279ce0131dd~mv2.png",
+   "items": [
+    {
+     "k": "caja",
+     "x": 0,
+     "y": 0,
+     "w": 719,
+     "h": 662,
+     "bg": "rgb(247, 247, 244)",
+     "bimg": "",
+     "rad": "0px",
+     "borde": "",
+     "sombra": 0
+    },
+    {
+     "k": "texto",
+     "x": 118,
+     "y": 49,
+     "w": 485,
+     "h": 207,
+     "html": "<h2 data-f=\"56\" data-c=\"rgb(37, 71, 87)\" data-a=\"center\">¿Qué opciones de tratamiento existen?</h2>",
+     "fs": 56,
+     "lh": "normal",
+     "color": "rgb(160, 121, 109)",
+     "align": "center",
+     "fw": "400",
+     "ls": "normal"
+    },
+    {
+     "k": "texto",
+     "x": 152,
+     "y": 290,
+     "w": 445,
+     "h": 245,
+     "html": "<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\">El tratamiento depende de cada paciente.</p>\n\n<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\"></p>\n\n<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\">Algunas personas requieren vigilancia y seguimiento.</p>\n\n<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\">Otras pueden beneficiarse de cirugía para evitar nuevos episodios de dolor o complicaciones.</p>\n\n<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\"></p>\n\n<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\">Durante la consulta se revisarán los estudios y se explicarán las opciones más adecuadas para tu caso.</p>",
+     "fs": 18,
+     "lh": "25.2px",
+     "color": "rgb(82, 79, 79)",
+     "align": "start",
+     "fw": "400",
+     "ls": "normal"
+    },
+    {
+     "k": "btn",
+     "x": 393,
+     "y": 573,
+     "w": 169,
+     "h": 45,
+     "t": "Tratamiento",
+     "href": "https://joeldorantes.wixsite.com/cirugiamerida/coming-soon-03",
+     "bg": "rgba(229, 235, 250, 0)",
+     "color": "rgb(0, 0, 0)",
+     "borde": "1px rgb(255, 255, 255)",
+     "rad": "60px",
+     "fs": 10,
+     "icono": true
+    },
+    {
+     "k": "caja",
+     "x": 719,
+     "y": 0,
+     "w": 721,
+     "h": 662,
+     "bg": "rgb(220, 232, 235)",
+     "bimg": "1da153_c78abf680750451ea2e45279ce0131dd~mv2.png",
+     "rad": "0px",
+     "borde": "",
+     "sombra": 0
+    }
+   ]
+  },
+  {
+   "top": 6333,
+   "h": 679,
+   "w": 1440,
+   "bg": "rgb(249, 240, 232)",
+   "bgImg": "",
+   "items": [
+    {
+     "k": "caja",
+     "x": 0,
+     "y": 0,
+     "w": 480,
+     "h": 679,
+     "bg": "rgb(23, 59, 74)",
+     "bimg": "",
+     "rad": "0px",
+     "borde": "",
+     "sombra": 0
+    },
+    {
+     "k": "caja",
+     "x": 480,
+     "y": 0,
+     "w": 960,
+     "h": 679,
+     "bg": "rgb(220, 232, 236)",
+     "bimg": "",
+     "rad": "0px",
+     "borde": "",
+     "sombra": 0
+    },
+    {
+     "k": "texto",
+     "x": 641,
+     "y": 38,
+     "w": 596,
+     "h": 207,
+     "html": "<h2 data-f=\"56\" data-c=\"rgb(23, 59, 74)\" data-a=\"start\">¿Cómo puedo saber si mi dolor es de la vesícula?</h2>",
+     "fs": 56,
+     "lh": "normal",
+     "color": "rgb(23, 59, 74)",
+     "align": "start",
+     "fw": "400",
+     "ls": "normal"
+    },
+    {
+     "k": "linea",
+     "x": 656,
+     "y": 275,
+     "w": 60,
+     "h": 5,
+     "color": "rgb(160, 121, 109)"
+    },
+    {
+     "k": "texto",
+     "x": 656,
+     "y": 317,
+     "w": 535,
+     "h": 315,
+     "html": "<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\">El dolor relacionado con la vesícula suele:</p>\n\n<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\"></p>\n\n<ul>\n<li data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\">\n<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\">Aparecer después de comer.</p>\n</li>\n<li data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\">\n<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\">Localizarse en la parte superior derecha del abdomen.</p>\n</li>\n<li data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\">\n<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\">Irradiarse hacia la espalda o el hombro derecho.</p>\n</li>\n<li data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\">\n<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\">Presentarse en episodios que pueden durar desde minutos hasta varias horas.</p>\n</li>\n</ul>\n\n<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\"></p>\n\n<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\">Sin embargo, otras enfermedades pueden producir síntomas similares, por lo que una valoración médica es indispensable para establecer un diagnóstico correcto.</p>",
+     "fs": 18,
+     "lh": "25.2px",
+     "color": "rgb(82, 79, 79)",
+     "align": "start",
+     "fw": "400",
+     "ls": "normal"
+    }
+   ]
+  },
+  {
+   "top": 7012,
+   "h": 484,
+   "w": 1440,
+   "bg": "rgb(250, 250, 250)",
+   "bgImg": "",
+   "items": [
+    {
+     "k": "texto",
+     "x": 230,
+     "y": 33,
+     "w": 980,
+     "h": 165,
+     "html": "<h2 data-f=\"56\" data-c=\"rgb(22, 59, 74)\" data-a=\"center\">¿Ya tienes diagnóstico de piedras en la vesícula?</h2>",
+     "fs": 56,
+     "lh": "78.4px",
+     "color": "rgb(160, 121, 109)",
+     "align": "center",
+     "fw": "400",
+     "ls": "normal"
+    },
+    {
+     "k": "texto",
+     "x": 405,
+     "y": 220,
+     "w": 629,
+     "h": 100,
+     "html": "<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"center\">Si presentas síntomas o un ultrasonido ha identificado cálculos en la vesícula, una valoración permite determinar cuál es el tratamiento apropiado en tu caso.</p>",
+     "fs": 18,
+     "lh": "32.4px",
+     "color": "rgb(82, 79, 79)",
+     "align": "center",
+     "fw": "400",
+     "ls": "normal"
+    },
+    {
+     "k": "btn",
+     "x": 175,
+     "y": 383,
+     "w": 346,
+     "h": 45,
+     "t": "Conoce más sobre el tratamiento con cirugía",
+     "href": "https://joeldorantes.wixsite.com/cirugiamerida/coming-soon-03",
+     "bg": "rgba(229, 235, 250, 0)",
+     "color": "rgb(0, 0, 0)",
+     "borde": "1px rgb(255, 255, 255)",
+     "rad": "60px",
+     "fs": 10,
+     "icono": true
+    },
+    {
+     "k": "img",
+     "x": 922,
+     "y": 339,
+     "w": 374,
+     "h": 133,
+     "src": "1da153_98e11fb3817743698389498ed9efc7d6~mv2.png",
+     "alt": "Imagen de ChatGPT 28 sept 2026, 04_13_52 p.m..png",
+     "fit": "cover",
+     "rad": "0px",
+     "link": ""
+    }
+   ]
+  },
+  {
+   "top": 7496,
+   "h": 1004,
+   "w": 1440,
+   "bg": "rgb(220, 232, 236)",
+   "bgImg": "",
+   "items": [
+    {
+     "k": "faq",
+     "x": 242,
+     "y": 29,
+     "w": 980,
+     "h": 942
+    }
+   ]
+  }
+ ],
+ "faq": [
+  {
+   "q": "¿Las piedras en la vesícula se eliminan con medicamentos?",
+   "a": "En la mayoría de los casos no desaparecen con medicamentos.",
+   "ah": "<div class=\"sIwn0eJ\"><div style=\"direction:ltr\" class=\"sBuQfDg oytk1I5---layout-8-collapse\">En la mayoría de los casos no desaparecen con medicamentos.</div></div>"
+  },
+  {
+   "q": "¿Puedo seguir comiendo normalmente?",
+   "a": "Las comidas muy grasosas suelen empeorar los síntomas en algunas personas.",
+   "ah": "<div class=\"sIwn0eJ\"><div style=\"direction:ltr\" class=\"sBuQfDg oytk1I5---layout-8-collapse\">Las comidas muy grasosas suelen empeorar los síntomas en algunas personas.</div></div>"
+  },
+  {
+   "q": "¿Las piedras en la vesícula son peligrosas?",
+   "a": "Pueden provocar complicaciones cuando producen inflamación, infección o bloqueo del flujo normal de la bilis.",
+   "ah": "<div class=\"sIwn0eJ\"><div style=\"direction:ltr\" class=\"sBuQfDg oytk1I5---layout-8-collapse\">Pueden provocar complicaciones cuando producen inflamación, infección o bloqueo del flujo normal de la bilis.</div></div>"
+  },
+  {
+   "q": "¿Todas las personas con piedras en la vesícula necesitan cirugía?",
+   "a": "No. Algunas personas tienen piedras en la vesícula sin presentar síntomas y pueden no requerir tratamiento inmediato. Cuando existen episodios de dolor u otras complicaciones, es importante realizar una valoración médica para determinar el tratamiento más adecuado.",
+   "ah": "<div class=\"sIwn0eJ\"><div style=\"direction:ltr\" class=\"sBuQfDg oytk1I5---layout-8-collapse\">No. Algunas personas tienen piedras en la vesícula sin presentar síntomas y pueden no requerir tratamiento inmediato. Cuando existen episodios de dolor u otras complicaciones, es importante realizar una valoración médica para determinar el tratamiento más adecuado.</div></div>"
+  },
+  {
+   "q": "¿Cómo es el dolor causado por piedras en la vesícula?",
+   "a": "Habitualmente aparece en la parte superior derecha del abdomen o en la zona superior central. Puede ser intenso, durar desde varios minutos hasta algunas horas y, en ocasiones, extenderse hacia la espalda o el hombro derecho. Algunas personas presentan además náusea o vómito.",
+   "ah": "<div class=\"sIwn0eJ\"><div style=\"direction:ltr\" class=\"sBuQfDg oytk1I5---layout-8-collapse\">Habitualmente aparece en la parte superior derecha del abdomen o en la zona superior central. Puede ser intenso, durar desde varios minutos hasta algunas horas y, en ocasiones, extenderse hacia la espalda o el hombro derecho. Algunas personas presentan además náusea o vómito.</div></div>"
+  }
+ ]
+}

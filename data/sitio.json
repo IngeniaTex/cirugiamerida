@@ -1,0 +1,36 @@
+{
+  "dominio": "https://cirugiamerida.com",
+  "nombre": "Dr. Joel Dorantes",
+  "nombreCompleto": "Dr. Joel Antonio Dorantes González",
+  "contacto": {
+    "_whatsapp": "POR CONFIRMAR: en Wix los botones de WhatsApp no tienen número; se usa el teléfono de la tarjeta de presentación.",
+    "whatsapp": "529999566388",
+    "telefonos": [
+      { "texto": "9999 566388", "tel": "+529999566388" },
+      { "texto": "9991 007935", "tel": "+529991007935" }
+    ],
+    "correo": "contacto@cirugiamerida.com",
+    "consultorio": "Centro de Especialidades Médicas y Odontológicas de Mérida",
+    "siglas": "CEMOM",
+    "direccion": "Calle 18 (Esquina con 5) No. 57, Colonia San Antonio Cinta, Mérida, Yucatán",
+    "horario": "Atención Lunes a Sábado Previa cita",
+    "mapa": "https://www.google.com/maps/search/?api=1&query=Centro+de+Especialidades+M%C3%A9dicas+y+Odontol%C3%B3gicas+de+M%C3%A9rida+Calle+18+57+San+Antonio+Cinta+M%C3%A9rida"
+  },
+  "pie": {
+    "credenciales": ["Cirujano General Certificado", "Cirugía Gastrointestinal", "Laparoscopía Avanzada", "Cirugía en Hospitales de Mérida", "Pago con tarjeta disponible", "Mérida, Yucatán"],
+    "copyright": "© 2026 Dr. Joel Dorantes González · cirugiamerida.com"
+  },
+  "menu": [
+    { "texto": "Inicio", "url": "/" },
+    { "texto": "Servicios", "url": "/servicios/", "grupo": "servicios" },
+    { "texto": "Dietas especiales", "url": "/dietas-especiales/", "grupo": "dietas" },
+    { "texto": "Preguntas Frecuentes", "url": "/#preguntas-frecuentes" },
+    { "texto": "Contacto", "url": "/#contacto" }
+  ],
+  "dietasColaboracion": {
+    "titulo": "Elaboración y colaboración profesional",
+    "lineas": ["Guías elaboradas en colaboración con", "**Lucía González Ramírez,**", "**Doctora en Nutrición y Ciencias de la Salud.**", "", "Para asesoría nutricional o planes de alimentación personalizados:"],
+    "whatsapp": "9992 232188",
+    "correo": "nutclinica@outlook.com"
+  }
+}

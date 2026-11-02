@@ -1,0 +1,936 @@
+{
+ "secciones": [
+  {
+   "top": 166,
+   "h": 847,
+   "w": 1440,
+   "bg": "rgba(0, 0, 0, 0)",
+   "bgImg": "",
+   "items": [
+    {
+     "k": "caja",
+     "x": 0,
+     "y": 0,
+     "w": 1440,
+     "h": 847,
+     "bg": "rgb(23, 59, 74)",
+     "bimg": "",
+     "rad": "0px",
+     "borde": "",
+     "sombra": 0
+    },
+    {
+     "k": "caja",
+     "x": 60,
+     "y": 60,
+     "w": 889,
+     "h": 727,
+     "bg": "rgb(220, 232, 236)",
+     "bimg": "",
+     "rad": "0px",
+     "borde": "",
+     "sombra": 0
+    },
+    {
+     "k": "texto",
+     "x": 230,
+     "y": 113,
+     "w": 541,
+     "h": 138,
+     "html": "<h2 data-f=\"56\" data-c=\"rgb(49, 90, 107)\" data-a=\"start\">Apendicitis en Mérida</h2>",
+     "fs": 56,
+     "lh": "normal",
+     "color": "rgb(49, 90, 107)",
+     "align": "start",
+     "fw": "400",
+     "ls": "normal"
+    },
+    {
+     "k": "texto",
+     "x": 230,
+     "y": 278,
+     "w": 541,
+     "h": 32,
+     "html": "<p data-f=\"20\" data-c=\"rgb(23, 59, 74)\" data-a=\"start\">¿Tienes dolor en el lado derecho del abdomen?</p>",
+     "fs": 20,
+     "lh": "normal",
+     "color": "rgb(23, 59, 74)",
+     "align": "start",
+     "fw": "400",
+     "ls": "normal"
+    },
+    {
+     "k": "texto",
+     "x": 230,
+     "y": 343,
+     "w": 469,
+     "h": 326,
+     "html": "<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\">La apendicitis es una de las causas más frecuentes de dolor abdominal que requiere atención quirúrgica.</p>\n\n<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\"></p>\n\n<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\">Reconocer los síntomas a tiempo puede ayudar a evitar complicaciones y permitir un tratamiento oportuno.</p>\n\n<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\"></p>\n\n<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\">Soy el Dr. Joel Antonio Dorantes González, Cirujano General Certificado y con Alta Especialidad en Cirugía Laparoscópica Avanzada, y atiendo pacientes con dolor abdominal agudo y enfermedades que requieren tratamiento quirúrgico en hospitales de Mérida.</p>",
+     "fs": 18,
+     "lh": "25.2px",
+     "color": "rgb(82, 79, 79)",
+     "align": "start",
+     "fw": "400",
+     "ls": "normal"
+    },
+    {
+     "k": "btn",
+     "x": 230,
+     "y": 702,
+     "w": 346,
+     "h": 45,
+     "t": "Conoce más sobre el tratamiento con cirugía",
+     "href": "https://joeldorantes.wixsite.com/cirugiamerida/copia-de-vesícula-biliar-t-1",
+     "bg": "rgba(229, 235, 250, 0)",
+     "color": "rgb(0, 0, 0)",
+     "borde": "1px rgb(255, 255, 255)",
+     "rad": "60px",
+     "fs": 10,
+     "icono": true
+    },
+    {
+     "k": "caja",
+     "x": 985,
+     "y": 60,
+     "w": 359,
+     "h": 721,
+     "bg": "rgb(255, 255, 255)",
+     "bimg": "",
+     "rad": "0px",
+     "borde": "",
+     "sombra": 0
+    },
+    {
+     "k": "img",
+     "x": 629,
+     "y": 265,
+     "w": 908,
+     "h": 431,
+     "src": "1da153_c10d21d84c03473e9cf05361f6eeedf0~mv2.png",
+     "alt": "Ilustración anatómica del apéndice y ciego.png",
+     "fit": "cover",
+     "rad": "0px",
+     "link": ""
+    }
+   ]
+  },
+  {
+   "top": 1013,
+   "h": 382,
+   "w": 1440,
+   "bg": "rgb(255, 255, 255)",
+   "bgImg": "",
+   "items": [
+    {
+     "k": "texto",
+     "x": 230,
+     "y": 29,
+     "w": 980,
+     "h": 69,
+     "html": "<h2 data-f=\"56\" data-c=\"rgb(23, 59, 74)\" data-a=\"center\">¿Qué es la apendicitis?</h2>",
+     "fs": 56,
+     "lh": "normal",
+     "color": "rgb(23, 59, 74)",
+     "align": "center",
+     "fw": "400",
+     "ls": "normal"
+    },
+    {
+     "k": "texto",
+     "x": 405,
+     "y": 137,
+     "w": 629,
+     "h": 190,
+     "html": "<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\">La apendicitis ocurre cuando el apéndice se inflama.</p>\n\n<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\"></p>\n\n<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\">El apéndice es una pequeña estructura ubicada en la parte inferior derecha del abdomen.</p>\n\n<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\"></p>\n\n<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\">Cuando se inflama, generalmente produce dolor que aumenta con el paso de las horas y suele requerir tratamiento quirúrgico.</p>",
+     "fs": 18,
+     "lh": "25.2px",
+     "color": "rgb(82, 79, 79)",
+     "align": "start",
+     "fw": "400",
+     "ls": "normal"
+    }
+   ]
+  },
+  {
+   "top": 1396,
+   "h": 742,
+   "w": 1440,
+   "bg": "rgb(249, 240, 232)",
+   "bgImg": "",
+   "items": [
+    {
+     "k": "caja",
+     "x": 0,
+     "y": 0,
+     "w": 480,
+     "h": 742,
+     "bg": "rgb(23, 59, 74)",
+     "bimg": "",
+     "rad": "0px",
+     "borde": "",
+     "sombra": 0
+    },
+    {
+     "k": "caja",
+     "x": 480,
+     "y": 0,
+     "w": 960,
+     "h": 742,
+     "bg": "rgb(220, 232, 236)",
+     "bimg": "",
+     "rad": "0px",
+     "borde": "",
+     "sombra": 0
+    },
+    {
+     "k": "texto",
+     "x": 642,
+     "y": 28,
+     "w": 596,
+     "h": 207,
+     "html": "<h2 data-f=\"56\" data-c=\"rgb(23, 59, 74)\" data-a=\"start\">¿Cuáles son los síntomas de la apendicitis?</h2>",
+     "fs": 56,
+     "lh": "normal",
+     "color": "rgb(23, 59, 74)",
+     "align": "start",
+     "fw": "400",
+     "ls": "normal"
+    },
+    {
+     "k": "linea",
+     "x": 665,
+     "y": 261,
+     "w": 60,
+     "h": 5,
+     "color": "rgb(160, 121, 109)"
+    },
+    {
+     "k": "texto",
+     "x": 665,
+     "y": 288,
+     "w": 490,
+     "h": 408,
+     "html": "<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\">Los síntomas pueden variar de una persona a otra, pero los más frecuentes son:</p>\n\n<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\"></p>\n\n<ul>\n<li data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\">\n<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\">Dolor abdominal que aumenta progresivamente.</p>\n</li>\n<li data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\">\n<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\">Dolor en la parte inferior derecha del abdomen.</p>\n</li>\n<li data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\">\n<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\">Pérdida del apetito.</p>\n</li>\n<li data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\">\n<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\">Náuseas.</p>\n</li>\n<li data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\">\n<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\">Vómito.</p>\n</li>\n<li data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\">\n<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\">Fiebre.</p>\n</li>\n<li data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\">\n<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\">Sensación de malestar general.</p>\n</li>\n<li data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\">\n<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\">Dolor al caminar o moverse.</p>\n</li>\n</ul>\n\n<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\"></p>\n\n<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\">En muchas personas el dolor comienza cerca del ombligo y posteriormente se desplaza hacia el lado derecho del abdomen.</p>",
+     "fs": 18,
+     "lh": "25.2px",
+     "color": "rgb(82, 79, 79)",
+     "align": "start",
+     "fw": "400",
+     "ls": "normal"
+    }
+   ]
+  },
+  {
+   "top": 2138,
+   "h": 717,
+   "w": 1440,
+   "bg": "rgb(255, 255, 255)",
+   "bgImg": "",
+   "items": [
+    {
+     "k": "caja",
+     "x": 420,
+     "y": 42,
+     "w": 600,
+     "h": 622,
+     "bg": "rgb(49, 90, 107)",
+     "bimg": "",
+     "rad": "0px",
+     "borde": "",
+     "sombra": 0
+    },
+    {
+     "k": "texto",
+     "x": 473,
+     "y": 94,
+     "w": 494,
+     "h": 138,
+     "html": "<h1 data-f=\"56\" data-c=\"rgb(255, 255, 255)\" data-a=\"center\">¿Cómo es el dolor de la apendicitis?</h1>",
+     "fs": 56,
+     "lh": "normal",
+     "color": "rgb(255, 255, 255)",
+     "align": "center",
+     "fw": "400",
+     "ls": "normal"
+    },
+    {
+     "k": "texto",
+     "x": 519,
+     "y": 277,
+     "w": 416,
+     "h": 326,
+     "html": "<p data-f=\"18\" data-c=\"rgb(255, 255, 255)\" data-a=\"start\">El dolor suele:</p>\n\n<p data-f=\"18\" data-c=\"rgb(255, 255, 255)\" data-a=\"start\"></p>\n\n<ul>\n<li data-f=\"18\" data-c=\"rgb(255, 255, 255)\" data-a=\"start\">\n<p data-f=\"18\" data-c=\"rgb(255, 255, 255)\" data-a=\"start\">Iniciar de manera gradual.</p>\n</li>\n<li data-f=\"18\" data-c=\"rgb(255, 255, 255)\" data-a=\"start\">\n<p data-f=\"18\" data-c=\"rgb(255, 255, 255)\" data-a=\"start\">Aumentar con el paso de las horas.</p>\n</li>\n<li data-f=\"18\" data-c=\"rgb(255, 255, 255)\" data-a=\"start\">\n<p data-f=\"18\" data-c=\"rgb(255, 255, 255)\" data-a=\"start\">Empeorar al caminar, toser o realizar movimientos bruscos.</p>\n</li>\n<li data-f=\"18\" data-c=\"rgb(255, 255, 255)\" data-a=\"start\">\n<p data-f=\"18\" data-c=\"rgb(255, 255, 255)\" data-a=\"start\">Localizarse finalmente en la parte inferior derecha del abdomen.</p>\n</li>\n</ul>\n\n<p data-f=\"18\" data-c=\"rgb(255, 255, 255)\" data-a=\"start\"></p>\n\n<p data-f=\"18\" data-c=\"rgb(255, 255, 255)\" data-a=\"start\">No todas las personas presentan exactamente los mismos síntomas, por lo que es importante una valoración médica.</p>",
+     "fs": 18,
+     "lh": "25.2px",
+     "color": "rgb(255, 255, 255)",
+     "align": "start",
+     "fw": "400",
+     "ls": "normal"
+    }
+   ]
+  },
+  {
+   "top": 2855,
+   "h": 1182,
+   "w": 1440,
+   "bg": "rgb(233, 232, 227)",
+   "bgImg": "",
+   "items": [
+    {
+     "k": "texto",
+     "x": 230,
+     "y": 33,
+     "w": 980,
+     "h": 69,
+     "html": "<h2 data-f=\"56\" data-c=\"rgb(23, 59, 74)\" data-a=\"center\">¿Cuándo debo acudir a urgencias?</h2>",
+     "fs": 56,
+     "lh": "normal",
+     "color": "rgb(23, 59, 74)",
+     "align": "center",
+     "fw": "400",
+     "ls": "normal"
+    },
+    {
+     "k": "texto",
+     "x": 405,
+     "y": 140,
+     "w": 629,
+     "h": 272,
+     "html": "<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\">Debes buscar atención médica inmediata si presentas:</p>\n\n<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\"></p>\n\n<ul>\n<li data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\">\n<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\">Dolor intenso en el lado derecho del abdomen.</p>\n</li>\n<li data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\">\n<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\">Dolor abdominal que empeora progresivamente.</p>\n</li>\n<li data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\">\n<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\">Fiebre acompañada de dolor abdominal.</p>\n</li>\n<li data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\">\n<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\">Náuseas y vómitos persistentes.</p>\n</li>\n<li data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\">\n<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\">Dolor que dificulta caminar o moverte.</p>\n</li>\n<li data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\">\n<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\">Dolor abdominal asociado a mal estado general.</p>\n</li>\n</ul>\n\n<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\"></p>\n\n<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\">La apendicitis es una condición que requiere valoración médica urgente.</p>",
+     "fs": 18,
+     "lh": "25.2px",
+     "color": "rgb(82, 79, 79)",
+     "align": "start",
+     "fw": "400",
+     "ls": "normal"
+    },
+    {
+     "k": "caja",
+     "x": 161,
+     "y": 461,
+     "w": 1123,
+     "h": 559,
+     "bg": "rgb(49, 90, 107)",
+     "bimg": "",
+     "rad": "0px",
+     "borde": "",
+     "sombra": 0
+    },
+    {
+     "k": "img",
+     "x": 187,
+     "y": 485,
+     "w": 1066,
+     "h": 513,
+     "src": "1da153_4d6345ac330642399b4ae61f17274a8e~mv2.png",
+     "alt": "Edificio Faro del Mayab al atardecer.png",
+     "fit": "cover",
+     "rad": "0px",
+     "link": ""
+    },
+    {
+     "k": "img",
+     "x": 524,
+     "y": 1033,
+     "w": 374,
+     "h": 133,
+     "src": "1da153_98e11fb3817743698389498ed9efc7d6~mv2.png",
+     "alt": "Imagen de ChatGPT 28 sept 2026, 04_13_52 p.m..png",
+     "fit": "cover",
+     "rad": "0px",
+     "link": ""
+    }
+   ]
+  },
+  {
+   "top": 4037,
+   "h": 575,
+   "w": 1440,
+   "bg": "rgb(247, 247, 244)",
+   "bgImg": "",
+   "items": [
+    {
+     "k": "texto",
+     "x": 230,
+     "y": 26,
+     "w": 980,
+     "h": 82,
+     "html": "<h2 data-f=\"56\" data-c=\"rgb(49, 90, 107)\" data-a=\"center\">¿Cómo se diagnostica la apendicitis?</h2>",
+     "fs": 56,
+     "lh": "78.4px",
+     "color": "rgb(160, 121, 109)",
+     "align": "center",
+     "fw": "400",
+     "ls": "normal"
+    },
+    {
+     "k": "texto",
+     "x": 405,
+     "y": 108,
+     "w": 629,
+     "h": 422,
+     "html": "<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\">El diagnóstico se basa en:</p>\n\n<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\"></p>\n\n<h3 data-f=\"20\" data-c=\"rgb(49, 90, 107)\" data-a=\"start\">Historia clínica</h3>\n\n<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\">Se analizan los síntomas, su evolución y las características del dolor.</p>\n\n<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\"></p>\n\n<h3 data-f=\"20\" data-c=\"rgb(49, 90, 107)\" data-a=\"start\">Exploración física</h3>\n\n<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\">La revisión médica es una de las herramientas más importantes para identificar signos compatibles con apendicitis.</p>\n\n<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\"></p>\n\n<h3 data-f=\"20\" data-c=\"rgb(49, 90, 107)\" data-a=\"start\">Estudios de laboratorio</h3>\n\n<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\">Pueden ayudar a detectar datos relacionados con inflamación o infección.</p>\n\n<p data-f=\"20\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\"></p>\n\n<h3 data-f=\"20\" data-c=\"rgb(49, 90, 107)\" data-a=\"start\">Estudios de imagen</h3>\n\n<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\">Dependiendo del caso pueden solicitarse estudios que permitan confirmar el diagnóstico.</p>",
+     "fs": 18,
+     "lh": "25.2px",
+     "color": "rgb(82, 79, 79)",
+     "align": "start",
+     "fw": "400",
+     "ls": "normal"
+    }
+   ]
+  },
+  {
+   "top": 4613,
+   "h": 817,
+   "w": 1440,
+   "bg": "rgba(0, 0, 0, 0)",
+   "bgImg": "",
+   "items": [
+    {
+     "k": "caja",
+     "x": 0,
+     "y": 0,
+     "w": 1440,
+     "h": 817,
+     "bg": "rgb(220, 232, 236)",
+     "bimg": "",
+     "rad": "0px",
+     "borde": "",
+     "sombra": 0
+    },
+    {
+     "k": "caja",
+     "x": 60,
+     "y": 60,
+     "w": 889,
+     "h": 697,
+     "bg": "rgb(247, 247, 244)",
+     "bimg": "",
+     "rad": "0px",
+     "borde": "",
+     "sombra": 0
+    },
+    {
+     "k": "texto",
+     "x": 230,
+     "y": 98,
+     "w": 541,
+     "h": 276,
+     "html": "<h2 data-f=\"56\" data-c=\"rgb(49, 90, 107)\" data-a=\"start\">¿Todas las personas con dolor en el lado derecho tienen apendicitis?</h2>",
+     "fs": 56,
+     "lh": "normal",
+     "color": "rgb(49, 90, 107)",
+     "align": "start",
+     "fw": "400",
+     "ls": "normal"
+    },
+    {
+     "k": "texto",
+     "x": 230,
+     "y": 408,
+     "w": 469,
+     "h": 218,
+     "html": "<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\">No.</p>\n\n<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\"></p>\n\n<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\">Existen diversas enfermedades que pueden producir síntomas similares.</p>\n\n<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\"></p>\n\n<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\">Por eso es importante evitar el autodiagnóstico y acudir a valoración médica para identificar la causa real del problema.</p>",
+     "fs": 18,
+     "lh": "25.2px",
+     "color": "rgb(82, 79, 79)",
+     "align": "start",
+     "fw": "400",
+     "ls": "normal"
+    },
+    {
+     "k": "btn",
+     "x": 482,
+     "y": 663,
+     "w": 346,
+     "h": 45,
+     "t": "Conoce más sobre el tratamiento con cirugía",
+     "href": "https://joeldorantes.wixsite.com/cirugiamerida/copia-de-vesícula-biliar-t-1",
+     "bg": "rgba(229, 235, 250, 0)",
+     "color": "rgb(0, 0, 0)",
+     "borde": "1px rgb(255, 255, 255)",
+     "rad": "60px",
+     "fs": 10,
+     "icono": true
+    },
+    {
+     "k": "caja",
+     "x": 949,
+     "y": 60,
+     "w": 431,
+     "h": 697,
+     "bg": "rgb(233, 232, 227)",
+     "bimg": "",
+     "rad": "0px",
+     "borde": "",
+     "sombra": 0
+    }
+   ]
+  },
+  {
+   "top": 5429,
+   "h": 307,
+   "w": 1440,
+   "bg": "rgb(255, 255, 255)",
+   "bgImg": "",
+   "items": [
+    {
+     "k": "texto",
+     "x": 230,
+     "y": 25,
+     "w": 980,
+     "h": 69,
+     "html": "<h2 data-f=\"56\" data-c=\"rgb(23, 59, 74)\" data-a=\"center\">¿Qué pasa si no se trata?</h2>",
+     "fs": 56,
+     "lh": "normal",
+     "color": "rgb(23, 59, 74)",
+     "align": "center",
+     "fw": "400",
+     "ls": "normal"
+    },
+    {
+     "k": "texto",
+     "x": 405,
+     "y": 122,
+     "w": 629,
+     "h": 136,
+     "html": "<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\">Cuando la apendicitis no recibe atención médica oportuna pueden presentarse complicaciones graves.</p>\n\n<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\"></p>\n\n<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\">Por esta razón, ante la sospecha de apendicitis, se recomienda buscar atención médica lo antes posible.</p>",
+     "fs": 18,
+     "lh": "25.2px",
+     "color": "rgb(82, 79, 79)",
+     "align": "start",
+     "fw": "400",
+     "ls": "normal"
+    }
+   ]
+  },
+  {
+   "top": 5736,
+   "h": 642,
+   "w": 1440,
+   "bg": "rgb(249, 240, 232)",
+   "bgImg": "1da153_c78abf680750451ea2e45279ce0131dd~mv2.png",
+   "items": [
+    {
+     "k": "caja",
+     "x": 0,
+     "y": 0,
+     "w": 719,
+     "h": 639,
+     "bg": "rgb(247, 247, 244)",
+     "bimg": "",
+     "rad": "0px",
+     "borde": "",
+     "sombra": 0
+    },
+    {
+     "k": "texto",
+     "x": 118,
+     "y": 39,
+     "w": 485,
+     "h": 164,
+     "html": "<h2 data-f=\"56\" data-c=\"rgb(37, 71, 87)\" data-a=\"center\">¿Cuál es el tratamiento?</h2>",
+     "fs": 56,
+     "lh": "normal",
+     "color": "rgb(160, 121, 109)",
+     "align": "center",
+     "fw": "400",
+     "ls": "normal"
+    },
+    {
+     "k": "texto",
+     "x": 153,
+     "y": 226,
+     "w": 445,
+     "h": 272,
+     "html": "<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\">La mayoría de los casos de apendicitis requieren cirugía para retirar el apéndice inflamado.</p>\n\n<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\"></p>\n\n<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\">Actualmente, muchos pacientes pueden beneficiarse de cirugía laparoscópica de mínima invasión.</p>\n\n<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\"></p>\n\n<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\">La elección del tratamiento dependerá de la valoración médica y de las características de cada caso.</p>",
+     "fs": 18,
+     "lh": "25.2px",
+     "color": "rgb(82, 79, 79)",
+     "align": "start",
+     "fw": "400",
+     "ls": "normal"
+    },
+    {
+     "k": "btn",
+     "x": 186,
+     "y": 533,
+     "w": 346,
+     "h": 45,
+     "t": "Conoce más sobre el tratamiento con cirugía",
+     "href": "https://joeldorantes.wixsite.com/cirugiamerida/copia-de-vesícula-biliar-t-1",
+     "bg": "rgba(229, 235, 250, 0)",
+     "color": "rgb(0, 0, 0)",
+     "borde": "1px rgb(255, 255, 255)",
+     "rad": "60px",
+     "fs": 10,
+     "icono": true
+    },
+    {
+     "k": "caja",
+     "x": 719,
+     "y": 0,
+     "w": 721,
+     "h": 639,
+     "bg": "rgb(220, 232, 235)",
+     "bimg": "1da153_c78abf680750451ea2e45279ce0131dd~mv2.png",
+     "rad": "0px",
+     "borde": "",
+     "sombra": 0
+    }
+   ]
+  },
+  {
+   "top": 6378,
+   "h": 1081,
+   "w": 1440,
+   "bg": "rgb(247, 247, 244)",
+   "bgImg": "",
+   "items": [
+    {
+     "k": "texto",
+     "x": 230,
+     "y": 48,
+     "w": 980,
+     "h": 69,
+     "html": "<h2 data-f=\"56\" data-c=\"rgb(49, 90, 107)\" data-a=\"center\">¿Por qué atenderte conmigo?</h2>",
+     "fs": 56,
+     "lh": "normal",
+     "color": "rgb(49, 90, 107)",
+     "align": "center",
+     "fw": "400",
+     "ls": "normal"
+    },
+    {
+     "k": "texto",
+     "x": 391,
+     "y": 143,
+     "w": 658,
+     "h": 109,
+     "html": "<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"center\">Me he preparado para ofrecerte una atención quirúrgica profesional, segura y personalizada. Mi formación como Cirujano General y en Cirugía Laparoscópica Avanzada me permite acompañarte desde el diagnóstico y la decisión de operarte, hasta tu cirugía y recuperación.</p>",
+     "fs": 18,
+     "lh": "25.2px",
+     "color": "rgb(82, 79, 79)",
+     "align": "center",
+     "fw": "400",
+     "ls": "normal"
+    },
+    {
+     "k": "caja",
+     "x": 72,
+     "y": 282,
+     "w": 648,
+     "h": 393,
+     "bg": "rgb(220, 232, 236)",
+     "bimg": "",
+     "rad": "0px",
+     "borde": "",
+     "sombra": 0
+    },
+    {
+     "k": "img",
+     "x": 72,
+     "y": 282,
+     "w": 344,
+     "h": 344,
+     "src": "1da153_136aac1925b94ee999650659f6812f81~mv2.png",
+     "alt": "Imagen de ChatGPT 27 sept 2026, 07_54_25 p.m..png",
+     "fit": "cover",
+     "rad": "0px",
+     "link": ""
+    },
+    {
+     "k": "texto",
+     "x": 432,
+     "y": 334,
+     "w": 258,
+     "h": 49,
+     "html": "<p data-f=\"18\" data-c=\"rgb(49, 90, 107)\" data-a=\"start\" data-b=\"1\">Cirujano General Certificado</p>",
+     "fs": 18,
+     "lh": "22.4px",
+     "color": "rgb(49, 90, 107)",
+     "align": "start",
+     "fw": "700",
+     "ls": "normal"
+    },
+    {
+     "k": "texto",
+     "x": 432,
+     "y": 403,
+     "w": 233,
+     "h": 190,
+     "html": "<h3 data-f=\"18\" data-c=\"rgb(50, 65, 88)\" data-a=\"start\">Cuento con certificación vigente por el Consejo Mexicano de Cirugía General y pertenezco a asociaciones nacionales de cirugía general y cirugía endoscópica.</h3>",
+     "fs": 18,
+     "lh": "25.2px",
+     "color": "rgb(50, 65, 88)",
+     "align": "start",
+     "fw": "400",
+     "ls": "normal"
+    },
+    {
+     "k": "caja",
+     "x": 720,
+     "y": 282,
+     "w": 648,
+     "h": 393,
+     "bg": "rgb(220, 232, 236)",
+     "bimg": "",
+     "rad": "0px",
+     "borde": "",
+     "sombra": 0
+    },
+    {
+     "k": "img",
+     "x": 720,
+     "y": 282,
+     "w": 344,
+     "h": 344,
+     "src": "1da153_c0a363fdc30342249ecaef0067b90e0f~mv2.png",
+     "alt": "Imagen de ChatGPT 28 sept 2026, 06_32_48 a.m..png",
+     "fit": "cover",
+     "rad": "0px",
+     "link": ""
+    },
+    {
+     "k": "texto",
+     "x": 1080,
+     "y": 334,
+     "w": 258,
+     "h": 47,
+     "html": "<p data-f=\"18\" data-c=\"rgb(49, 90, 107)\" data-a=\"start\" data-b=\"1\">Alta Especialidad en Cirugía Laparoscópica</p>",
+     "fs": 18,
+     "lh": "22.4px",
+     "color": "rgb(49, 90, 107)",
+     "align": "start",
+     "fw": "700",
+     "ls": "normal"
+    },
+    {
+     "k": "texto",
+     "x": 1080,
+     "y": 401,
+     "w": 233,
+     "h": 190,
+     "html": "<h3 data-f=\"18\" data-c=\"rgb(50, 65, 88)\" data-a=\"start\">Realicé un Postgrado de Alta Especialidad en Cirugía Laparoscópica Avanzada, con entrenamiento específico en procedimientos de mínima invasión.</h3>",
+     "fs": 18,
+     "lh": "25.2px",
+     "color": "rgb(50, 65, 88)",
+     "align": "start",
+     "fw": "400",
+     "ls": "normal"
+    },
+    {
+     "k": "caja",
+     "x": 72,
+     "y": 675,
+     "w": 648,
+     "h": 393,
+     "bg": "rgb(220, 232, 236)",
+     "bimg": "",
+     "rad": "0px",
+     "borde": "",
+     "sombra": 0
+    },
+    {
+     "k": "img",
+     "x": 72,
+     "y": 675,
+     "w": 344,
+     "h": 344,
+     "src": "1da153_e07088e9d98a4d1fb91e14d4c7729f6b~mv2.png",
+     "alt": "Consulta médica sobre hernia abdominal.png",
+     "fit": "cover",
+     "rad": "0px",
+     "link": ""
+    },
+    {
+     "k": "texto",
+     "x": 432,
+     "y": 727,
+     "w": 258,
+     "h": 24,
+     "html": "<p data-f=\"18\" data-c=\"rgb(49, 90, 107)\" data-a=\"start\" data-b=\"1\">Atención personalizada</p>",
+     "fs": 18,
+     "lh": "22.4px",
+     "color": "rgb(49, 90, 107)",
+     "align": "start",
+     "fw": "700",
+     "ls": "normal"
+    },
+    {
+     "k": "texto",
+     "x": 432,
+     "y": 771,
+     "w": 233,
+     "h": 190,
+     "html": "<h3 data-f=\"18\" data-c=\"rgb(50, 65, 88)\" data-a=\"start\">Me tomo el tiempo de explicar claramente tu diagnóstico, las alternativas de tratamiento, los beneficios esperados y el proceso de recuperación.</h3>",
+     "fs": 18,
+     "lh": "25.2px",
+     "color": "rgb(50, 65, 88)",
+     "align": "start",
+     "fw": "400",
+     "ls": "normal"
+    },
+    {
+     "k": "caja",
+     "x": 720,
+     "y": 675,
+     "w": 648,
+     "h": 393,
+     "bg": "rgb(220, 232, 236)",
+     "bimg": "",
+     "rad": "0px",
+     "borde": "",
+     "sombra": 0
+    },
+    {
+     "k": "img",
+     "x": 720,
+     "y": 675,
+     "w": 344,
+     "h": 344,
+     "src": "1da153_c5e983bbe28a484f9e0d5c1843e81009~mv2.png",
+     "alt": "Imagen de ChatGPT 28 sept 2026, 06_55_19 a.m..png",
+     "fit": "cover",
+     "rad": "0px",
+     "link": ""
+    },
+    {
+     "k": "texto",
+     "x": 1080,
+     "y": 727,
+     "w": 258,
+     "h": 47,
+     "html": "<p data-f=\"18\" data-c=\"rgb(49, 90, 107)\" data-a=\"start\" data-b=\"1\">Atención de urgencias quirúrgicas</p>",
+     "fs": 18,
+     "lh": "22.4px",
+     "color": "rgb(49, 90, 107)",
+     "align": "start",
+     "fw": "700",
+     "ls": "normal"
+    },
+    {
+     "k": "texto",
+     "x": 1080,
+     "y": 794,
+     "w": 233,
+     "h": 109,
+     "html": "<h3 data-f=\"18\" data-c=\"rgb(50, 65, 88)\" data-a=\"start\">Valoración y tratamiento oportuno de pacientes con dolor abdominal agudo y sospecha de apendicitis.</h3>",
+     "fs": 18,
+     "lh": "25.2px",
+     "color": "rgb(242, 131, 130)",
+     "align": "start",
+     "fw": "400",
+     "ls": "normal"
+    }
+   ]
+  },
+  {
+   "top": 7459,
+   "h": 417,
+   "w": 1440,
+   "bg": "rgb(250, 250, 250)",
+   "bgImg": "",
+   "items": [
+    {
+     "k": "texto",
+     "x": 230,
+     "y": 33,
+     "w": 980,
+     "h": 82,
+     "html": "<h2 data-f=\"56\" data-c=\"rgb(22, 59, 74)\" data-a=\"center\">Agenda una valoración inmediata</h2>",
+     "fs": 56,
+     "lh": "78.4px",
+     "color": "rgb(160, 121, 109)",
+     "align": "center",
+     "fw": "400",
+     "ls": "normal"
+    },
+    {
+     "k": "texto",
+     "x": 405,
+     "y": 148,
+     "w": 629,
+     "h": 100,
+     "html": "<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"center\">Si presentas dolor abdominal que aumenta con el paso de las horas, especialmente en el lado derecho del abdomen, busca atención médica lo antes posible.</p>",
+     "fs": 18,
+     "lh": "32.4px",
+     "color": "rgb(82, 79, 79)",
+     "align": "center",
+     "fw": "400",
+     "ls": "normal"
+    },
+    {
+     "k": "btn",
+     "x": 151,
+     "y": 305,
+     "w": 346,
+     "h": 45,
+     "t": "Conoce más sobre el tratamiento con cirugía",
+     "href": "https://joeldorantes.wixsite.com/cirugiamerida/copia-de-vesícula-biliar-t-1",
+     "bg": "rgba(229, 235, 250, 0)",
+     "color": "rgb(0, 0, 0)",
+     "borde": "1px rgb(255, 255, 255)",
+     "rad": "60px",
+     "fs": 10,
+     "icono": true
+    },
+    {
+     "k": "img",
+     "x": 922,
+     "y": 261,
+     "w": 374,
+     "h": 133,
+     "src": "1da153_98e11fb3817743698389498ed9efc7d6~mv2.png",
+     "alt": "Imagen de ChatGPT 28 sept 2026, 04_13_52 p.m..png",
+     "fit": "cover",
+     "rad": "0px",
+     "link": ""
+    }
+   ]
+  },
+  {
+   "top": 7876,
+   "h": 870,
+   "w": 1440,
+   "bg": "rgb(220, 232, 236)",
+   "bgImg": "",
+   "items": [
+    {
+     "k": "faq",
+     "x": 242,
+     "y": 29,
+     "w": 980,
+     "h": 806
+    }
+   ]
+  }
+ ],
+ "faq": [
+  {
+   "q": "¿La apendicitis puede desaparecer sola?",
+   "a": "No debe asumirse que el problema desaparecerá por sí solo. Ante la sospecha de apendicitis es indispensable una valoración médica.",
+   "ah": "<div class=\"sIwn0eJ\"><div style=\"direction:ltr\" class=\"sBuQfDg oytk1I5---layout-8-collapse\">No debe asumirse que el problema desaparecerá por sí solo. Ante la sospecha de apendicitis es indispensable una valoración médica.</div></div>"
+  },
+  {
+   "q": "¿Siempre hay fiebre?",
+   "a": "No. Algunas personas pueden presentar fiebre y otras no.",
+   "ah": "<div class=\"sIwn0eJ\"><div style=\"direction:ltr\" class=\"sBuQfDg oytk1I5---layout-8-collapse\">No.&nbsp;Algunas personas pueden presentar fiebre y otras no.</div></div>"
+  },
+  {
+   "q": "¿Todas las personas sienten dolor en el mismo lugar?",
+   "a": "No necesariamente. La localización y características del dolor pueden variar.",
+   "ah": "<div class=\"sIwn0eJ\"><div style=\"direction:ltr\" class=\"sBuQfDg oytk1I5---layout-8-collapse\">No necesariamente. La localización y características del dolor pueden variar.</div></div>"
+  },
+  {
+   "q": "¿La apendicitis requiere cirugía?",
+   "a": "En la mayoría de los casos sí, aunque la decisión depende de la evaluación médica.",
+   "ah": "<div class=\"sIwn0eJ\"><div style=\"direction:ltr\" class=\"sBuQfDg oytk1I5---layout-8-collapse\">En la mayoría de los casos sí, aunque la decisión depende de la evaluación médica.</div></div>"
+  },
+  {
+   "q": "¿La cirugía es segura?",
+   "a": "La cirugía de apendicitis es uno de los procedimientos más frecuentes en cirugía general y generalmente ofrece excelentes resultados cuando se realiza oportunamente.",
+   "ah": "<div class=\"sIwn0eJ\"><div style=\"direction:ltr\" class=\"sBuQfDg oytk1I5---layout-8-collapse\">La cirugía de apendicitis es uno de los procedimientos más frecuentes en cirugía general y generalmente ofrece excelentes resultados cuando se realiza oportunamente.</div></div>"
+  }
+ ]
+}

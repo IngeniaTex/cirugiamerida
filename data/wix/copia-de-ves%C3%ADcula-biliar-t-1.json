@@ -1,0 +1,827 @@
+{
+ "secciones": [
+  {
+   "top": 166,
+   "h": 168,
+   "w": 1440,
+   "bg": "rgb(247, 247, 244)",
+   "bgImg": "",
+   "items": [
+    {
+     "k": "caja",
+     "x": -87,
+     "y": 3,
+     "w": 1760,
+     "h": 163,
+     "bg": "rgb(49, 90, 107)",
+     "bimg": "",
+     "rad": "0px",
+     "borde": "",
+     "sombra": 0
+    },
+    {
+     "k": "texto",
+     "x": 345,
+     "y": 19,
+     "w": 750,
+     "h": 138,
+     "html": "<p data-f=\"56\" data-c=\"rgb(255, 255, 255)\" data-a=\"center\">Cirugía de Apendicitis en Mérida</p>",
+     "fs": 56,
+     "lh": "normal",
+     "color": "rgb(255, 255, 255)",
+     "align": "center",
+     "fw": "400",
+     "ls": "normal"
+    }
+   ]
+  },
+  {
+   "top": 334,
+   "h": 518,
+   "w": 1440,
+   "bg": "rgb(220, 232, 236)",
+   "bgImg": "",
+   "items": [
+    {
+     "k": "texto",
+     "x": 258,
+     "y": 35,
+     "w": 907,
+     "h": 86,
+     "html": "<h2 data-f=\"35\" data-c=\"rgb(49, 90, 107)\" data-a=\"start\">Tratamiento oportuno por Cirujano General Certificado y Especialista en Cirugía Laparoscópica</h2>",
+     "fs": 35,
+     "lh": "normal",
+     "color": "rgb(160, 121, 109)",
+     "align": "start",
+     "fw": "400",
+     "ls": "normal"
+    },
+    {
+     "k": "texto",
+     "x": 247,
+     "y": 153,
+     "w": 709,
+     "h": 232,
+     "html": "<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\">La apendicitis es una de las urgencias quirúrgicas más frecuentes. Cuando el apéndice se inflama, generalmente se requiere cirugía para resolver el problema y prevenir complicaciones.</p>\n\n<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\"></p>\n\n<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\" data-b=\"1\">Soy el Dr. Joel Antonio Dorantes González, Cirujano General Certificado y con Alta Especialidad en Cirugía Laparoscópica Avanzada, y realizo cirugía de apendicitis en hospitales de Mérida mediante técnicas modernas de mínima invasión cuando las condiciones del paciente lo permiten.</p>",
+     "fs": 18,
+     "lh": "27px",
+     "color": "rgb(82, 79, 79)",
+     "align": "start",
+     "fw": "400",
+     "ls": "normal"
+    },
+    {
+     "k": "btn",
+     "x": 538,
+     "y": 423,
+     "w": 346,
+     "h": 45,
+     "t": "Conoce más sobre la Apendicitis aguda",
+     "href": "https://joeldorantes.wixsite.com/cirugiamerida/copia-de-vesícula-biliar-e-1",
+     "bg": "rgba(229, 235, 250, 0)",
+     "color": "rgb(0, 0, 0)",
+     "borde": "1px rgb(255, 255, 255)",
+     "rad": "60px",
+     "fs": 10,
+     "icono": true
+    }
+   ]
+  },
+  {
+   "top": 852,
+   "h": 369,
+   "w": 1440,
+   "bg": "rgb(233, 232, 227)",
+   "bgImg": "",
+   "items": [
+    {
+     "k": "texto",
+     "x": 322,
+     "y": 46,
+     "w": 795,
+     "h": 47,
+     "html": "<h2 data-f=\"38\" data-c=\"rgb(49, 90, 107)\" data-a=\"center\">¿Qué es la cirugía de apendicitis?</h2>",
+     "fs": 38,
+     "lh": "normal",
+     "color": "rgb(49, 90, 107)",
+     "align": "center",
+     "fw": "400",
+     "ls": "normal"
+    },
+    {
+     "k": "texto",
+     "x": 322,
+     "y": 135,
+     "w": 795,
+     "h": 200,
+     "html": "<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\">La cirugía de apendicitis consiste en retirar el apéndice inflamado.</p>\n\n<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\"></p>\n\n<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\">El objetivo es eliminar la causa del problema y evitar complicaciones que pueden poner en riesgo la salud del paciente.</p>\n\n<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\"></p>\n\n<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\">La intervención se realiza bajo anestesia y es uno de los procedimientos más frecuentes dentro de la cirugía general.</p>",
+     "fs": 18,
+     "lh": "21px",
+     "color": "rgb(82, 79, 79)",
+     "align": "start",
+     "fw": "400",
+     "ls": "normal"
+    }
+   ]
+  },
+  {
+   "top": 1221,
+   "h": 815,
+   "w": 1440,
+   "bg": "rgb(230, 216, 208)",
+   "bgImg": "1da153_c78abf680750451ea2e45279ce0131dd~mv2.png",
+   "items": [
+    {
+     "k": "caja",
+     "x": 420,
+     "y": 67,
+     "w": 600,
+     "h": 674,
+     "bg": "rgb(247, 247, 244)",
+     "bimg": "",
+     "rad": "0px",
+     "borde": "",
+     "sombra": 0
+    },
+    {
+     "k": "texto",
+     "x": 473,
+     "y": 101,
+     "w": 494,
+     "h": 138,
+     "html": "<h1 data-f=\"56\" data-c=\"rgb(49, 90, 107)\" data-a=\"center\">¿Cuándo se necesita cirugía?</h1>",
+     "fs": 56,
+     "lh": "normal",
+     "color": "rgb(49, 90, 107)",
+     "align": "center",
+     "fw": "400",
+     "ls": "normal"
+    },
+    {
+     "k": "texto",
+     "x": 473,
+     "y": 266,
+     "w": 494,
+     "h": 352,
+     "html": "<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\">La mayoría de los pacientes con apendicitis requieren tratamiento quirúrgico.</p>\n\n<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\"></p>\n\n<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\">Generalmente se recomienda cuando existe:</p>\n\n<ul>\n<li data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\">\n<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\">Diagnóstico confirmado de apendicitis.</p>\n</li>\n<li data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\">\n<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\">Alta sospecha clínica.</p>\n</li>\n<li data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\">\n<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\">Dolor abdominal progresivo compatible con apendicitis.</p>\n</li>\n<li data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\">\n<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\">Riesgo de complicaciones si no se trata oportunamente.</p>\n</li>\n</ul>\n\n<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\">&nbsp;</p>\n\n<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\">La rapidez en el diagnóstico y tratamiento suele ser un factor importante para una mejor evolución.</p>",
+     "fs": 18,
+     "lh": "25.2px",
+     "color": "rgb(82, 79, 79)",
+     "align": "start",
+     "fw": "400",
+     "ls": "normal"
+    },
+    {
+     "k": "btn",
+     "x": 533,
+     "y": 653,
+     "w": 346,
+     "h": 45,
+     "t": "Conoce más sobre la Apendicitis aguda",
+     "href": "https://joeldorantes.wixsite.com/cirugiamerida/copia-de-vesícula-biliar-e-1",
+     "bg": "rgba(229, 235, 250, 0)",
+     "color": "rgb(0, 0, 0)",
+     "borde": "1px rgb(255, 255, 255)",
+     "rad": "60px",
+     "fs": 10,
+     "icono": true
+    }
+   ]
+  },
+  {
+   "top": 2036,
+   "h": 601,
+   "w": 1440,
+   "bg": "rgb(249, 240, 232)",
+   "bgImg": "",
+   "items": [
+    {
+     "k": "caja",
+     "x": 1,
+     "y": 1,
+     "w": 718,
+     "h": 599,
+     "bg": "rgb(233, 232, 227)",
+     "bimg": "",
+     "rad": "0px",
+     "borde": "",
+     "sombra": 0
+    },
+    {
+     "k": "linea",
+     "x": 139,
+     "y": 336,
+     "w": 30,
+     "h": 5,
+     "color": "rgb(249, 240, 232)"
+    },
+    {
+     "k": "texto",
+     "x": 212,
+     "y": 193,
+     "w": 437,
+     "h": 207,
+     "html": "<h2 data-f=\"56\" data-c=\"rgb(49, 90, 107)\" data-a=\"start\">¿Cómo se realiza la cirugía?</h2>",
+     "fs": 56,
+     "lh": "normal",
+     "color": "rgb(49, 90, 107)",
+     "align": "start",
+     "fw": "400",
+     "ls": "normal"
+    },
+    {
+     "k": "caja",
+     "x": 720,
+     "y": 1,
+     "w": 719,
+     "h": 599,
+     "bg": "rgb(220, 232, 236)",
+     "bimg": "",
+     "rad": "0px",
+     "borde": "",
+     "sombra": 0
+    },
+    {
+     "k": "texto",
+     "x": 740,
+     "y": 62,
+     "w": 406,
+     "h": 60,
+     "html": "<h3 data-f=\"20\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\">Actualmente existen dos formas principales de realizar el procedimiento:</h3>",
+     "fs": 20,
+     "lh": "28px",
+     "color": "rgb(160, 121, 109)",
+     "align": "start",
+     "fw": "400",
+     "ls": "normal"
+    },
+    {
+     "k": "texto",
+     "x": 740,
+     "y": 151,
+     "w": 481,
+     "h": 386,
+     "html": "<h3 data-f=\"20\" data-c=\"rgb(23, 59, 74)\" data-a=\"start\">Cirugía laparoscópica</h3>\n\n<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\">Es la técnica que se utiliza con mayor frecuencia cuando las condiciones del paciente lo permiten.</p>\n\n<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\"></p>\n\n<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\">Se realiza mediante pequeñas incisiones utilizando una cámara de alta definición e instrumentos especializados.</p>\n\n<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\"></p>\n\n<h3 data-f=\"20\" data-c=\"rgb(23, 59, 74)\" data-a=\"start\">Cirugía convencional</h3>\n\n<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\">En algunos casos específicos puede ser necesario realizar una cirugía abierta mediante una incisión más amplia.</p>\n\n<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\"></p>\n\n<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\">La elección de la técnica depende de diversos factores que se valoran individualmente en cada paciente.</p>",
+     "fs": 20,
+     "lh": "28px",
+     "color": "rgb(23, 59, 74)",
+     "align": "start",
+     "fw": "400",
+     "ls": "normal"
+    }
+   ]
+  },
+  {
+   "top": 2637,
+   "h": 839,
+   "w": 1440,
+   "bg": "rgb(23, 59, 74)",
+   "bgImg": "",
+   "items": [
+    {
+     "k": "img",
+     "x": 32,
+     "y": 111,
+     "w": 818,
+     "h": 460,
+     "src": "1da153_b5425d10b8e14b2e9e4e9e5bc03b9eb1~mv2.png",
+     "alt": "Imagen de ChatGPT 27 sept 2026, 07_28_59 p.m..png",
+     "fit": "cover",
+     "rad": "0px",
+     "link": ""
+    },
+    {
+     "k": "caja",
+     "x": 552,
+     "y": 59,
+     "w": 808,
+     "h": 716,
+     "bg": "rgb(249, 240, 232)",
+     "bimg": "",
+     "rad": "0px",
+     "borde": "",
+     "sombra": 0
+    },
+    {
+     "k": "texto",
+     "x": 664,
+     "y": 111,
+     "w": 583,
+     "h": 138,
+     "html": "<h1 data-f=\"56\" data-c=\"rgb(49, 90, 107)\" data-a=\"start\">Beneficios de la cirugía laparoscópica</h1>",
+     "fs": 56,
+     "lh": "normal",
+     "color": "rgb(49, 90, 107)",
+     "align": "start",
+     "fw": "400",
+     "ls": "normal"
+    },
+    {
+     "k": "texto",
+     "x": 664,
+     "y": 277,
+     "w": 583,
+     "h": 389,
+     "html": "<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\">Muchos pacientes con apendicitis pueden beneficiarse de la cirugía de mínima invasión.</p>\n\n<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\"></p>\n\n<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\">Entre sus ventajas se encuentran:</p>\n\n<ul>\n<li data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\">\n<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\">Menor dolor postoperatorio.</p>\n</li>\n<li data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\">\n<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\">Incisiones pequeñas.</p>\n</li>\n<li data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\">\n<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\">Menor riesgo de infección de la herida.</p>\n</li>\n<li data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\">\n<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\">Recuperación más rápida.</p>\n</li>\n<li data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\">\n<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\">Regreso más temprano a las actividades habituales.</p>\n</li>\n<li data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\">\n<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\">Mejor resultado estético.</p>\n</li>\n</ul>\n\n<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\"></p>\n\n<p data-f=\"20\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\">Gracias a mi formación en Cirugía Laparoscópica Avanzada, puedo ofrecer este tipo de procedimientos cuando están indicados.</p>",
+     "fs": 18,
+     "lh": "25.2px",
+     "color": "rgb(82, 79, 79)",
+     "align": "start",
+     "fw": "400",
+     "ls": "normal"
+    },
+    {
+     "k": "btn",
+     "x": 968,
+     "y": 684,
+     "w": 279,
+     "h": 45,
+     "t": "Conoce más sobre la laparoscopía",
+     "href": "https://joeldorantes.wixsite.com/cirugiamerida/copia-de-apendicitis-e-1",
+     "bg": "rgba(229, 235, 250, 0)",
+     "color": "rgb(0, 0, 0)",
+     "borde": "1px rgb(255, 255, 255)",
+     "rad": "60px",
+     "fs": 10,
+     "icono": true
+    }
+   ]
+  },
+  {
+   "top": 3477,
+   "h": 386,
+   "w": 1440,
+   "bg": "rgb(233, 232, 227)",
+   "bgImg": "",
+   "items": [
+    {
+     "k": "texto",
+     "x": 230,
+     "y": 34,
+     "w": 980,
+     "h": 69,
+     "html": "<p data-f=\"56\" data-c=\"rgb(49, 90, 107)\" data-a=\"center\">¿Cuánto tiempo dura la cirugía?</p>",
+     "fs": 56,
+     "lh": "normal",
+     "color": "rgb(49, 90, 107)",
+     "align": "center",
+     "fw": "400",
+     "ls": "normal"
+    },
+    {
+     "k": "texto",
+     "x": 230,
+     "y": 127,
+     "w": 980,
+     "h": 218,
+     "html": "<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\">La duración puede variar dependiendo de:</p>\n\n<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\"></p>\n\n<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\">· &nbsp; &nbsp;&nbsp; El grado de inflamación.</p>\n\n<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\">· &nbsp; &nbsp;&nbsp; El tiempo de evolución de la enfermedad.</p>\n\n<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\">· &nbsp; &nbsp;&nbsp; La presencia o ausencia de complicaciones.</p>\n\n<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\">· &nbsp; &nbsp;&nbsp; Las condiciones individuales del paciente.</p>\n\n<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\"></p>\n\n<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\">Durante la valoración médica se explicarán los detalles específicos de cada caso.</p>",
+     "fs": 18,
+     "lh": "25.2px",
+     "color": "rgb(82, 79, 79)",
+     "align": "start",
+     "fw": "400",
+     "ls": "normal"
+    }
+   ]
+  },
+  {
+   "top": 3862,
+   "h": 696,
+   "w": 1440,
+   "bg": "rgb(249, 240, 232)",
+   "bgImg": "",
+   "items": [
+    {
+     "k": "caja",
+     "x": 0,
+     "y": 0,
+     "w": 480,
+     "h": 696,
+     "bg": "rgb(23, 59, 74)",
+     "bimg": "",
+     "rad": "0px",
+     "borde": "",
+     "sombra": 0
+    },
+    {
+     "k": "caja",
+     "x": 480,
+     "y": 0,
+     "w": 960,
+     "h": 696,
+     "bg": "rgb(255, 255, 254)",
+     "bimg": "",
+     "rad": "0px",
+     "borde": "",
+     "sombra": 0
+    },
+    {
+     "k": "texto",
+     "x": 662,
+     "y": 41,
+     "w": 596,
+     "h": 138,
+     "html": "<h2 data-f=\"56\" data-c=\"rgb(49, 90, 107)\" data-a=\"start\">Recuperación después de la cirugía</h2>",
+     "fs": 56,
+     "lh": "normal",
+     "color": "rgb(49, 90, 107)",
+     "align": "start",
+     "fw": "400",
+     "ls": "normal"
+    },
+    {
+     "k": "linea",
+     "x": 665,
+     "y": 192,
+     "w": 60,
+     "h": 5,
+     "color": "rgb(160, 121, 109)"
+    },
+    {
+     "k": "texto",
+     "x": 665,
+     "y": 226,
+     "w": 490,
+     "h": 408,
+     "html": "<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\">La recuperación suele ser favorable cuando el tratamiento se realiza oportunamente.</p>\n\n<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\"></p>\n\n<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\">En la mayoría de los pacientes:</p>\n\n<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\"></p>\n\n<ul>\n<li data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\">\n<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\">La movilización inicia pocas horas después del procedimiento.</p>\n</li>\n<li data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\">\n<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\">La alimentación se reinicia progresivamente.</p>\n</li>\n<li data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\">\n<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\">La estancia hospitalaria suele ser corta.</p>\n</li>\n<li data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\">\n<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\">El regreso a las actividades cotidianas ocurre de forma gradual.</p>\n</li>\n</ul>\n\n<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\"></p>\n\n<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\">Las recomendaciones específicas dependerán del tipo de cirugía realizada y de la evolución clínica de cada paciente.</p>",
+     "fs": 18,
+     "lh": "25.2px",
+     "color": "rgb(82, 79, 79)",
+     "align": "start",
+     "fw": "400",
+     "ls": "normal"
+    }
+   ]
+  },
+  {
+   "top": 4558,
+   "h": 325,
+   "w": 1440,
+   "bg": "rgb(247, 247, 244)",
+   "bgImg": "",
+   "items": [
+    {
+     "k": "texto",
+     "x": 230,
+     "y": 25,
+     "w": 980,
+     "h": 138,
+     "html": "<h2 data-f=\"56\" data-c=\"rgb(49, 90, 107)\" data-a=\"center\">¿Qué pasa después de retirar el apéndice?</h2>",
+     "fs": 56,
+     "lh": "normal",
+     "color": "rgb(49, 90, 107)",
+     "align": "center",
+     "fw": "400",
+     "ls": "normal"
+    },
+    {
+     "k": "texto",
+     "x": 391,
+     "y": 189,
+     "w": 658,
+     "h": 82,
+     "html": "<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"center\">El apéndice puede retirarse sin afectar la calidad de vida del paciente.</p>\n\n<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"center\">La gran mayoría de las personas continúa con sus actividades normales una vez completado el proceso de recuperación.</p>",
+     "fs": 18,
+     "lh": "25.2px",
+     "color": "rgb(82, 79, 79)",
+     "align": "center",
+     "fw": "400",
+     "ls": "normal"
+    }
+   ]
+  },
+  {
+   "top": 4883,
+   "h": 649,
+   "w": 1440,
+   "bg": "rgb(249, 240, 232)",
+   "bgImg": "",
+   "items": [
+    {
+     "k": "caja",
+     "x": 0,
+     "y": 0,
+     "w": 719,
+     "h": 649,
+     "bg": "rgb(49, 90, 107)",
+     "bimg": "",
+     "rad": "0px",
+     "borde": "",
+     "sombra": 0
+    },
+    {
+     "k": "texto",
+     "x": 117,
+     "y": 188,
+     "w": 485,
+     "h": 207,
+     "html": "<h2 data-f=\"56\" data-c=\"rgb(255, 255, 254)\" data-a=\"center\">Atención de urgencias quirúrgicas</h2>",
+     "fs": 56,
+     "lh": "normal",
+     "color": "rgb(255, 255, 254)",
+     "align": "center",
+     "fw": "400",
+     "ls": "normal"
+    },
+    {
+     "k": "img",
+     "x": 186,
+     "y": 464,
+     "w": 374,
+     "h": 133,
+     "src": "1da153_98e11fb3817743698389498ed9efc7d6~mv2.png",
+     "alt": "Imagen de ChatGPT 28 sept 2026, 04_13_52 p.m..png",
+     "fit": "cover",
+     "rad": "0px",
+     "link": ""
+    },
+    {
+     "k": "caja",
+     "x": 719,
+     "y": 0,
+     "w": 721,
+     "h": 649,
+     "bg": "rgb(220, 232, 236)",
+     "bimg": "",
+     "rad": "0px",
+     "borde": "",
+     "sombra": 0
+    },
+    {
+     "k": "texto",
+     "x": 918,
+     "y": 97,
+     "w": 343,
+     "h": 441,
+     "html": "<p data-f=\"20\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\" data-b=\"1\">La apendicitis requiere valoración médica inmediata.</p>\n\n<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\"></p>\n\n<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\">Si presentas:</p>\n\n<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\"></p>\n\n<ul>\n<li data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\">\n<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\">Dolor abdominal que aumenta progresivamente.</p>\n</li>\n<li data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\">\n<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\">Dolor en la parte inferior derecha del abdomen.</p>\n</li>\n<li data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\">\n<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\">Fiebre.</p>\n</li>\n<li data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\">\n<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\">Náuseas o vómitos.</p>\n</li>\n<li data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\">\n<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\">Dolor que dificulta caminar o moverte.</p>\n</li>\n</ul>\n\n<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\"></p>\n\n<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\">es importante acudir a valoración médica lo antes posible.</p>",
+     "fs": 20,
+     "lh": "28px",
+     "color": "rgb(82, 79, 79)",
+     "align": "start",
+     "fw": "400",
+     "ls": "normal"
+    }
+   ]
+  },
+  {
+   "top": 5532,
+   "h": 844,
+   "w": 1440,
+   "bg": "rgb(220, 232, 235)",
+   "bgImg": "",
+   "items": [
+    {
+     "k": "caja",
+     "x": 40,
+     "y": 35,
+     "w": 1360,
+     "h": 766,
+     "bg": "rgb(247, 247, 244)",
+     "bimg": "",
+     "rad": "0px",
+     "borde": "",
+     "sombra": 0
+    },
+    {
+     "k": "texto",
+     "x": 258,
+     "y": 93,
+     "w": 925,
+     "h": 70,
+     "html": "<h3 data-f=\"57\" data-c=\"rgb(49, 90, 107)\" data-a=\"start\">Planea tu cirugía</h3>",
+     "fs": 57,
+     "lh": "normal",
+     "color": "rgb(242, 131, 130)",
+     "align": "start",
+     "fw": "400",
+     "ls": "normal"
+    },
+    {
+     "k": "texto",
+     "x": 258,
+     "y": 207,
+     "w": 233,
+     "h": 41,
+     "html": "<p data-f=\"22\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\">Hospitales en Mérida</p>",
+     "fs": 22,
+     "lh": "39.6px",
+     "color": "rgb(82, 79, 79)",
+     "align": "start",
+     "fw": "400",
+     "ls": "normal"
+    },
+    {
+     "k": "texto",
+     "x": 541,
+     "y": 207,
+     "w": 619,
+     "h": 163,
+     "html": "<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\">Dependiendo de las necesidades del paciente, la cirugía puede realizarse en diversos hospitales de Mérida que cuenten con la infraestructura adecuada para este tipo de procedimientos.</p>\n\n<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\"></p>\n\n<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\">Durante la consulta se determinará cuál es la mejor opción considerando tu caso particular, tu cobertura médica y tus preferencias.</p>",
+     "fs": 18,
+     "lh": "25.2px",
+     "color": "rgb(82, 79, 79)",
+     "align": "start",
+     "fw": "400",
+     "ls": "normal"
+    },
+    {
+     "k": "texto",
+     "x": 258,
+     "y": 435,
+     "w": 233,
+     "h": 81,
+     "html": "<p data-f=\"22\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\">Pacientes particulares y aseguradoras</p>",
+     "fs": 22,
+     "lh": "39.6px",
+     "color": "rgb(82, 79, 79)",
+     "align": "start",
+     "fw": "400",
+     "ls": "normal"
+    },
+    {
+     "k": "texto",
+     "x": 541,
+     "y": 435,
+     "w": 627,
+     "h": 163,
+     "html": "<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\">Atiendo tanto pacientes particulares como pacientes con seguro de gastos médicos mayores.</p>\n\n<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\"></p>\n\n<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\">Si cuentas con aseguradora, durante la consulta podemos orientarte respecto a la documentación médica necesaria para los trámites correspondientes.</p>",
+     "fs": 18,
+     "lh": "25.2px",
+     "color": "rgb(82, 79, 79)",
+     "align": "start",
+     "fw": "400",
+     "ls": "normal"
+    },
+    {
+     "k": "texto",
+     "x": 258,
+     "y": 674,
+     "w": 233,
+     "h": 41,
+     "html": "<p data-f=\"22\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\">Formas de pago</p>",
+     "fs": 22,
+     "lh": "39.6px",
+     "color": "rgb(82, 79, 79)",
+     "align": "start",
+     "fw": "400",
+     "ls": "normal"
+    },
+    {
+     "k": "texto",
+     "x": 541,
+     "y": 674,
+     "w": 619,
+     "h": 105,
+     "html": "<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\">Para mayor comodidad, contamos con diferentes opciones de pago, incluyendo pago con tarjeta bancaria.</p>",
+     "fs": 18,
+     "lh": "25.2px",
+     "color": "rgb(82, 79, 79)",
+     "align": "start",
+     "fw": "400",
+     "ls": "normal"
+    }
+   ]
+  },
+  {
+   "top": 6376,
+   "h": 1033,
+   "w": 1440,
+   "bg": "rgb(250, 250, 250)",
+   "bgImg": "",
+   "items": [
+    {
+     "k": "faq",
+     "x": 230,
+     "y": 10,
+     "w": 980,
+     "h": 1013
+    }
+   ]
+  },
+  {
+   "top": 7409,
+   "h": 505,
+   "w": 1440,
+   "bg": "rgb(249, 240, 232)",
+   "bgImg": "1da153_24097b55adfd47ceafae998f6c0b1878~mv2.png",
+   "items": [
+    {
+     "k": "caja",
+     "x": 0,
+     "y": 0,
+     "w": 1440,
+     "h": 505,
+     "bg": "rgba(0, 0, 0, 0)",
+     "bimg": "1da153_24097b55adfd47ceafae998f6c0b1878~mv2.png",
+     "rad": "0px",
+     "borde": "",
+     "sombra": 0
+    },
+    {
+     "k": "caja",
+     "x": 0,
+     "y": 0,
+     "w": 720,
+     "h": 505,
+     "bg": "rgb(233, 232, 227)",
+     "bimg": "",
+     "rad": "0px",
+     "borde": "",
+     "sombra": 0
+    },
+    {
+     "k": "texto",
+     "x": 135,
+     "y": 48,
+     "w": 464,
+     "h": 168,
+     "html": "Agenda una cita de valoración",
+     "fs": 57,
+     "lh": "79.8px",
+     "color": "rgb(242, 131, 130)",
+     "align": "start",
+     "fw": "400",
+     "ls": "normal"
+    },
+    {
+     "k": "texto",
+     "x": 141,
+     "y": 242,
+     "w": 438,
+     "h": 82,
+     "html": "<p data-f=\"18\" data-c=\"rgb(50, 65, 88)\" data-a=\"justify\">Si te han diagnosticado apendicitis o presentas síntomas compatibles con esta enfermedad, busca atención médica lo antes posible.</p>",
+     "fs": 18,
+     "lh": "25.2px",
+     "color": "rgb(50, 65, 88)",
+     "align": "justify",
+     "fw": "400",
+     "ls": "normal"
+    },
+    {
+     "k": "img",
+     "x": 173,
+     "y": 345,
+     "w": 374,
+     "h": 133,
+     "src": "1da153_98e11fb3817743698389498ed9efc7d6~mv2.png",
+     "alt": "Imagen de ChatGPT 28 sept 2026, 04_13_52 p.m..png",
+     "fit": "cover",
+     "rad": "0px",
+     "link": ""
+    },
+    {
+     "k": "caja",
+     "x": 720,
+     "y": 0,
+     "w": 720,
+     "h": 505,
+     "bg": "rgba(0, 0, 0, 0)",
+     "bimg": "1da153_24097b55adfd47ceafae998f6c0b1878~mv2.png",
+     "rad": "0px",
+     "borde": "",
+     "sombra": 0
+    }
+   ]
+  },
+  {
+   "top": 7914,
+   "h": 40,
+   "w": 1440,
+   "bg": "rgb(249, 240, 232)",
+   "bgImg": "",
+   "items": []
+  }
+ ],
+ "faq": [
+  {
+   "q": "¿La apendicitis siempre requiere cirugía?",
+   "a": "La mayoría de los casos sí requieren tratamiento quirúrgico. La decisión final depende de la valoración médica.",
+   "ah": "<div class=\"sIwn0eJ\"><div style=\"direction:ltr\" class=\"sBuQfDg oytk1I5---layout-8-collapse\">La mayoría de los casos sí requieren tratamiento quirúrgico. La decisión final depende de la valoración médica.</div></div>"
+  },
+  {
+   "q": "¿La cirugía es urgente?",
+   "a": "Generalmente sí. La apendicitis es una enfermedad que requiere atención oportuna.",
+   "ah": "<div class=\"sIwn0eJ\"><div style=\"direction:ltr\" class=\"sBuQfDg oytk1I5---layout-8-collapse\">Generalmente sí. La apendicitis es una enfermedad que requiere atención oportuna.</div></div>"
+  },
+  {
+   "q": "¿Cuánto tiempo estaré hospitalizado?",
+   "a": "La estancia hospitalaria depende de cada paciente y de la evolución de la enfermedad.",
+   "ah": "<div class=\"sIwn0eJ\"><div style=\"direction:ltr\" class=\"sBuQfDg oytk1I5---layout-8-collapse\">La estancia hospitalaria depende de cada paciente y de la evolución de la enfermedad.</div></div>"
+  },
+  {
+   "q": "¿La cirugía laparoscópica deja cicatrices grandes?",
+   "a": "No. Utiliza pequeñas incisiones que suelen dejar cicatrices discretas.",
+   "ah": "<div class=\"sIwn0eJ\"><div style=\"direction:ltr\" class=\"sBuQfDg oytk1I5---layout-8-collapse\">No.&nbsp;Utiliza pequeñas incisiones que suelen dejar cicatrices discretas.</div></div>"
+  },
+  {
+   "q": "¿Cuándo podré volver a trabajar?",
+   "a": "El tiempo de recuperación depende del tipo de trabajo que realices y de la evolución postoperatoria. Al menos un par de semanas se considera prudente para reincorporarse a tus labores.",
+   "ah": "<div class=\"sIwn0eJ\"><div style=\"direction:ltr\" class=\"sBuQfDg oytk1I5---layout-8-collapse\">El tiempo de recuperación depende del tipo de trabajo que realices y de la evolución postoperatoria. Al menos un par de semanas se considera prudente para reincorporarse a tus labores.</div></div>"
+  },
+  {
+   "q": "¿La apendicitis puede volver a aparecer?",
+   "a": "No. Una vez retirado el apéndice, la enfermedad no vuelve a presentarse.",
+   "ah": "<div class=\"sIwn0eJ\"><div style=\"direction:ltr\" class=\"sBuQfDg oytk1I5---layout-8-collapse\">No.&nbsp;Una vez retirado el apéndice, la enfermedad no vuelve a presentarse.</div></div>"
+  }
+ ]
+}
