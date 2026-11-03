@@ -28,7 +28,7 @@ PAGINAS = {
     'copia-de-gastritis': 'colitis-merida', 'copia-de-gastritis-1': 'intestino-irritable-merida', 'copia-de-colitis': 'diarrea-y-estrenimiento-merida',
     'about-6-1': 'dietas-especiales', 'about-6': 'dieta-blanda', 'copia-de-dieta-blanda-1': 'dieta-para-estrenimiento',
     'copia-de-dieta-para-estreñimiento': 'dieta-para-diarrea', 'copia-de-dieta-para-diarrea': 'dieta-para-reflujo-y-gastritis',
-    'copia-de-dieta-blanda': 'dieta-baja-en-fodmap',
+    'copia-de-dieta-blanda': 'dieta-baja-en-fodmap', 'copia-de-inicio': 'pacientes',
 }
 OTRAS = {'contact-4': '/#contacto', 's-projects-basic': '/#preguntas-frecuentes'}
 # Textos que en Wix son etiquetas de padecimientos junto a las ilustraciones: se vuelven enlaces
@@ -48,12 +48,14 @@ def ruta(href):
     return OTRAS.get(s, '')
 
 
+# Nombre de cada imagen: el de su original en la carpeta IMAGENES (data/imagenes.json); si no está, uno provisional
+NOMBRES = json.load(open(os.path.join(RAIZ, 'data', 'imagenes.json')))['imagenes']
 descargadas = {}
 def imagen(media):
     """Descarga la imagen de Wix (máx. 1600 px) y la guarda como WebP. Devuelve la ruta pública."""
     if not media: return ''
     if media in descargadas: return descargadas[media]
-    nombre = 'w-' + hashlib.md5(media.encode()).hexdigest()[:10] + '.webp'
+    nombre = NOMBRES.get(media) or 'w-' + hashlib.md5(media.encode()).hexdigest()[:10] + '.webp'
     destino = os.path.join(IMG, nombre)
     if not os.path.exists(destino):
         url = f'https://static.wixstatic.com/media/{media}/v1/fit/w_1600,h_1600,q_90/{media}'
@@ -213,15 +215,130 @@ def ajustar_inicio(secciones):
     for it in s1['items']:
         if it['k'] == 'texto' and 'Enfermedades del estómago' in it['html']: it['x'], it['w'] = 44, 560
         # "Ver padecimientos" del colon: su subtítulo ocupa dos renglones, se separa un poco
-        if it.get('tipo') == 'desplegable' and it['x'] > ANCHO / 2: it['y'] += 14
+        if it.get('tipo') == 'desplegable' and it['x'] > ANCHO / 2: it['y'] += 4
     # Tarjeta de quistes y lipomas: en Wix tiene botón "Más información" (con sus dos páginas)
     quistes = next(i for i in s1['items'] if i['k'] == 'texto' and 'Quistes, Lipomas' in i['html'])
     opciones = [{'t': re.sub(r'<[^>]+>', '', i['html']), 'href': i['enlace']} for i in s1['items'] if i.get('padre') == quistes['padre'] and i.get('enlace')]
     s1['items'].append({'k': 'btn', 'x': 1042, 'y': 2296, 'w': 153, 'h': 36, 't': 'Más información', 'href': '', 'tipo': 'desplegable', 'opciones': opciones})
     anidar(s1['items'])
-    # Testimonio centrado, como en Wix
-    for it in secciones[6]['items']:
-        if it['k'] == 'texto' and 'excelente ser humano' in it['html']: it['align'] = 'center'
+    # Instrumento de cirugía laparoscópica: más pequeño y completo (contain), para que el efecto al pasar el cursor no lo recorte
+    for it in secciones[3]['items']:
+        if it['k'] == 'img' and it['w'] > 1000: it.update(x=188, w=940, fit='contain')
+        # Sus botones, alineados a la izquierda con la columna de texto (en Wix van a la derecha): "Más información" bajo
+        # el primer bloque y la cita bajo la pregunta final (el botón de cita ocupa el 80 % central de su caja)
+        if it['k'] == 'btn' and it.get('tipo') != 'cita': it.update(x=192, y=545, alinear='izq')
+        if it.get('tipo') == 'cita': it.update(x=round(192 - it['w'] * .1), y=1888)
+    # Testimonios: en Wix es un carrusel (slideshow) de tres diapositivas que el extractor no lee; se arma aquí con
+    # sus fondos, textos y autores. Ocupa el lugar del carrusel de Wix (a todo lo ancho, 28 px bajo el borde de la sección).
+    s6 = secciones[6]
+    s6.update(bg='rgba(0, 0, 0, 0)', bgImg='')
+    s6['items'] = [{'k': 'carrusel', 'x': 0, 'y': 28, 'w': ANCHO, 'h': 647, 'id': 0, 'padre': None, 'diapositivas': [
+        {'img': imagen('1da153_ac922e1b481d4750919f449831151fa5~mv2.jpg'), 'tono': 'oscuro', 'autor': 'M. Pérez',
+         'cita': '"Un excelente ser humano y gran <br>profesionista que se prepara día a día. <br>Altamente recomendado"'},
+        {'img': imagen('1da153_c525313b38034ff897da1b9ab583f6ab~mv2.png'), 'alt': 'Médico conversando con una paciente en su habitación del hospital'},
+        {'img': imagen('1da153_35e96de349b84dd489e5ba3416f24d50~mv2.jpg'), 'tono': 'claro', 'autor': 'G. Izquierdo',
+         'cita': 'No cabe duda, uno de los mejores <br>Cirujanos, muy recomendable.'},
+    ]}]
+    # Sección de contacto: destino de la opción "Contacto" del menú (/#contacto)
+    secciones[7]['ancla'] = 'contacto'
+
+
+def ajustar_servicios(secciones):
+    """Elementos que en Wix quedan tapados (no se ven en escritorio, pero en celular sí aparecerían): los botones
+    "Más información" y "Tratamiento" de cirugía laparoscópica bajo su foto, y la vesícula grande bajo su tarjeta."""
+    s1 = secciones[1]
+    fotos = [i for i in s1['items'] if i['k'] == 'img']
+    tapado = lambda b: any(f['id'] > b['id'] and f['x'] <= b['x'] + b['w'] / 2 <= f['x'] + f['w'] and f['y'] <= b['y'] + b['h'] / 2 <= f['y'] + f['h'] for f in fotos)
+    cajas = [c for c in s1['items'] if c['k'] == 'caja' and c['bg'].startswith('rgb(')]
+    bajo_caja = lambda im: any(c['id'] > im['id'] and c['x'] <= im['x'] and c['y'] <= im['y'] and im['x'] + im['w'] <= c['x'] + c['w']
+                               and im['y'] + im['h'] <= c['y'] + c['h'] for c in cajas)
+    s1['items'] = [i for i in s1['items'] if not (i['k'] == 'btn' and tapado(i)) and not (i['k'] == 'img' and bajo_caja(i))]
+    anidar(s1['items'])
+
+
+def ajustar_pacientes(secciones):
+    """Ingreso a cirugía: en Wix solo dos frases de las recomendaciones van en negritas (el extractor marca todo el bloque)."""
+    for it in secciones[0]['items']:
+        if it['k'] == 'texto' and 'agradeceremos' in it['html']:
+            it['html'] = it['html'].replace(';font-weight:600', '')
+            for frase in ('Tener como mínimo 8 horas de ayuno total, incluyendo ingesta de líquidos, a menos que haya recibido otra indicación de su médico tratante.',
+                          'pregunte a su médico si debe suspender algún medicamento.'):
+                it['html'] = it['html'].replace(frase, f'<strong>{frase}</strong>')
+
+
+def alinear_botones_izquierda(secciones):
+    """Botón solo debajo de un texto alineado a la izquierda de su misma caja, pero corrido a la derecha (así quedó en
+    Wix): se alinea con el inicio del texto. Devuelve los botones movidos (para revisar)."""
+    movidos = []
+    for s in secciones:
+        for b in s['items']:
+            if b['k'] != 'btn' or b.get('alinear') or b.get('tipo') == 'desplegable': continue
+            if any(o is not b and o['k'] == 'btn' and o['padre'] == b['padre'] and abs(o['y'] + o['h'] / 2 - (b['y'] + b['h'] / 2)) < 30 for o in s['items']):
+                continue   # botones en pareja: se acomodan juntos
+            cita = b.get('tipo') == 'cita'
+            bx, by = (b['x'] + b['w'] * .1, b['y'] + b['h'] * .29) if cita else (b['x'], b['y'])   # el de cita ocupa el centro de su caja
+            arriba = [t for t in s['items'] if t['k'] == 'texto' and t['padre'] == b['padre'] and not t.get('enlace')
+                      and t['y'] + t['h'] <= by + 10 and by - (t['y'] + t['h']) < 200 and t['x'] < bx + b['w'] and bx < t['x'] + t['w']]
+            if not arriba: continue
+            t = max(arriba, key=lambda t: t['y'] + t['h'])
+            if t['align'] not in ('start', 'left', 'justify') or 'text-align:center' in t['html'] or bx - t['x'] < 40: continue
+            if t['fs'] >= 28: continue   # bajo un título corto (p. ej. "Ver dieta"): va centrado con él
+            ancho = b['w'] * .8 if cita else b['w']
+            if abs(bx + ancho / 2 - (t['x'] + t['w'] / 2)) <= 50: continue   # ya está centrado con su párrafo
+            b['x'] = round(t['x'] - b['w'] * .1) if cita else t['x']
+            b['alinear'] = 'izq'
+            movidos.append((b.get('t'), round(bx), '->', t['x']))
+    return movidos
+
+
+def juntar_botones_finales(secciones):
+    """Secciones con un botón y el de cita en el mismo renglón pero en extremos opuestos (cierre de las páginas de
+    padecimientos): se juntan en una pareja centrada bajo su texto."""
+    for s in secciones:
+        botones = [b for b in s['items'] if b['k'] == 'btn' and b.get('tipo') != 'cita']
+        citas = [b for b in s['items'] if b.get('tipo') == 'cita']
+        if len(botones) != 1 or len(citas) != 1: continue
+        b, c = botones[0], citas[0]
+        if abs(b['y'] + b['h'] / 2 - (c['y'] + c['h'] / 2)) > 20 or abs(b['x'] - c['x']) < 500: continue
+        textos = [t for t in s['items'] if t['k'] == 'texto' and t['y'] + t['h'] <= b['y'] and t['align'] == 'center']
+        centro = max(textos, key=lambda t: t['y'])['x'] + max(textos, key=lambda t: t['y'])['w'] / 2 if textos else ANCHO / 2
+        b['x'] = round(centro - 16 - b['w'])
+        b['alinear'] = 'der'   # si su texto es más ancho que en Wix, crece hacia la izquierda y no toca al de cita
+        c['x'] = round(centro + 16 - c['w'] * .1)   # el botón de cita ocupa el 80 % central de su caja
+
+
+def texto_plano(it):
+    return re.sub(r'<[^>]+>', '', it.get('html', '')).strip()
+
+
+def centrar_botones(seccion, centros):
+    """Centra los botones de cada tarjeta con su título y subtítulo. `centros`: título de la tarjeta -> centro (en px del
+    lienzo) medido en el sitio ya publicado, porque el texto de Wix suele no estar centrado en su caja."""
+    for titulo, centro in centros.items():
+        caja = next(i['padre'] for i in seccion['items'] if i['k'] == 'texto' and texto_plano(i).startswith(titulo))
+        filas = {}
+        for b in seccion['items']:
+            if b['k'] == 'btn' and b['padre'] == caja: filas.setdefault(round(b['y'] / 12), []).append(b)
+        for botones in filas.values():
+            x1, x2 = min(b['x'] for b in botones), max(b['x'] + b['w'] for b in botones)
+            for b in botones: b['x'] = round(b['x'] + centro - (x1 + x2) / 2)
+            # La ilustración de abajo baja (sin cambiar de tamaño) para dejar aire bajo los botones (38 px de alto en el
+            # sitio), siempre que siga cabiendo en su tarjeta
+            abajo = max(b['y'] + max(b['h'], 38) for b in botones) + 12
+            x1, x2 = min(b['x'] for b in botones), max(b['x'] + b['w'] for b in botones)
+            c = next(i for i in seccion['items'] if i['id'] == caja)
+            for img in seccion['items']:
+                if (img['k'] == 'img' and img['padre'] == caja and botones[0]['y'] <= img['y'] < abajo and img['x'] < x2 and x1 < img['x'] + img['w']
+                        and abajo + img['h'] <= c['y'] + c['h']):
+                    img['y'] = abajo
+
+
+CENTROS = {
+    'inicio': {'VESICULA BILIAR': 936, 'HERNIAS': 498, 'Enfermedades del estómago': 332, 'Enfermedades del colon': 1108,
+               'Apendicitis Aguda': 310, 'Quistes, Lipomas': 1108},
+    'servicios': {'Vesícula biliar': 257, 'Hernias': 1054, 'Enfermedades del estómago': 265, 'Enfermedades del colon': 1035,
+                  'Apendicitis aguda': 246, 'Quistes y Lipomas': 1049, 'Cirugía Laparoscópica': 693},
+}
 
 
 if __name__ == '__main__':
@@ -238,16 +355,17 @@ if __name__ == '__main__':
                                 'alt': 'Cirujano en quirófano', 'fit': 'cover', 'rad': '0px', 'heroe': True},
                                {'k': 'texto', 'x': 560, 'y': 30, 'w': 653, 'h': 150, 'fs': 50, 'color': 'rgb(255, 255, 255)', 'align': 'right',
                                 'html': '<h1 style="--f:50;line-height:1.23">Cirujano General<br>Certificado en Mérida</h1>'}]
-            # Comillas del testimonio (en Wix son un gráfico vectorial)
-            s6 = secciones[6]
-            s6['items'].append({'k': 'texto', 'x': 670, 'y': 120, 'w': 100, 'h': 110, 'fs': 120, 'color': 'rgb(255, 255, 255)', 'align': 'center',
-                                'html': '<p style="--f:120;color:rgb(255, 255, 255);text-align:center">“</p>', 'comillas': True})
-            anidar(s0['items']); anidar(s6['items'])
+            anidar(s0['items'])
             for it in s0['items']:
                 if it['k'] == 'texto' and it['y'] > 150:
                     it['color'] = 'rgb(255, 255, 255)'; it['align'] = 'right'; it.pop('fondo', None)   # van sobre la foto del héroe
                 if it.get('padre') is None and it['k'] != 'img': it['padre'] = None
             ajustar_inicio(secciones)
+        if slug == 'servicios': ajustar_servicios(secciones)
+        if slug == 'pacientes': ajustar_pacientes(secciones)
+        juntar_botones_finales(secciones)
+        alinear_botones_izquierda(secciones)
+        if (slug or 'inicio') in CENTROS: centrar_botones(secciones[1], CENTROS[slug or 'inicio'])
         with open(os.path.join(SALIDA, (slug or 'inicio') + '.json'), 'w', encoding='utf-8') as fh:
             json.dump({'slug': slug, 'wix': wix_slug, 'secciones': secciones}, fh, ensure_ascii=False)
         print(f'{slug or "inicio":42} {len(secciones):3} secciones {sum(len(s["items"]) for s in secciones):4} elementos')

@@ -5,6 +5,7 @@
 // · Tablet y celular: cada caja envuelve a sus elementos y todo se acomoda en orden, de arriba a abajo.
 import Faq from './Faq';
 import Desplegable from './Desplegable';
+import Carrusel from './Carrusel';
 import { Icono } from './Iconos';
 
 const ANCHO = 1440;
@@ -20,8 +21,10 @@ function luminancia(rgb) {
 const tamano = fs => (fs >= 40 ? 't-xl' : fs >= 28 ? 't-l' : fs >= 21 ? 't-m' : 't-s');
 
 // Botones del mismo renglón (misma caja y misma altura en Wix): van juntos en una fila con separación fija,
-// centrada donde estaban, para que no se encimen cuando el texto es más ancho que en Wix.
-function agruparBotones(items) {
+// para que no se encimen ni crezcan hacia un solo lado cuando el texto es más ancho que en Wix.
+// La fila se alinea con el texto de arriba: por la izquierda si en Wix ya lo estaba, o centrada (en el centro del
+// texto si en Wix quedaba casi centrada). Con `fijas` (tarjetas ya centradas en los datos) solo se centra donde está.
+function agruparBotones(items, fijas) {
   const filas = new Map();
   for (const it of items) {
     if (it.k !== 'btn' || it.tipo === 'cita') continue;
@@ -31,11 +34,17 @@ function agruparBotones(items) {
   const fuera = new Set();
   const nuevas = [];
   for (const botones of filas.values()) {
-    if (botones.length < 2) continue;
     botones.sort((a, b) => a.x - b.x).forEach(b => fuera.add(b));
-    const x = botones[0].x, y = Math.min(...botones.map(b => b.y));
-    nuevas.push({ k: 'fila', id: Math.min(...botones.map(b => b.id)), padre: botones[0].padre, orden: Math.min(...botones.map(b => b.orden)),
-      x, y, w: Math.max(...botones.map(b => b.x + b.w)) - x, h: Math.max(...botones.map(b => b.h)), botones });
+    const fila = { k: 'fila', id: Math.min(...botones.map(b => b.id)), padre: botones[0].padre, orden: Math.min(...botones.map(b => b.orden)),
+      x: botones[0].x, y: Math.min(...botones.map(b => b.y)), h: Math.max(...botones.map(b => b.h)), botones };
+    fila.w = Math.max(...botones.map(b => b.x + b.w)) - fila.x;
+    // Alineación fijada en los datos (p. ej. el botón junto al de cita al cierre de las páginas)
+    fila.alinear = botones.find(b => b.alinear)?.alinear;
+    const texto = fijas || fila.alinear ? null : items.filter(t => t.k === 'texto' && !t.enlace && t.padre === fila.padre && t.y + t.h <= fila.y + 10
+      && fila.y - (t.y + t.h) < 300 && t.x < fila.x + fila.w && fila.x < t.x + t.w).sort((a, b) => b.y + b.h - (a.y + a.h))[0];
+    if (texto && Math.abs(fila.x - texto.x) <= 12) { fila.x = texto.x; fila.alinear = 'izq'; }
+    else if (texto && Math.abs(fila.x + fila.w / 2 - (texto.x + texto.w / 2)) <= 40) fila.x = Math.round(texto.x + (texto.w - fila.w) / 2);
+    nuevas.push(fila);
   }
   return [...items.filter(i => !fuera.has(i)), ...nuevas];
 }
@@ -52,6 +61,8 @@ function Elemento({ it, todos, fondo, prioridad }) {
     const oscura = luminancia(it.bg) < 0.45;
     const fondoCaja = { ...estilo, background: it.bg || undefined, borderRadius: it.rad && it.rad !== '0px' ? it.rad : undefined };
     const grupo = ['el-grupo', oscura ? 'oscura' : '', !hijos.length && !it.bimg ? 'decorativa' : ''].join(' ');
+    // Foto en una columna muy alta (p. ej. el doctor en "¿Por qué elegir…?"): se queda fija al bajar para que se le vea la cara
+    if (it.bimg && it.h > it.w * 2) clases.push('retrato');
     return (
       <div className={grupo} style={{ order: it.orden, '--bg': it.bg || 'transparent' }}>
         <div className={clases.join(' ')} style={fondoCaja} aria-hidden="true">
@@ -67,7 +78,6 @@ function Elemento({ it, todos, fondo, prioridad }) {
     estilo.textAlign = it.align === 'justify' || it.align === 'start' ? 'left' : it.align === 'end' ? 'right' : it.align;
     clases.push(tamano(it.fs), 'revelar');
     if (it.fondo) clases.push('con-fondo');
-    if (it.comillas) clases.push('comillas');
     if (it.enlace) return <a className={clases.join(' ') + ' etiqueta'} style={estilo} href={it.enlace} dangerouslySetInnerHTML={{ __html: it.html }} />;
     return <div className={clases.join(' ')} style={estilo} dangerouslySetInnerHTML={{ __html: it.html }} />;
   }
@@ -82,6 +92,7 @@ function Elemento({ it, todos, fondo, prioridad }) {
   }
   if (it.k === 'fila') {
     // El primer botón de la fila es el principal (relleno); los demás, secundarios (contorno)
+    if (it.alinear) clases.push('fila-' + it.alinear);
     return (
       <div className={clases.join(' ')} style={estilo}>
         {it.botones.map((b, i) => <Elemento key={b.id} it={{ ...b, secundario: i > 0 }} todos={todos} fondo={fondo} prioridad={prioridad} />)}
@@ -102,6 +113,7 @@ function Elemento({ it, todos, fondo, prioridad }) {
   }
   if (it.k === 'linea') return <div className={clases.join(' ')} style={estilo} aria-hidden="true" />;
   if (it.k === 'faq') return <div className={clases.join(' ')} style={estilo}><Faq preguntas={it.preguntas} /></div>;
+  if (it.k === 'carrusel') return <Carrusel clase={clases.join(' ')} estilo={estilo} diapositivas={it.diapositivas} />;
   return null;
 }
 
@@ -109,11 +121,13 @@ export default function Seccion({ s, n }) {
   const conFaq = s.items.some(i => i.k === 'faq');
   // Orden en celular: por renglones de arriba a abajo y, en el mismo renglón, de izquierda a derecha
   [...s.items].sort((a, b) => (Math.abs(a.y - b.y) < 24 ? a.x - b.x : a.y - b.y)).forEach((it, k) => { it.orden = k; });
-  const items = agruparBotones(s.items);
+  // Tarjetas de padecimientos (las secciones con "Ver padecimientos"): botones compactos y centrados con su texto
+  const tarjetas = s.items.some(i => i.tipo === 'desplegable');
+  const items = agruparBotones(s.items, tarjetas);
   const raiz = items.filter(i => i.padre == null).sort((a, b) => a.id - b.id);
   return (
-    <section className={'wx' + (conFaq ? ' wx-flujo' : '')} style={{ background: s.bg && s.bg !== 'rgba(0, 0, 0, 0)' ? s.bg : undefined }}
-      id={conFaq ? 'preguntas-frecuentes' : undefined}>
+    <section className={'wx' + (conFaq ? ' wx-flujo' : '') + (tarjetas ? ' wx-tarjetas' : '')} style={{ background: s.bg && s.bg !== 'rgba(0, 0, 0, 0)' ? s.bg : undefined }}
+      id={s.ancla || (conFaq ? 'preguntas-frecuentes' : undefined)}>
       {s.bgImg && <img className="wx-fondo" src={s.bgImg} alt="" loading={n === 0 ? 'eager' : 'lazy'} />}
       {s.velo && <div className="wx-velo" aria-hidden="true" />}
       <div className="wx-marco">

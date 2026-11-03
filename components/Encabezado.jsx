@@ -1,5 +1,6 @@
 'use client';
-// Encabezado como el de Wix (logotipo, menú con submenús y monograma), fijo y compacto al bajar; menú lateral en celular.
+// Encabezado como el de Wix (logotipo, menú con submenús y monograma), fijo y compacto al bajar; menú lateral en celular
+// con el botón de cita debajo de las opciones.
 import { useEffect, useState } from 'react';
 import { usePathname } from 'next/navigation';
 import { Icono } from './Iconos';
@@ -35,9 +36,9 @@ export default function Encabezado({ menu, wa }) {
               </li>
             ))}
           </ul>
-          <a className="btn-menu-cita" href={wa} target="_blank" rel="noopener"><Icono n="cal" /><span>Agenda tu cita hoy</span></a>
+          <a className="btn-menu-cita" href={wa} target="_blank" rel="noopener"><Icono n="cal" /><span>Agenda tu cita hoy</span><Icono n="flecha" /></a>
         </nav>
-        <a className="monograma" href="/" aria-hidden="true" tabIndex={-1}><img src="/img/monograma.webp" alt="" /></a>
+        <a className="monograma" href="/" aria-hidden="true" tabIndex={-1}><img src="/img/logo-joel-png.webp" alt="" /></a>
         <button className="hamburguesa" aria-label={abierto ? 'Cerrar menú' : 'Abrir menú'} aria-expanded={abierto} onClick={() => setAbierto(!abierto)}>
           <span /><span /><span />
         </button>

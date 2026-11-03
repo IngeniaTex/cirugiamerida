@@ -10,15 +10,17 @@ const fuente = Albert_Sans({ subsets: ['latin'], weight: ['400', '500', '600', '
 
 export const metadata = {
   metadataBase: new URL(sitio.dominio),
-  icons: { icon: '/img/monograma.webp' },
+  icons: { icon: '/img/logo-joel-png.webp' },
 };
 export const viewport = { themeColor: '#173B4A' };
 
-// Menú como en Wix: Inicio, Servicios (con sus padecimientos), Dietas especiales (con sus dietas), Contacto y Preguntas Frecuentes.
+// Menú como en Wix: Inicio, Servicios (con sus padecimientos), Dietas especiales (con sus dietas), Ingreso a cirugía,
+// Contacto y Preguntas Frecuentes.
 const menu = [
   { texto: 'Inicio', url: '/' },
   { texto: 'Servicios', url: '/servicios/', hijos: servicios.filter(s => !s.oculta).map(s => ({ texto: s.menu, url: `/${s.slug}/` })) },
   { texto: 'Dietas especiales', url: '/dietas-especiales/', hijos: dietas.map(d => ({ texto: d.menu, url: `/${d.slug}/` })) },
+  { texto: 'Ingreso a cirugía', url: '/pacientes/' },
   { texto: 'Contacto', url: '/#contacto' },
   { texto: 'Preguntas Frecuentes', url: '/#preguntas-frecuentes' },
 ];

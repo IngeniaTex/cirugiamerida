@@ -21,7 +21,7 @@ export default function Pie() {
             <li><a href="/servicios/">Servicios</a></li>
             <li><a href="/dietas-especiales/">Dietas especiales</a></li>
           </ul></div>
-          <a className="pie-logo" href="/"><img src="/img/logo-vertical.webp" alt="Dr. Joel Dorantes, Cirugía Gastrointestinal y Laparoscopía Avanzada" loading="lazy" /></a>
+          <a className="pie-logo" href="/"><img src="/img/joel-dorantes-logo-azul.webp" alt="Dr. Joel Dorantes, Cirugía Gastrointestinal y Laparoscopía Avanzada" loading="lazy" /></a>
         </div>
         <p className="pie-legal">{sitio.pie.copyright}</p>
       </footer>

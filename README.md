@@ -27,7 +27,9 @@ Wix acomoda cada elemento en un lienzo de 1440 px. Este sitio guarda esa misma p
    textos (con tamaño, color y alineación de cada párrafo), imágenes, botones, líneas y preguntas frecuentes (con sus respuestas).
 2. `tools/importar_wix.py` convierte esa estructura en `data/paginas/<ruta>.json`: cambia los enlaces de Wix por las rutas
    nuevas, convierte las imágenes-botón de Wix en botones reales, agrupa cada elemento dentro de su caja (para celular) y
-   descarga las imágenes a `public/img/` en WebP.
+   descarga las imágenes a `public/img/` en WebP. Cada imagen lleva el nombre de su original en la carpeta `IMAGENES`
+   (o `LOGOS`) en minúsculas, sin acentos y con guiones: "Edificio Faro del Mayab al atardecer.png" →
+   `edificio-faro-del-mayab-al-atardecer.webp`. La relación está en `data/imagenes.json`.
 3. `components/Seccion.jsx` dibuja cada sección:
    - **Escritorio (≥1200 px):** cada elemento en su posición de Wix, escalada al ancho de la ventana y pintada en el mismo orden.
    - **Tablet y celular:** cada caja envuelve a sus elementos y todo se acomoda de arriba a abajo.
@@ -45,6 +47,7 @@ FFMPEG=/ruta/ffmpeg python3 tools/importar_wix.py
 | --- | --- |
 | `data/paginas/*.json` | Secciones y elementos de cada página (textos editables en `html`) |
 | `data/sitio.json` | Teléfonos, WhatsApp, correo, dirección y pie de página |
+| `data/imagenes.json` | Nombre de cada imagen de Wix en `public/img/` (el de su original en `IMAGENES`) |
 | `data/paginas.json` | Menú, metatítulos y metadescripciones (de `METATITULOS.docx` y de cada bloque) |
 | `app/globals.css` | Colores, tipografía, lienzo de Wix, botones, preguntas frecuentes y versión celular |
 | `components/` | Encabezado, pie, sección, preguntas frecuentes, desplegable "Ver padecimientos" |
@@ -54,10 +57,12 @@ FFMPEG=/ruta/ffmpeg python3 tools/importar_wix.py
 Las direcciones son las que propone `METATITULOS.docx`: `/hernias-merida/`, `/cirugia-vesicula-merida/`, `/dieta-blanda/`, etc.
 Las páginas de tratamiento (cirugía de vesícula, operación de hernia, cirugía de apendicitis, cirugía para reflujo) no aparecen
 en el menú, igual que en Wix.
+"Ingreso a cirugía" (`/copia-de-inicio` en Wix) está en `/pacientes/`; su título y descripción están en `lib/datos.js`.
 
 ## Pendientes
 
 - **WhatsApp:** en Wix los botones no tienen número. Se usa el teléfono de la tarjeta de presentación (999 956 6388); confirmar en `data/sitio.json`.
 - **Tipografía:** Wix usa "aether" (licencia solo para sitios de Wix). Se usa Albert Sans, la libre más parecida, con el mismo interlineado.
-- **Gráficos vectoriales de Wix** (palomita y tache dorados de la dieta FODMAP, flechas del carrusel de testimonios) no se importan; las comillas del testimonio se agregaron.
-- **Páginas no incluidas:** Acerca de, Ingreso a cirugía, Hospitales, Aviso de privacidad y Blog médico. El botón "Acerca de Mí" se omitió hasta que exista su página.
+- **Gráficos vectoriales de Wix** (palomita y tache dorados de la dieta FODMAP) no se importan.
+- **Carrusel de testimonios del inicio:** el extractor no lee los carruseles de Wix; sus tres diapositivas (fondos, citas y autores) están en `ajustar_inicio` de `tools/importar_wix.py` y se dibujan con `components/Carrusel.jsx`.
+- **Páginas no incluidas:** Acerca de, la otra "Ingreso a cirugía" de Wix (`/paciente`: Acerca de tu visita y testimonios), Cuidados postoperatorios, Hospitales, Aviso de privacidad y Blog médico. El botón "Acerca de Mí" se omitió hasta que exista su página.
