@@ -10,11 +10,13 @@
     // Rutas que no existen: out/404.html con estado 404
     "not_found_handling": "404-page"
   },
-  // Dominios del sitio: el deploy crea sus registros DNS y certificados (cirugiamerida.com es el principal;
-  // www redirige a él con una regla de Cloudflare)
-  "routes": [
-    { "pattern": "cirugiamerida.com", "custom_domain": true },
-    { "pattern": "www.cirugiamerida.com", "custom_domain": true }
-  ],
+  // Mientras cirugiamerida.com no esté activo en Cloudflare, el sitio se publica en cirugiamerida.<cuenta>.workers.dev.
+  // Cuando la zona aparezca "Active" (nameservers de Akky ya en Cloudflare), agregar los dominios aquí; el deploy crea
+  // sus registros DNS y certificados (cirugiamerida.com es el principal; www redirige a él con una regla de Cloudflare):
+  //   "routes": [
+  //     { "pattern": "cirugiamerida.com", "custom_domain": true },
+  //     { "pattern": "www.cirugiamerida.com", "custom_domain": true }
+  //   ],
+  "workers_dev": true,
   "observability": { "enabled": true }
 }
