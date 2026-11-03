@@ -5,12 +5,19 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "node tools/servir.mjs"
+    "start": "wrangler dev",
+    "preview": "next build && wrangler dev",
+    "deploy": "next build && wrangler deploy"
   },
   "dependencies": {
     "next": "^16.4.3",
     "react": "^19.3.1",
     "react-dom": "^19.3.1"
   },
-  "engines": { "node": ">=20.9.0" }
+  "engines": {
+    "node": ">=22"
+  },
+  "devDependencies": {
+    "wrangler": "^4.157.0"
+  }
 }

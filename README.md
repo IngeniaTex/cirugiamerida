@@ -5,8 +5,8 @@ y tratamientos, y Dietas especiales con sus dietas), con los **textos e imágene
 colores y mejoras de diseño: encabezado fijo que se compacta, menú lateral en celular, animaciones al aparecer, acordeón
 animado en preguntas frecuentes, botón flotante de WhatsApp, efectos al pasar el cursor y versión adaptada a celular.
 
-Next.js 16 (App Router) con exportación estática: `npm run build` genera la carpeta `out/`, lista para cualquier hosting
-(Cloudflare Pages, Vercel, Netlify o un hosting tradicional).
+Next.js 16 (App Router) con exportación estática: `npm run build` genera la carpeta `out/`, que se publica en
+Cloudflare Workers (archivos estáticos, sin código de servidor).
 
 ## Uso
 
@@ -14,10 +14,26 @@ Next.js 16 (App Router) con exportación estática: `npm run build` genera la ca
 npm install
 npm run dev      # desarrollo en http://localhost:3000
 npm run build    # genera out/
-npm start        # sirve out/ en http://localhost:4322
+npm start        # sirve out/ con Cloudflare (wrangler dev) en http://localhost:8787, igual que en producción
+npm run preview  # build + wrangler dev
+npm run deploy   # build + publica en Cloudflare (normalmente lo hace Cloudflare solo al hacer push a main)
 ```
 
-Requiere Node 20.9 o superior.
+Requiere Node 22 o superior (wrangler lo pide; ver `.nvmrc`). No corras `npm run build` con `npm run dev` abierto
+(comparten `.next`): detén dev, compila y luego `rm -rf .next` antes de volver a dev.
+
+## Hosting (Cloudflare Workers)
+
+- `wrangler.jsonc`: Worker `cirugiamerida` que sirve `out/`. Los dominios `cirugiamerida.com` (principal) y
+  `www.cirugiamerida.com` se declaran ahí en `routes`; el deploy crea sus registros DNS y certificados. `www` redirige a
+  `cirugiamerida.com` con una regla de redirección (301) en la zona de Cloudflare.
+- Cada push a `main` compila (`npm run build`) y publica (`npx wrangler deploy`) desde la integración de Git de Cloudflare.
+- URLs con diagonal final (`trailingSlash: true` + `html_handling: "auto-trailing-slash"`): `/hernias-merida` y
+  `/hernias-merida.html` redirigen a `/hernias-merida/`. Las rutas inexistentes responden 404 con `out/404.html`.
+- `public/_headers`: caché de un año para `/_next/static/*` (nombres con hash) y de una semana para `/img/*`.
+- Por ser exportación estática no se puede usar: rutas `app/api`, middleware, `headers()`/`cookies()`, ISR/`revalidate`,
+  server actions ni `next/image` optimizado. Toda ruta dinámica necesita `generateStaticParams`. Si algún día hace falta
+  un formulario que envíe correos, va en un Worker bajo `/api/*` (ver `wrangler.jsonc`).
 
 ## Cómo funciona
 

@@ -1,0 +1,20 @@
+// Cloudflare Workers: sitio estático (carpeta out/ de `next build`), sin código de servidor.
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "cirugiamerida",
+  "compatibility_date": "2026-11-03",
+  "assets": {
+    "directory": "./out",
+    // /hernias-merida → /hernias-merida/ (las páginas son carpetas con index.html, por trailingSlash: true)
+    "html_handling": "auto-trailing-slash",
+    // Rutas que no existen: out/404.html con estado 404
+    "not_found_handling": "404-page"
+  },
+  // Dominios del sitio: el deploy crea sus registros DNS y certificados (cirugiamerida.com es el principal;
+  // www redirige a él con una regla de Cloudflare)
+  "routes": [
+    { "pattern": "cirugiamerida.com", "custom_domain": true },
+    { "pattern": "www.cirugiamerida.com", "custom_domain": true }
+  ],
+  "observability": { "enabled": true }
+}
