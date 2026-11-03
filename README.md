@@ -27,6 +27,9 @@ Requiere Node 22 o superior (wrangler lo pide; ver `.nvmrc`). No corras `npm run
 - `wrangler.jsonc`: Worker `cirugiamerida` que sirve `out/`. Los dominios `cirugiamerida.com` (principal) y
   `www.cirugiamerida.com` se declaran ahí en `routes`; el deploy crea sus registros DNS y certificados. `www` redirige a
   `cirugiamerida.com` con una regla de redirección (301) en la zona de Cloudflare.
+  **Pendiente:** `routes` está comentado hasta que la zona `cirugiamerida.com` esté activa en Cloudflare (con dominios
+  en una zona que no existe, el deploy falla con "Can't infer zone from route" [10082]); mientras, el sitio se publica
+  en `*.workers.dev`.
 - Cada push a `main` compila (`npm run build`) y publica (`npx wrangler deploy`) desde la integración de Git de Cloudflare.
 - URLs con diagonal final (`trailingSlash: true` + `html_handling: "auto-trailing-slash"`): `/hernias-merida` y
   `/hernias-merida.html` redirigen a `/hernias-merida/`. Las rutas inexistentes responden 404 con `out/404.html`.
