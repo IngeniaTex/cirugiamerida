@@ -18,5 +18,10 @@
   //     { "pattern": "www.cirugiamerida.com", "custom_domain": true }
   //   ],
   "workers_dev": true,
-  "observability": { "enabled": true }
+  "observability": { "enabled": true },
+  // Ramas que no son main (PR): Cloudflare las publica como vista previa con `wrangler preview`, que exige este bloque.
+  // Repite la configuración de arriba que deba valer también en las vistas previas.
+  "previews": {
+    "observability": { "enabled": true }
+  }
 }

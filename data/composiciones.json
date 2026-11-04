@@ -1,0 +1,30 @@
+{
+  "_nota": "Fotos sueltas de Wix que se unen en una sola imagen con la señal de prohibido (vector de Wix que el extractor no toma). Posiciones en el lienzo de 1440 de la primera página; en otras páginas el grupo puede estar corrido. La imagen la arma tools/componer_alimentos.mjs y tools/importar_wix.py la pone en lugar de las fotos.",
+  "composiciones": [
+    {
+      "archivo": "alimentos-que-empeoran-los-sintomas",
+      "alt": "Café, cerveza, refresco de cola, chiles habaneros y pizza: alimentos que pueden empeorar los síntomas",
+      "paginas": ["gastritis-merida", "intestino-irritable-merida"],
+      "fotos": [
+        ["botella-heineken-fria-con-condensacion", 513, 636, 320, 481],
+        ["vaso-de-cola-helada-con-hielo-y-burbujas", 718, 740, 180, 341],
+        ["vaso-de-cafe-con-logo-verde", 466, 826, 187, 282],
+        ["rebanada-de-pizza-pepperoni-fundida", 805, 835, 309, 282],
+        ["chiles-habaneros-en-plato-talavera", 653, 998, 180, 119]
+      ],
+      "cruz": [568, 805, 303]
+    },
+    {
+      "archivo": "factores-que-empeoran-la-colitis",
+      "alt": "Frijoles, refresco de cola, pizza y leche: alimentos que pueden empeorar los síntomas de colitis",
+      "paginas": ["colitis-merida"],
+      "fotos": [
+        ["plato-de-frijoles-guisados-brillantes", 752, 904, 401, 267],
+        ["vaso-de-cola-helada-con-hielo-y-burbujas", 679, 836, 180, 341],
+        ["rebanada-de-pizza-pepperoni-fundida-2", 449, 891, 303, 275],
+        ["carton-de-leche-azul-con-salpicaduras-frescas", 269, 787, 269, 403]
+      ],
+      "cruz": [482, 812, 462]
+    }
+  ]
+}
