@@ -57,6 +57,7 @@ Para volver a importar después de cambiar algo en Wix:
 
 ```bash
 node tools/extraer_wix.mjs data/wix "" servicios about-1 …     # páginas de Wix (requiere puppeteer-core y Chrome)
+node tools/componer_imagenes.mjs                              # fotos encimadas → una sola imagen (data/composiciones.json)
 FFMPEG=/ruta/ffmpeg python3 tools/importar_wix.py
 ```
 
@@ -67,6 +68,7 @@ FFMPEG=/ruta/ffmpeg python3 tools/importar_wix.py
 | `data/paginas/*.json` | Secciones y elementos de cada página (textos editables en `html`) |
 | `data/sitio.json` | Teléfonos, WhatsApp, correo, dirección y pie de página |
 | `data/imagenes.json` | Nombre de cada imagen de Wix en `public/img/` (el de su original en `IMAGENES`) |
+| `data/composiciones.json` | Fotos encimadas de Wix que se unen en una sola imagen con la señal de prohibido roja (alimentos de gastritis, intestino irritable y colitis) |
 | `data/paginas.json` | Menú, metatítulos y metadescripciones (de `METATITULOS.docx` y de cada bloque) |
 | `app/globals.css` | Colores, tipografía, lienzo de Wix, botones, preguntas frecuentes y versión celular |
 | `components/` | Encabezado, pie, sección, preguntas frecuentes, desplegable "Ver padecimientos" |
@@ -82,6 +84,7 @@ en el menú, igual que en Wix.
 
 - **WhatsApp:** en Wix los botones no tienen número. Se usa el teléfono de la tarjeta de presentación (999 956 6388); confirmar en `data/sitio.json`.
 - **Tipografía:** Wix usa "aether" (licencia solo para sitios de Wix). Se usa Albert Sans, la libre más parecida, con el mismo interlineado.
-- **Gráficos vectoriales de Wix** (palomita y tache dorados de la dieta FODMAP) no se importan.
+- **Gráficos vectoriales de Wix** (palomita y tache dorados de la dieta FODMAP) no se importan. La señal de prohibido roja de los
+  alimentos sí está: va dentro de la imagen que arma `tools/componer_imagenes.mjs`.
 - **Carrusel de testimonios del inicio:** el extractor no lee los carruseles de Wix; sus tres diapositivas (fondos, citas y autores) están en `ajustar_inicio` de `tools/importar_wix.py` y se dibujan con `components/Carrusel.jsx`.
 - **Páginas no incluidas:** Acerca de, la otra "Ingreso a cirugía" de Wix (`/paciente`: Acerca de tu visita y testimonios), Cuidados postoperatorios, Hospitales, Aviso de privacidad y Blog médico. El botón "Acerca de Mí" se omitió hasta que exista su página.

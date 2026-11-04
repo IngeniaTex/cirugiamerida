@@ -186,6 +186,10 @@ def convertir(wix_slug, datos):
         textos_sueltos = [i for i in items if i['k'] == 'texto' and i['padre'] is None]
         if sec['bgImg'] and textos_sueltos and all(oscuro(c) for i in textos_sueltos for c in re.findall(r'color:(rgb\([^)]*\))', i['html'])):
             sec['velo'] = True
+        # La misma foto de fondo de la sección y de una de sus cajas: en escritorio la caja la tapa, pero en tablet y
+        # celular (las cajas se vuelven tarjetas) se vería dos veces, una encima de la otra
+        if sec['bgImg'] and any(i.get('bimg') == sec['bgImg'] for i in items):
+            sec['fondoRepetido'] = True
         secciones.append(sec)
     # Botones "Ver padecimientos": enlaces de las etiquetas de su misma caja
     for s in secciones:
@@ -264,6 +268,54 @@ def ajustar_pacientes(secciones):
             for frase in ('Tener como mínimo 8 horas de ayuno total, incluyendo ingesta de líquidos, a menos que haya recibido otra indicación de su médico tratante.',
                           'pregunte a su médico si debe suspender algún medicamento.'):
                 it['html'] = it['html'].replace(frase, f'<strong>{frase}</strong>')
+
+
+def quitar_foto_oculta(seccion):
+    """Héroe de piedras en la vesícula y lipomas: en Wix la foto de la mujer de suéter va de fondo de la sección y de la
+    columna derecha, pero en escritorio la tapan la caja oscura y la blanca (solo asoman dos franjas grises a los lados);
+    en celular sí se vería. Se quita y las franjas quedan de ese gris. La ilustración va dentro de la columna blanca,
+    para que en celular quede sobre fondo blanco (se desvanece hacia abajo en blanco)."""
+    seccion['bgImg'] = ''
+    gris = next(c for c in seccion['items'] if c['k'] == 'caja' and c['bimg'])
+    blanca = next(c for c in seccion['items'] if c['k'] == 'caja' and c['padre'] == gris['id'])
+    gris.update(bimg='', bg='rgb(180, 178, 173)')
+    blanca['padre'] = gris['padre']   # la gris queda vacía: en celular no se dibuja
+    for im in seccion['items']:
+        if im['k'] == 'img': im['padre'] = blanca['id']
+
+
+def ajustar_piedras(secciones):
+    quitar_foto_oculta(secciones[0])
+    # ¿Qué opciones de tratamiento existen?: la foto del quirófano va alineada a la derecha como en Wix (se ven el
+    # monitor y los instrumentos)
+    next(c for c in secciones[8]['items'] if c['k'] == 'caja' and c['bimg'])['pos'] = '100% 50%'
+
+
+COMPOSICIONES = json.load(open(os.path.join(RAIZ, 'data', 'composiciones.json')))['composiciones']
+
+
+def unir_fotos(secciones, slug):
+    """Fotos encimadas que van mejor como una sola imagen (p. ej. "¿Qué alimentos pueden empeorar…?", con la señal de
+    prohibido de Wix): se cambian por la que arma tools/componer_imagenes.mjs, en el mismo lugar (data/composiciones.json)."""
+    for comp in COMPOSICIONES:
+        if slug not in comp['paginas']: continue
+        for s in secciones:
+            fotos = [i for i in s['items'] if i['k'] == 'img' and i['src'][5:-5] in [f[0] for f in comp['fotos']]]
+            if len(fotos) != len(comp['fotos']): continue
+            # El grupo puede estar corrido respecto a la página de referencia
+            ref = next(f for f in comp['fotos'] if f[0] == fotos[0]['src'][5:-5])
+            dx, dy = fotos[0]['x'] - ref[1], fotos[0]['y'] - ref[2]
+            cx, cy, lado = comp['cruz']
+            cajas = [f[1:] for f in comp['fotos']] + [[cx, cy, lado, lado]]
+            x, y = min(c[0] for c in cajas), min(c[1] for c in cajas)
+            # Va en la tarjeta blanca de afuera, no en la franja azul que la cruza
+            por_id = {c['id']: c for c in s['items']}
+            caja = por_id[fotos[0]['padre']]
+            while caja['padre'] is not None: caja = por_id[caja['padre']]
+            primera = min(fotos, key=lambda f: f['id'])
+            primera.update(x=x + dx, y=y + dy, w=max(c[0] + c[2] for c in cajas) - x, h=max(c[1] + c[3] for c in cajas) - y,
+                           src='/img/' + comp['archivo'] + '.webp', alt=comp['alt'], fit='contain', padre=caja['id'])
+            s['items'] = [i for i in s['items'] if i not in fotos or i is primera]
 
 
 def alinear_botones_izquierda(secciones):
@@ -363,6 +415,9 @@ if __name__ == '__main__':
             ajustar_inicio(secciones)
         if slug == 'servicios': ajustar_servicios(secciones)
         if slug == 'pacientes': ajustar_pacientes(secciones)
+        if slug == 'piedras-en-la-vesicula-merida': ajustar_piedras(secciones)
+        if slug == 'lipomas-merida': quitar_foto_oculta(secciones[0])
+        unir_fotos(secciones, slug)
         juntar_botones_finales(secciones)
         alinear_botones_izquierda(secciones)
         if (slug or 'inicio') in CENTROS: centrar_botones(secciones[1], CENTROS[slug or 'inicio'])

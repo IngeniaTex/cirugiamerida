@@ -60,13 +60,16 @@ function Elemento({ it, todos, fondo, prioridad }) {
   if (it.k === 'caja') {
     const oscura = luminancia(it.bg) < 0.45;
     const fondoCaja = { ...estilo, background: it.bg || undefined, borderRadius: it.rad && it.rad !== '0px' ? it.rad : undefined };
-    const grupo = ['el-grupo', oscura ? 'oscura' : '', !hijos.length && !it.bimg ? 'decorativa' : ''].join(' ');
+    // Decorativa: sin contenido propio ni en sus cajas internas (p. ej. el marco blanco detrás de una ilustración);
+    // en tablet y celular no se dibuja, porque quedaría como un bloque vacío
+    const conContenido = c => !!c.bimg || todos.some(o => o.padre === c.id && (o.k !== 'caja' || conContenido(o)));
+    const grupo = ['el-grupo', oscura ? 'oscura' : '', !conContenido(it) ? 'decorativa' : ''].join(' ');
     // Foto en una columna muy alta (p. ej. el doctor en "¿Por qué elegir…?"): se queda fija al bajar para que se le vea la cara
     if (it.bimg && it.h > it.w * 2) clases.push('retrato');
     return (
       <div className={grupo} style={{ order: it.orden, '--bg': it.bg || 'transparent' }}>
         <div className={clases.join(' ')} style={fondoCaja} aria-hidden="true">
-          {it.bimg && <img className="caja-fondo" src={it.bimg} alt="" loading={carga} />}
+          {it.bimg && <img className="caja-fondo" src={it.bimg} alt="" loading={carga} style={it.pos ? { objectPosition: it.pos } : undefined} />}
         </div>
         {hijos.map(h => <Elemento key={h.id} it={h} todos={todos} fondo={it.bg || fondo} prioridad={prioridad} />)}
       </div>
@@ -128,7 +131,7 @@ export default function Seccion({ s, n }) {
   return (
     <section className={'wx' + (conFaq ? ' wx-flujo' : '') + (tarjetas ? ' wx-tarjetas' : '')} style={{ background: s.bg && s.bg !== 'rgba(0, 0, 0, 0)' ? s.bg : undefined }}
       id={s.ancla || (conFaq ? 'preguntas-frecuentes' : undefined)}>
-      {s.bgImg && <img className="wx-fondo" src={s.bgImg} alt="" loading={n === 0 ? 'eager' : 'lazy'} />}
+      {s.bgImg && <img className={'wx-fondo' + (s.fondoRepetido ? ' solo-escritorio' : '')} src={s.bgImg} alt="" loading={n === 0 ? 'eager' : 'lazy'} />}
       {s.velo && <div className="wx-velo" aria-hidden="true" />}
       <div className="wx-marco">
         <div className="wx-lienzo" style={{ '--h': s.h }}>

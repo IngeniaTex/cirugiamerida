@@ -252,8 +252,9 @@ a.etiqueta:hover { color: var(--azul) !important; text-decoration: underline; }
   .monograma img, .compacta .monograma img { width: 42px; height: 42px; }
   .hamburguesa { display: flex; }
   .nav { position: fixed; top: var(--alto-cab); right: 0; bottom: 0; width: min(380px, 100%); height: calc(100dvh - var(--alto-cab)); background: #fff; padding: 18px 20px 30px; overflow-y: auto;
-    flex-direction: column; align-items: stretch; transform: translateX(100%); transition: transform .4s var(--ease); box-shadow: -20px 0 50px rgba(23, 59, 74, .15); margin: 0; }
-  .nav.abierta { transform: none; }
+    flex-direction: column; align-items: stretch; transform: translateX(100%); transition: transform .4s var(--ease); margin: 0; }
+  /* La sombra solo con el menú abierto: cerrado queda fuera de la pantalla y asomaría en el borde derecho */
+  .nav.abierta { transform: none; box-shadow: -20px 0 50px rgba(23, 59, 74, .15); }
   .nav > ul { flex-direction: column; }
   .nav > ul > li { border-bottom: 1px solid var(--gris); display: flex; flex-wrap: wrap; align-items: center; }
   .nav > ul > li > a { flex: 1; padding: 15px 4px; font-size: 17px; }
@@ -269,6 +270,8 @@ a.etiqueta:hover { color: var(--azul) !important; text-decoration: underline; }
   .btn-menu-cita .ico:first-child { color: var(--dorado); width: 20px; height: 20px; }
   .btn-menu-cita:active { background: var(--azul); }
 
+  /* Fondo que repite la foto de una de sus cajas: en escritorio queda tapado; aquí se vería dos veces */
+  .wx-fondo.solo-escritorio { display: none; }
   .wx-lienzo, .wx-flujo .wx-lienzo { height: auto; min-height: 0; display: flex; flex-direction: column; gap: 18px; padding: 44px 20px; --u: 1px; }
   .el, .el.el-faq, .el.pega-izq, .el.pega-der, .el.pega-izq.pega-der { position: relative; left: auto; top: auto; width: auto; height: auto; min-height: 0; margin: 0; z-index: auto !important; }
   /* Cada caja envuelve a sus elementos: su fondo (y su imagen, si tiene) va detrás */
@@ -278,6 +281,8 @@ a.etiqueta:hover { color: var(--azul) !important; text-decoration: underline; }
   .el-grupo .el-grupo { padding: 26px 20px; }
   .el-grupo.decorativa, .el-linea { display: none; }
   .el-grupo:has(> .el-caja img):not(:has(> .el:not(.el-caja))) { min-height: 280px; }
+  /* Caja que solo lleva una ilustración (p. ej. la vesícula del héroe): la imagen ocupa todo el ancho de la tarjeta */
+  .el-grupo:has(> figure.el-img:only-of-type):not(:has(> .el:not(.el-caja):not(.el-img))) { padding: 14px 0; }
   .el-grupo:has(> .el-caja.retrato) { min-height: 0; aspect-ratio: 2 / 3; padding: 0; }
   .el-caja.retrato .caja-fondo { object-position: center top; }
   .el-img { width: 100%; aspect-ratio: var(--w) / var(--h); max-height: 460px; border-radius: 16px; }
@@ -318,6 +323,8 @@ a.etiqueta:hover { color: var(--azul) !important; text-decoration: underline; }
   .el-btn, .desplegable { align-self: center; min-width: 0; min-height: 50px; padding: 0 26px; font-size: 16px; white-space: normal; text-align: center; }
   .el-btn.btn-cita { min-height: 56px; font-size: 17px; }
   .el-fila, .el-fila.fila-izq, .el-fila.fila-der { flex-wrap: wrap; gap: 12px; justify-content: center; }
+  /* Botones de texto largo ("Conoce más sobre el tratamiento con cirugía"): no más anchos que la tarjeta, el texto baja de renglón */
+  .el-fila > .el { max-width: 100%; }
   .desplegable { padding: 0; }
   .desplegable > button { min-height: 50px; padding: 0 26px; }
   .faq-item button, .faq-resp-int p { font-size: 15.5px; }
