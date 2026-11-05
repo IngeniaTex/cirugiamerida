@@ -187,6 +187,10 @@ a.etiqueta:hover { color: var(--azul) !important; text-decoration: underline; }
 .faq-resp-int p:last-child { padding-bottom: 20px; }
 .faq-resp-int p + p { margin-top: 10px; }
 
+/* mapa de Google de la sección de contacto */
+.el-mapa { height: calc(var(--h) * var(--u)); overflow: hidden; background: #e5e3df; }
+.el-mapa iframe { display: block; width: 100%; height: 100%; border: 0; }
+
 /* carrusel de testimonios: diapositivas que se funden una con otra, con flechas y puntos */
 .el-carrusel { height: calc(var(--h) * var(--u)); overflow: hidden; background: var(--azul-oscuro); }
 .diapositiva { position: absolute; inset: 0; margin: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 0 calc(140 * var(--u));
@@ -278,6 +282,9 @@ a.etiqueta:hover { color: var(--azul) !important; text-decoration: underline; }
   .el-grupo { display: flex; flex-direction: column; gap: 16px; padding: 30px 22px; border-radius: 18px; background: var(--bg); position: relative; isolation: isolate; }
   .el-grupo > .el-caja { position: absolute; inset: 0; width: auto; height: auto; border-radius: inherit; z-index: -1 !important; background: none !important; }
   .el-grupo > .el-caja:not(:has(img)) { display: none; }
+  /* Franja translúcida sobre una foto (cuidados postoperatorios): de lado a lado y debajo de la cara del doctor */
+  .el-grupo.banda { margin: 132px -20px 16px; padding: 24px 20px; border-radius: 0; }
+  .wx .wx-lienzo .el.el-mapa { height: min(415px, 90vw); }
   .el-grupo .el-grupo { padding: 26px 20px; }
   .el-grupo.decorativa, .el-linea { display: none; }
   .el-grupo:has(> .el-caja img):not(:has(> .el:not(.el-caja))) { min-height: 280px; }

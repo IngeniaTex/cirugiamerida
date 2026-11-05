@@ -13,8 +13,9 @@
     "consultorio": "Centro de Especialidades Médicas y Odontológicas de Mérida",
     "siglas": "CEMOM",
     "direccion": "Calle 18 (Esquina con 5) No. 57, Colonia San Antonio Cinta, Mérida, Yucatán",
-    "horario": "Atención Lunes a Sábado Previa cita",
-    "mapa": "https://www.google.com/maps/search/?api=1&query=Centro+de+Especialidades+M%C3%A9dicas+y+Odontol%C3%B3gicas+de+M%C3%A9rida+Calle+18+57+San+Antonio+Cinta+M%C3%A9rida"
+    "horario": "Atención lunes a sábado, previa cita",
+    "mapa": "https://www.google.com/maps/search/?api=1&query=Centro+de+Especialidades+M%C3%A9dicas+y+Odontol%C3%B3gicas+de+M%C3%A9rida+Calle+18+57+San+Antonio+Cinta+M%C3%A9rida",
+    "mapaEmbed": "https://www.google.com/maps?q=Centro+de+Especialidades+M%C3%A9dicas+y+Odontol%C3%B3gicas+de+M%C3%A9rida,+Calle+18+57,+San+Antonio+Cinta,+M%C3%A9rida&z=15&hl=es&output=embed"
   },
   "pie": {
     "credenciales": ["Cirujano General Certificado", "Cirugía Gastrointestinal", "Laparoscopía Avanzada", "Cirugía en Hospitales de Mérida", "Pago con tarjeta disponible", "Mérida, Yucatán"],
@@ -24,7 +25,7 @@
     { "texto": "Inicio", "url": "/" },
     { "texto": "Servicios", "url": "/servicios/", "grupo": "servicios" },
     { "texto": "Dietas especiales", "url": "/dietas-especiales/", "grupo": "dietas" },
-    { "texto": "Preguntas Frecuentes", "url": "/#preguntas-frecuentes" },
+    { "texto": "Preguntas frecuentes", "url": "/#preguntas-frecuentes" },
     { "texto": "Contacto", "url": "/#contacto" }
   ],
   "dietasColaboracion": {
