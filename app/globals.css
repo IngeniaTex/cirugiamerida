@@ -47,6 +47,12 @@ main { padding-top: var(--alto-cab); }
 .nav > ul > li > a { display: block; padding: 10px 12px; font-size: 15px; text-decoration: none; color: var(--marino); position: relative; }
 .nav > ul > li > a::after { content: ''; position: absolute; left: 12px; right: 12px; bottom: 4px; height: 1.5px; background: var(--dorado); transform: scaleX(0); transform-origin: left; transition: transform .3s var(--ease); }
 .nav > ul > li > a:hover::after, .nav li.activo > a::after { transform: scaleX(1); }
+/* Escritorio: cada opción en un renglón; en las pantallas más angostas, un poco más compactas para que quepan todas */
+@media (min-width: 1200px) { .nav > ul > li > a { white-space: nowrap; } }
+@media (min-width: 1200px) and (max-width: 1360px) {
+  .nav > ul > li > a { padding-inline: 8px; font-size: 14px; }
+  .nav > ul > li > a::after { left: 8px; right: 8px; }
+}
 .nav li.activo > a { color: #A0796D; }
 .abrir-sub { display: none; }
 .submenu { list-style: none; margin: 0; padding: 10px; position: absolute; top: 100%; left: -10px; min-width: 280px; background: #fff; border-radius: 14px; box-shadow: var(--sombra);
@@ -293,6 +299,7 @@ a.etiqueta:hover { color: var(--azul) !important; text-decoration: underline; }
   .el-grupo:has(> .el-caja.retrato) { min-height: 0; aspect-ratio: 2 / 3; padding: 0; }
   .el-caja.retrato .caja-fondo { object-position: center top; }
   .el-img { width: 100%; aspect-ratio: var(--w) / var(--h); max-height: 460px; border-radius: 16px; }
+  .el-img img { object-position: var(--pos-movil, 50% 50%); }
   .el-img.img-contain { aspect-ratio: auto; max-height: 340px; }
   .el-img.img-contain img { height: auto; max-height: 340px; margin: 0 auto; width: auto; max-width: 100%; }
   /* Héroe de inicio en celular: la foto queda de fondo y los textos encima */

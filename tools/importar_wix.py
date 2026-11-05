@@ -4,9 +4,10 @@ página (data/paginas/<slug>.json) y descarga las imágenes a public/img/ en Web
 Cada sección conserva la posición de cada elemento como en Wix (lienzo de 1440 px): x, y, ancho y alto.
 Los elementos dentro de una caja se anidan para que en celular se acomoden en orden.
 
-    FFMPEG=/ruta/ffmpeg python3 tools/importar_wix.py
+    FFMPEG=/ruta/ffmpeg python3 tools/importar_wix.py                 # todas las páginas
+    FFMPEG=/ruta/ffmpeg python3 tools/importar_wix.py about-9 home    # solo esas páginas de Wix
 """
-import hashlib, html, json, os, re, subprocess, urllib.request
+import hashlib, html, json, os, re, subprocess, sys, urllib.request
 
 RAIZ = os.path.join(os.path.dirname(__file__), '..')
 WIX = os.path.join(RAIZ, 'data', 'wix')  # salida de tools/extraer_wix.mjs
@@ -30,6 +31,7 @@ PAGINAS = {
     'about-6-1': 'dietas-especiales', 'about-6': 'dieta-blanda', 'copia-de-dieta-blanda-1': 'dieta-para-estrenimiento',
     'copia-de-dieta-para-estreñimiento': 'dieta-para-diarrea', 'copia-de-dieta-para-diarrea': 'dieta-para-reflujo-y-gastritis',
     'copia-de-dieta-blanda': 'dieta-baja-en-fodmap', 'copia-de-inicio': 'pacientes', 'copia-de-dietas-especiales': 'cuidados-postoperatorios',
+    'about-9': 'sobre-mi',
 }
 OTRAS = {'contact-4': '/#contacto', 's-projects-basic': '/#preguntas-frecuentes'}
 # Textos que en Wix son etiquetas de padecimientos junto a las ilustraciones: se vuelven enlaces
@@ -440,7 +442,10 @@ def ajustar_cuidados(secciones):
         negritas(t, *frases)
         textos.append(t)
         foto['x'] = 797
-    s6['items'] = textos + fotos
+    # Aviso final de la guía: alineado con los pasos
+    aviso_drenaje = por_texto(s6, 'tipo Blake')
+    aviso_drenaje.update(x=230, w=800)
+    s6['items'] = textos + fotos + [aviso_drenaje]
     anidar(s6['items'])
 
     # Medicamentos: fotos alineadas con su texto; aviso centrado en su franja
@@ -465,6 +470,53 @@ def ajustar_cuidados(secciones):
     s10 = secciones[10]
     por_texto(s10, 'Trombosis venosa profunda').update(x=125, w=560)
     next(i for i in s10['items'] if i['k'] == 'img' and 'corte-transversal' in i['src'])['x'] = 848
+
+    # ¿Tienes dudas?: en Wix solo "Importante" va en negritas (el extractor marca todo el párrafo)
+    dudas = por_texto(secciones[11], 'Importante:')
+    dudas['html'] = dudas['html'].replace(';font-weight:600', '')
+    negritas(dudas, 'Importante')
+
+
+def ajustar_sobre_mi(secciones):
+    """Formación y experiencia. Posiciones de la línea y los puntos: las de Wix (el extractor no lee esos gráficos)."""
+    por_texto = lambda s, t: next(i for i in s['items'] if i['k'] == 'texto' and t in i['html'])
+    # Encabezado: la foto del doctor es el fondo de una caja en Wix; va como imagen real, con texto alternativo.
+    # El extractor también la toma como fondo de la sección, donde no se ve.
+    s0 = secciones[0]
+    s0['bgImg'] = ''
+    s0.pop('fondoRepetido', None)
+    s0.pop('velo', None)
+    caja = next(c for c in s0['items'] if c['k'] == 'caja' and c['bimg'])
+    s0['items'][s0['items'].index(caja)] = {
+        'k': 'img', 'x': caja['x'], 'y': caja['y'], 'w': caja['w'], 'h': caja['h'], 'src': caja['bimg'], 'fit': 'cover', 'rad': '0px',
+        'posMovil': '50% 15%',   # en tablet la foto se recorta a lo ancho: que no le corte la frente
+        'alt': 'Dr. Joel Antonio Dorantes González, cirujano general certificado en Mérida'}
+    # La caja beige de atrás queda tapada en Wix; en tablet y celular se vería como un marco de más
+    s0['items'] = [i for i in s0['items'] if not (i['k'] == 'caja' and i['w'] == 980)]
+    anidar(s0['items'])
+    # El nombre ocupa dos renglones con más interlineado que en Wix: sube para no pegarse al renglón siguiente
+    por_texto(s0, 'Dr. Joel Antonio')['y'] = 172
+
+    # Trayectoria: línea vertical con un punto en cada etapa, y título y etiquetas como encabezados
+    for s, y_linea, puntos in ((secciones[1], 208, (208, 511, 663)), (secciones[4], 202, (202, 504, 657))):
+        decorado = lambda x, y, w, h, bg, rad: {'k': 'caja', 'x': x, 'y': y, 'w': w, 'h': h, 'bg': bg, 'bimg': '', 'rad': rad, 'borde': ''}
+        s['items'].append(decorado(516, y_linea, 1, 463, 'rgb(192, 165, 154)', '0px'))
+        s['items'].extend(decorado(511, y, 11, 11, 'rgb(160, 121, 109)', '50%') for y in puntos)
+        anidar(s['items'])
+        for inicio, etiqueta in (('Formación y trayectoria', 'h2'), ('Participación académica', 'h3')):
+            t = por_texto(s, inicio)
+            t['html'] = re.sub(r'^<p\b(.*)</p>$', rf'<{etiqueta}\1</{etiqueta}>', t['html'])
+
+    # Cierre con cita: centrado en su caja (en Wix el texto queda corrido respecto al botón)
+    s2 = secciones[2]
+    por_texto(s2, 'Tu salud merece')['x'] = 453
+    por_texto(s2, 'Conoce las opciones')['x'] = 309
+
+    # Semblanza: un solo h1 en la página (el del encabezado) y solo los títulos como encabezados
+    t = por_texto(secciones[3], 'Formación académica')
+    h = re.sub(r'<h2( [^>]*)>(Medicina General.*?)</h2>', r'<p\1>\2</p>', t['html'])
+    h = re.sub(r'<(/?)h2\b', r'<\1h3', h)
+    t['html'] = re.sub(r'<(/?)h1\b', r'<\1h2', h)
 
 
 # Faltas de ortografía de los textos de Wix, para que no regresen al volver a importar.
@@ -496,7 +548,7 @@ CORRECCIONES = [
     ('tolera el alimento</', 'tolera el alimento.</'), ('favorecer molestias digestivas</', 'favorecer molestias digestivas.</'),
     ('causa específica del problema<br>', 'causa específica del problema.<br>'), ('en personas sensibles</', 'en personas sensibles.</'),
     ('si aparecen síntomas nuevos</', 'si aparecen síntomas nuevos.</'), ('si se incrementan las molestias</', 'si se incrementan las molestias.</'),
-    ('Muslos</', 'Muslos.</'), ('o el hombro derecho</', 'o el hombro derecho.</'), ('Identificación oficial<br>', 'Identificación oficial.<br>'),
+    ('comuníqueselo a su médico)', 'comuníqueselo a su médico).'), ('Muslos</', 'Muslos.</'), ('o el hombro derecho</', 'o el hombro derecho.</'), ('Identificación oficial<br>', 'Identificación oficial.<br>'),
 ]
 # Textos alternativos que en Wix son nombres de archivo o quedaron cortados
 ALTS = {'foto joel solo': 'Dr. Joel Dorantes', 'FOTO HOME -  CIRUGIA laparoscopica - paciente': 'Paciente de cirugía laparoscópica',
@@ -602,6 +654,7 @@ if __name__ == '__main__':
     os.makedirs(SALIDA, exist_ok=True); os.makedirs(IMG, exist_ok=True)
     for f in sorted(os.listdir(WIX)):
         wix_slug = urllib.request.unquote(f[:-5])
+        if sys.argv[1:] and wix_slug not in sys.argv[1:]: continue
         slug = PAGINAS[wix_slug]
         datos = json.load(open(os.path.join(WIX, f)))
         secciones = convertir(wix_slug, datos)
@@ -620,6 +673,7 @@ if __name__ == '__main__':
             ajustar_inicio(secciones)
         if slug == 'servicios': ajustar_servicios(secciones)
         if slug == 'pacientes': ajustar_pacientes(secciones)
+        if slug == 'sobre-mi': ajustar_sobre_mi(secciones)
         if slug == 'piedras-en-la-vesicula-merida': ajustar_piedras(secciones)
         if slug == 'lipomas-merida': quitar_foto_oculta(secciones[0])
         unir_fotos(secciones, slug)

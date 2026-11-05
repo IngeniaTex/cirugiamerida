@@ -15,15 +15,14 @@ export const metadata = {
 export const viewport = { themeColor: '#173B4A' };
 
 // Menú como en Wix: Inicio, Servicios (con sus padecimientos), Dietas especiales (con sus dietas), Ingreso a cirugía,
-// Cuidados postoperatorios, Contacto y Preguntas Frecuentes.
+// Cuidados postoperatorios y Formación y experiencia.
 const menu = [
   { texto: 'Inicio', url: '/' },
   { texto: 'Servicios', url: '/servicios/', hijos: servicios.filter(s => !s.oculta).map(s => ({ texto: s.menu, url: `/${s.slug}/` })) },
   { texto: 'Dietas especiales', url: '/dietas-especiales/', hijos: dietas.map(d => ({ texto: d.menu, url: `/${d.slug}/` })) },
   { texto: 'Ingreso a cirugía', url: '/pacientes/' },
   { texto: 'Cuidados postoperatorios', url: '/cuidados-postoperatorios/' },
-  { texto: 'Contacto', url: '/#contacto' },
-  { texto: 'Preguntas frecuentes', url: '/#preguntas-frecuentes' },
+  { texto: 'Formación y experiencia', url: '/sobre-mi/' },
 ];
 
 export default function RootLayout({ children }) {

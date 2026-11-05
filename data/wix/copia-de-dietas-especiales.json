@@ -509,8 +509,8 @@
      "x": 1100,
      "y": 204,
      "w": 258,
-     "h": 218,
-     "html": "<p data-f=\"18\" data-c=\"rgb(49, 90, 107)\" data-a=\"start\" data-b=\"1\">2.&nbsp;La&nbsp;herida debe lavarse únicamente con agua y jabón neutro, tratando de eliminar todo residuo de sangre u otra materia que pudiera haberse acumulado. </p>\n\n<p data-f=\"16\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\">&nbsp;</p>\n\n<p data-f=\"18\" data-c=\"rgb(49, 90, 107)\" data-a=\"start\">Es muy importante la higiene diaria.</p>",
+     "h": 291,
+     "html": "<p data-f=\"18\" data-c=\"rgb(49, 90, 107)\" data-a=\"start\" data-b=\"1\">2.&nbsp;La&nbsp;herida debe lavarse. Puede usar agua y jabón neutro, tratando de eliminar todo residuo de sangre u otra materia que pudiera haberse acumulado. </p>\n\n<p data-f=\"16\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\">&nbsp;</p>\n\n<p data-f=\"18\" data-c=\"rgb(49, 90, 107)\" data-a=\"start\">Es muy importante la higiene diaria (el periodo de limpieza puede variar de acuerdo al tipo de herida).</p>\n\n<p data-f=\"18\" data-c=\"rgb(49, 90, 107)\" data-a=\"start\"></p>",
      "fs": 18,
      "lh": "22.4px",
      "color": "rgb(49, 90, 107)",
@@ -635,7 +635,7 @@
      "y": 240,
      "w": 485,
      "h": 330,
-     "html": "<h3 data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\">• Enrojecimiento.<br>\n• Hinchazón.<br>\n• Sangrado.<br>\n• Aumento de dolor.<br>\n• Olores desagradables.<br>\n• Fiebre.<br>\n• Calor en el área de la incisión.<br>\n• Sensibilidad anormal.<br>\n• Pus, derrame o hemorragia.<br>\n• Dehiscencia de herida quirúrgica(separación de los bordes de la piel).<br>\n• El dolor puede ser normal. Si no desaparece o disminuye con los analgésicos prescritos tomados de forma correcta, comuníquese con su médico.</h3>",
+     "html": "<h3 data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\">• Enrojecimiento que se extiende de manera progresiva.<br>\n• Hinchazón.<br>\n• Sangrado.<br>\n• Aumento de dolor.<br>\n• Olores desagradables.<br>\n• Fiebre.<br>\n• Calor en el área de la incisión.<br>\n• Sensibilidad anormal.<br>\n• Pus, derrame o hemorragia.<br>\n• Dehiscencia de herida quirúrgica(separación de los bordes de la piel).<br>\n• El dolor puede ser normal. Si no desaparece o disminuye con los analgésicos prescritos tomados de forma correcta, comuníquese con su médico.</h3>",
      "fs": 18,
      "lh": "21.6px",
      "color": "rgb(82, 79, 79)",
@@ -720,7 +720,7 @@
   },
   {
    "top": 4007,
-   "h": 1453,
+   "h": 1671,
    "w": 1440,
    "bg": "rgb(255, 255, 255)",
    "bgImg": "",
@@ -731,7 +731,7 @@
      "y": 41,
      "w": 477,
      "h": 1409,
-     "html": "<ul>\n<li data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\" data-b=\"1\">\n<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\" data-b=\"1\">¿Cómo cuidar un drenaje quirúrgico?</p>\n</li>\n</ul>\n\n<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\">&nbsp;</p>\n\n<ul>\n<li data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\" data-b=\"1\">\n<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\" data-b=\"1\">Lávese las manos con agua y jabón líquido antes de manipular el drenaje, luego séquelas bien, si es posible, utilice guantes.</p>\n</li>\n</ul>\n\n<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\"></p>\n\n<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\"></p>\n\n<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\"></p>\n\n<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\"></p>\n\n<ul>\n<li data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\" data-b=\"1\">\n<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\" data-b=\"1\">Si su drenaje está sujeto a su bata, ropa o pijama, desabroche el drenaje para un mejor manejo.</p>\n</li>\n</ul>\n\n<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\"></p>\n\n<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\"></p>\n\n<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\"></p>\n\n<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\"></p>\n\n<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\"></p>\n\n<ul>\n<li data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\" data-b=\"1\">\n<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\" data-b=\"1\">Doble el tubo del drenaje, quite la tapa, no permita que ésta o la parte superior del drenaje toque alguna superficie. Si sucede, limpie la tapa con alcohol.</p>\n</li>\n</ul>\n\n<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\">&nbsp;</p>\n\n<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\"></p>\n\n<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\">&nbsp;</p>\n\n<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\"></p>\n\n<ul>\n<li data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\" data-b=\"1\">\n<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\" data-b=\"1\">Voltee el drenaje y presiónelo suavemente, vaciando todo el líquido en un recipiente limpio (riñón).</p>\n</li>\n</ul>\n\n<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\"></p>\n\n<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\"></p>\n\n<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\">&nbsp;</p>\n\n<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\"></p>\n\n<ul>\n<li data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\" data-b=\"1\">\n<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\" data-b=\"1\">Haga presión o vacío con una mano y posteriormente, coloque la tapa. Después desdoble el tubo.</p>\n</li>\n</ul>\n\n<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\">&nbsp;</p>\n\n<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\">&nbsp;</p>\n\n<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\"></p>\n\n<ul>\n<li data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\" data-b=\"1\">\n<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\" data-b=\"1\">Asegure nuevamente el drenaje a su ropa para evitar que se desplace.</p>\n</li>\n</ul>\n\n<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\"></p>\n\n<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\"></p>\n\n<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\"></p>\n\n<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\"></p>\n\n<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\"></p>\n\n<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\"></p>\n\n<ul>\n<li data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\" data-b=\"1\">\n<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\" data-b=\"1\">Lávese las manos con agua y jabón líquido&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; y&nbsp;&nbsp; Anote la fecha, hora, cantidad y características del líquido.</p>\n</li>\n</ul>\n\n<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\"></p>",
+     "html": "<ul>\n<li data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\" data-b=\"1\">\n<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\" data-b=\"1\">¿Cómo cuidar un drenaje quirúrgico?</p>\n</li>\n</ul>\n\n<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\">&nbsp;</p>\n\n<ul>\n<li data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\" data-b=\"1\">\n<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\" data-b=\"1\">Lávese las manos con agua y jabón líquido antes de manipular el drenaje, luego séquelas bien, si es posible, utilice guantes.</p>\n</li>\n</ul>\n\n<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\"></p>\n\n<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\"></p>\n\n<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\"></p>\n\n<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\"></p>\n\n<ul>\n<li data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\" data-b=\"1\">\n<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\" data-b=\"1\">Si su drenaje está sujeto a su bata, ropa o pijama, desabroche el drenaje para un mejor manejo.</p>\n</li>\n</ul>\n\n<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\"></p>\n\n<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\"></p>\n\n<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\"></p>\n\n<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\"></p>\n\n<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\"></p>\n\n<ul>\n<li data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\" data-b=\"1\">\n<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\" data-b=\"1\">Doble el tubo del drenaje, quite la tapa, no permita que ésta o la parte superior del drenaje toque alguna superficie. Si sucede, limpie la tapa con alcohol.</p>\n</li>\n</ul>\n\n<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\">&nbsp;</p>\n\n<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\"></p>\n\n<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\">&nbsp;</p>\n\n<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\"></p>\n\n<ul>\n<li data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\" data-b=\"1\">\n<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\" data-b=\"1\">Voltee el drenaje y presiónelo suavemente, vaciando todo el líquido en un recipiente limpio (riñón) según la enseñanza recibida.</p>\n</li>\n</ul>\n\n<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\"></p>\n\n<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\"></p>\n\n<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\">&nbsp;</p>\n\n<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\"></p>\n\n<ul>\n<li data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\" data-b=\"1\">\n<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\" data-b=\"1\">Haga presión o vacío con una mano y posteriormente, coloque la tapa. Después desdoble el tubo. (Si el drenaje no está colapsado, no está funcionando, comuníqueselo a su médico)</p>\n</li>\n</ul>\n\n<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\">&nbsp;</p>\n\n<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\">&nbsp;</p>\n\n<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\"></p>\n\n<ul>\n<li data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\" data-b=\"1\">\n<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\" data-b=\"1\">Asegure nuevamente el drenaje a su ropa para evitar que se desplace.</p>\n</li>\n</ul>\n\n<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\"></p>\n\n<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\"></p>\n\n<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\"></p>\n\n<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\"></p>\n\n<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\"></p>\n\n<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\"></p>\n\n<ul>\n<li data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\" data-b=\"1\">\n<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\" data-b=\"1\">Lávese las manos con agua y jabón líquido&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; y&nbsp;&nbsp; Anote la fecha, hora, cantidad y características del líquido.</p>\n</li>\n</ul>\n\n<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\"></p>",
      "fs": 18,
      "lh": "25.2px",
      "color": "rgb(82, 79, 79)",
@@ -822,12 +822,26 @@
      "fit": "cover",
      "rad": "0px",
      "link": ""
+    },
+    {
+     "k": "texto",
+     "x": 270,
+     "y": 1506,
+     "w": 748,
+     "h": 109,
+     "html": "<ul>\n<li data-f=\"18\" data-c=\"rgb(160, 121, 109)\" data-a=\"start\">\n<h1 data-f=\"18\" data-c=\"rgb(160, 121, 109)\" data-a=\"start\">Esta guía es para el uso de un drenaje cerrado tipo Blake. No desconecte, comprima ni retire un drenaje sin recibir indicaciones específicas.</h1>\n</li>\n<li data-f=\"18\" data-c=\"rgb(160, 121, 109)\" data-a=\"start\">\n<h1 data-f=\"18\" data-c=\"rgb(160, 121, 109)\" data-a=\"start\">Señales para comunicarse con el cirujano: salida accidental, pérdida de succión, cambio brusco del volumen o aspecto del líquido, fiebre y dolor progresivo.</h1>\n</li>\n</ul>",
+     "fs": 18,
+     "lh": "25.2px",
+     "color": "rgb(160, 121, 109)",
+     "align": "start",
+     "fw": "400",
+     "ls": "normal"
     }
    ]
   },
   {
-   "top": 5460,
-   "h": 1237,
+   "top": 5678,
+   "h": 1308,
    "w": 1440,
    "bg": "rgb(220, 232, 236)",
    "bgImg": "",
@@ -859,8 +873,8 @@
      "x": 258,
      "y": 123,
      "w": 462,
-     "h": 777,
-     "html": "<p data-f=\"18\" data-c=\"rgb(50, 65, 88)\" data-a=\"start\" data-b=\"1\">¿Qué cuidados debe tener con sus medicamentos?</p>\n\n<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\">&nbsp;</p>\n\n<ul>\n<li data-f=\"18\" data-c=\"rgb(50, 65, 88)\" data-a=\"start\">\n<p data-f=\"18\" data-c=\"rgb(50, 65, 88)\" data-a=\"start\">El papel que usted desempeña en el cuidado de su salud es fundamental para conservarla. Por esta razón, es importante que conozca cuáles son los medicamentos que toma, cuándo y cómo tomarlos.<br>\n&nbsp;</p>\n</li>\n<li data-f=\"18\" data-c=\"rgb(50, 65, 88)\" data-a=\"start\">\n<p data-f=\"18\" data-c=\"rgb(50, 65, 88)\" data-a=\"start\">Recuerde tener siempre la lista de medicamentos recetados, si tiene alguna duda, consulte a su médico.<br>\n&nbsp;</p>\n</li>\n<li data-f=\"18\" data-c=\"rgb(50, 65, 88)\" data-a=\"start\">\n<p data-f=\"18\" data-c=\"rgb(50, 65, 88)\" data-a=\"start\">Tome sus medicamentos a la hora indicada. Si olvida tomar una dosis, hágalo tan pronto lo recuerde, pero no ingiera dos dosis para compensar la que le faltó.<br>\n&nbsp;</p>\n</li>\n<li data-f=\"18\" data-c=\"rgb(50, 65, 88)\" data-a=\"start\">\n<p data-f=\"18\" data-c=\"rgb(50, 65, 88)\" data-a=\"start\">No incremente o disminuya su medicación a menos que su médico así lo indique.<br>\n&nbsp;</p>\n</li>\n<li data-f=\"18\" data-c=\"rgb(50, 65, 88)\" data-a=\"start\">\n<p data-f=\"18\" data-c=\"rgb(50, 65, 88)\" data-a=\"start\">Es posible que le receten analgésicos para el control del dolor, úselos según las indicaciones médicas, antes de que el dolor se vuelva demasiado fuerte.<br>\n&nbsp;</p>\n</li>\n<li data-f=\"18\" data-c=\"rgb(50, 65, 88)\" data-a=\"start\">\n<p data-f=\"18\" data-c=\"rgb(50, 65, 88)\" data-a=\"start\">Avise a su médico si sus medicamentos no le controlan el dolor o si se incrementan las molestias</p>\n</li>\n</ul>",
+     "h": 806,
+     "html": "<p data-f=\"18\" data-c=\"rgb(50, 65, 88)\" data-a=\"start\" data-b=\"1\">¿Qué cuidados debe tener con sus medicamentos?</p>\n\n<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\">&nbsp;</p>\n\n<ul>\n<li data-f=\"18\" data-c=\"rgb(50, 65, 88)\" data-a=\"start\">\n<p data-f=\"18\" data-c=\"rgb(50, 65, 88)\" data-a=\"start\">El papel que usted desempeña en el cuidado de su salud es fundamental para conservarla. Por esta razón, es importante que conozca cuáles son los medicamentos que toma, cuándo y cómo tomarlos.<br>\n&nbsp;</p>\n</li>\n<li data-f=\"18\" data-c=\"rgb(50, 65, 88)\" data-a=\"start\">\n<p data-f=\"18\" data-c=\"rgb(50, 65, 88)\" data-a=\"start\">Recuerde tener siempre la lista de medicamentos recetados, si tiene alguna duda, consulte a su médico.<br>\n&nbsp;</p>\n</li>\n<li data-f=\"18\" data-c=\"rgb(50, 65, 88)\" data-a=\"start\">\n<p data-f=\"18\" data-c=\"rgb(50, 65, 88)\" data-a=\"start\">Tome sus medicamentos a la hora indicada. Si olvida una dosis, revise las indicaciones específicas de ese medicamento o consulte a su médico. No duplique dosis para compensar una omisión.&nbsp;</p>\n</li>\n</ul>\n\n<p data-f=\"18\" data-c=\"rgb(50, 65, 88)\" data-a=\"start\"></p>\n\n<ul>\n<li data-f=\"18\" data-c=\"rgb(50, 65, 88)\" data-a=\"start\">\n<p data-f=\"18\" data-c=\"rgb(50, 65, 88)\" data-a=\"start\">No incremente o disminuya su medicación a menos que su médico así lo indique.<br>\n&nbsp;</p>\n</li>\n<li data-f=\"18\" data-c=\"rgb(50, 65, 88)\" data-a=\"start\">\n<p data-f=\"18\" data-c=\"rgb(50, 65, 88)\" data-a=\"start\">Es posible que le receten analgésicos para el control del dolor, úselos según las indicaciones médicas, antes de que el dolor se vuelva demasiado fuerte.<br>\n&nbsp;</p>\n</li>\n<li data-f=\"18\" data-c=\"rgb(50, 65, 88)\" data-a=\"start\">\n<p data-f=\"18\" data-c=\"rgb(50, 65, 88)\" data-a=\"start\">Avise a su médico si sus medicamentos no le controlan el dolor o si se incrementan las molestias</p>\n</li>\n</ul>",
      "fs": 18,
      "lh": "25.2px",
      "color": "rgb(50, 65, 88)",
@@ -885,8 +899,8 @@
      "x": 838,
      "y": 496,
      "w": 367,
-     "h": 299,
-     "html": "<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\">Los analgésicos no son el único tratamiento que puede ayudarle a mejorar el dolor, existen otros métodos alternativos, como son:</p>\n\n<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\"></p>\n\n<ul>\n<li data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\">\n<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\">Cambios de posición.</p>\n</li>\n<li data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\">\n<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\">Musicoterapia.</p>\n</li>\n<li data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\">\n<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\">Aromaterapia.</p>\n</li>\n<li data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\">\n<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\">Mantener una actitud optimista.</p>\n</li>\n<li data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\">\n<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\">Utilizar terapias de relajación.</p>\n</li>\n<li data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\">\n<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\">Terapia de calor o frío.</p>\n</li>\n</ul>",
+     "h": 357,
+     "html": "<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\">Los analgésicos no son el único tratamiento que puede ayudarle a mejorar el dolor, existen otros métodos alternativos, como son:</p>\n\n<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\"></p>\n\n<ul>\n<li data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\">\n<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\">Cambios de posición.</p>\n</li>\n<li data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\">\n<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\">Musicoterapia.</p>\n</li>\n<li data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\">\n<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\">Aromaterapia.</p>\n</li>\n<li data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\">\n<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\">Mantener una actitud optimista.</p>\n</li>\n<li data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\">\n<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\">Utilizar terapias de relajación.</p>\n</li>\n<li data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\">\n<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\">Terapia de calor o frío (el calor, frío o masajes no deben aplicarse directamente sobre una zona operada sin autorización).</p>\n</li>\n</ul>",
      "fs": 18,
      "lh": "25.2px",
      "color": "rgb(82, 79, 79)",
@@ -897,7 +911,7 @@
     {
      "k": "img",
      "x": 849,
-     "y": 850,
+     "y": 921,
      "w": 356,
      "h": 237,
      "src": "1da153_70f8ee11b21646678e4fab5871fed56d~mv2.png",
@@ -909,7 +923,7 @@
     {
      "k": "caja",
      "x": 307,
-     "y": 1141,
+     "y": 1212,
      "w": 822,
      "h": 48,
      "bg": "rgb(22, 59, 74)",
@@ -921,7 +935,7 @@
     {
      "k": "texto",
      "x": 332,
-     "y": 1151,
+     "y": 1222,
      "w": 775,
      "h": 28,
      "html": "<h2 data-f=\"22\" data-c=\"rgb(255, 255, 255)\" data-a=\"start\">Recuerde que la automedicación es una práctica de alto riesgo, ¡evítela!</h2>",
@@ -935,7 +949,7 @@
    ]
   },
   {
-   "top": 6697,
+   "top": 6986,
    "h": 991,
    "w": 1440,
    "bg": "rgb(255, 255, 255)",
@@ -968,8 +982,8 @@
      "x": 258,
      "y": 123,
      "w": 462,
-     "h": 760,
-     "html": "<ul>\n<li data-f=\"18\" data-c=\"rgb(50, 65, 88)\" data-a=\"start\">\n<p data-f=\"18\" data-c=\"rgb(50, 65, 88)\" data-a=\"start\">Los primeros días después del alta hospitalaria permanezca en su domicilio. Duerma como mínimo 8 horas, camine por su casa y acostúmbrese de nuevo a recuperar el ritmo de vida normal.</p>\n</li>\n</ul>\n\n<p data-f=\"18\" data-c=\"rgb(50, 65, 88)\" data-a=\"start\"></p>\n\n<ul>\n<li data-f=\"18\" data-c=\"rgb(50, 65, 88)\" data-a=\"start\">\n<p data-f=\"18\" data-c=\"rgb(50, 65, 88)\" data-a=\"start\">Cuando lo considere su médico podrá salir a la calle. Camine el primer día media tarde, evitando el frío o el exceso de calor. A partir de entonces camine lo que desee sin llegar nunca al cansancio ni \"a ponerse a prueba\".</p>\n</li>\n</ul>\n\n<p data-f=\"18\" data-c=\"rgb(50, 65, 88)\" data-a=\"start\"></p>\n\n<ul>\n<li data-f=\"18\" data-c=\"rgb(50, 65, 88)\" data-a=\"start\">\n<p data-f=\"18\" data-c=\"rgb(50, 65, 88)\" data-a=\"start\">Recuerde que la recuperación debe de ser progresiva, evite realizar esfuerzos bruscos como correr o subir las escaleras de un tirón, ni levantar peso por el tiempo que su médico le indique.</p>\n</li>\n</ul>\n\n<p data-f=\"18\" data-c=\"rgb(50, 65, 88)\" data-a=\"start\"></p>\n\n<ul>\n<li data-f=\"18\" data-c=\"rgb(50, 65, 88)\" data-a=\"start\">\n<p data-f=\"18\" data-c=\"rgb(50, 65, 88)\" data-a=\"start\">El mejor ejercicio que puede realizar es caminar. Durante la primera semana hágalo por terreno plano evitando las cuestas y las escaleras. A partir de la cuándo y qué tipo de actividades podrá llevar a cabo.</p>\n</li>\n</ul>\n\n<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\">&nbsp;</p>\n\n<ul>\n<li data-f=\"18\" data-c=\"rgb(50, 65, 88)\" data-a=\"start\">\n<p data-f=\"18\" data-c=\"rgb(50, 65, 88)\" data-a=\"start\">Si realizó ejercicios respiratorios durante su estancia hospitalaria continúe practicándolos en casa como se le enseñó. También es bueno realizar gimnasia suave en el sillón, movimientos de brazos, piernas y de cabeza. No practique flexiones ni abdominales.</p>\n</li>\n</ul>",
+     "h": 787,
+     "html": "<ul>\n<li data-f=\"18\" data-c=\"rgb(50, 65, 88)\" data-a=\"start\">\n<p data-f=\"18\" data-c=\"rgb(50, 65, 88)\" data-a=\"start\">Los primeros días después del alta hospitalaria permanezca en su domicilio. Duerma como mínimo 8 horas, evite estar recostado todo el tiempo, camine por su casa y acostúmbrese de nuevo a recuperar el ritmo de vida normal.</p>\n</li>\n</ul>\n\n<p data-f=\"18\" data-c=\"rgb(50, 65, 88)\" data-a=\"start\"></p>\n\n<ul>\n<li data-f=\"18\" data-c=\"rgb(50, 65, 88)\" data-a=\"start\">\n<p data-f=\"18\" data-c=\"rgb(50, 65, 88)\" data-a=\"start\">Cuando lo considere su médico podrá salir a la calle. Camine el primer día media tarde, evitando el frío o el exceso de calor. A partir de entonces camine lo que desee sin llegar nunca al cansancio ni \"a ponerse a prueba\".</p>\n</li>\n</ul>\n\n<p data-f=\"18\" data-c=\"rgb(50, 65, 88)\" data-a=\"start\"></p>\n\n<ul>\n<li data-f=\"18\" data-c=\"rgb(50, 65, 88)\" data-a=\"start\">\n<p data-f=\"18\" data-c=\"rgb(50, 65, 88)\" data-a=\"start\">Recuerde que la recuperación debe de ser progresiva, evite realizar esfuerzos bruscos como correr o subir las escaleras de un tirón, ni levantar peso por el tiempo que su médico le indique.</p>\n</li>\n</ul>\n\n<p data-f=\"18\" data-c=\"rgb(50, 65, 88)\" data-a=\"start\"></p>\n\n<ul>\n<li data-f=\"18\" data-c=\"rgb(50, 65, 88)\" data-a=\"start\">\n<p data-f=\"18\" data-c=\"rgb(50, 65, 88)\" data-a=\"start\">El mejor ejercicio que puede realizar es caminar. Durante la primera semana hágalo por terreno plano evitando las cuestas y las escaleras. A partir de la cuándo y qué tipo de actividades podrá llevar a cabo.</p>\n</li>\n</ul>\n\n<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\">&nbsp;</p>\n\n<ul>\n<li data-f=\"18\" data-c=\"rgb(50, 65, 88)\" data-a=\"start\">\n<p data-f=\"18\" data-c=\"rgb(50, 65, 88)\" data-a=\"start\">Si realizó ejercicios respiratorios durante su estancia hospitalaria continúe practicándolos en casa como se le enseñó. También es bueno realizar gimnasia suave en el sillón, movimientos de brazos, piernas y de cabeza. No practique flexiones ni abdominales.</p>\n</li>\n</ul>",
      "fs": 18,
      "lh": "25.2px",
      "color": "rgb(50, 65, 88)",
@@ -983,7 +997,7 @@
      "y": 123,
      "w": 380,
      "h": 190,
-     "html": "<ul>\n<li data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\">\n<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\">Después de las comidas descanse como&nbsp;mínimo una hora. No es necesario estar acostado si no lo desea. Siéntese en el sillón, vea la televisión, escuche música o lea. Puede disfrutar de una siesta después de la comida, siempre y cuando ésta sea breve.</p>\n</li>\n</ul>",
+     "html": "<ul>\n<li data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\">\n<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\">Después de las comidas puede descansar al menos&nbsp;una hora. No es necesario estar acostado si no lo desea. Siéntese en el sillón, vea la televisión, escuche música o lea. Puede disfrutar de una siesta después de la comida, siempre y cuando ésta sea breve.</p>\n</li>\n</ul>",
      "fs": 18,
      "lh": "25.2px",
      "color": "rgb(82, 79, 79)",
@@ -1006,8 +1020,8 @@
    ]
   },
   {
-   "top": 7688,
-   "h": 1113,
+   "top": 7977,
+   "h": 1136,
    "w": 1440,
    "bg": "rgb(247, 247, 244)",
    "bgImg": "",
@@ -1032,7 +1046,7 @@
      "y": 137,
      "w": 418,
      "h": 372,
-     "html": "<ul>\n<li data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\">\n<h3 data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\">Realice de cuatro a cinco comidas al día, procurando que la cena sea ligera y no se acueste inmediatamente después d e cenar.</h3>\n</li>\n</ul>\n\n<h3 data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\">&nbsp;</h3>\n\n<ul>\n<li data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\">\n<h3 data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\">Coma ligero. Evite las comidas abundantes mejor quedarse con la sensación de querer comer más que con la sensación de plenitud.</h3>\n</li>\n</ul>\n\n<h3 data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\">&nbsp;</h3>\n\n<ul>\n<li data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\">\n<h3 data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\">Coma sin sal si es hipertenso o ha sufrido insuficiencia cardíaca en su historial clínico, hasta que su médico lo indique.</h3>\n</li>\n</ul>\n\n<h3 data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\">&nbsp;</h3>\n\n<ul>\n<li data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\">\n<h3 data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\">Evite las grasas animales, derivados de la leche, del cerdo (todo tipo de embutidos) y cordero. Sin embargo, puede comer cualquier tipo de pescado, de preferencia a la plancha.</h3>\n</li>\n</ul>",
+     "html": "<ul>\n<li data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\">\n<h3 data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\">Realice de cuatro a cinco comidas al día, procurando que la cena sea ligera y no se acueste inmediatamente después d e cenar.</h3>\n</li>\n</ul>\n\n<h3 data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\">&nbsp;</h3>\n\n<ul>\n<li data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\">\n<h3 data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\">Coma ligero. Evite las comidas abundantes mejor quedarse con la sensación de querer comer más que con la sensación de plenitud.</h3>\n</li>\n</ul>\n\n<h3 data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\">&nbsp;</h3>\n\n<ul>\n<li data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\">\n<h3 data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\">Coma sin sal si es hipertenso o ha sufrido insuficiencia cardíaca en su historial clínico, hasta que su médico lo indique.</h3>\n</li>\n</ul>\n\n<h3 data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\">&nbsp;</h3>\n\n<ul>\n<li data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\">\n<h3 data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\">Disminuya las grasas animales, derivados de la leche entera, del cerdo (embutidos) y cordero. Sin embargo, puede comer cualquier tipo de pescado, de preferencia a la plancha.</h3>\n</li>\n</ul>",
      "fs": 18,
      "lh": "21.6px",
      "color": "rgb(82, 79, 79)",
@@ -1057,7 +1071,7 @@
     {
      "k": "img",
      "x": 475,
-     "y": 548,
+     "y": 571,
      "w": 489,
      "h": 163,
      "src": "1da153_7a95c38e2d3d43019860fd0ac8f4f5c6~mv2.png",
@@ -1069,7 +1083,7 @@
     {
      "k": "img",
      "x": 360,
-     "y": 723,
+     "y": 746,
      "w": 719,
      "h": 348,
      "src": "1da153_cb01e9e0237540a9b7b21403fbdd2eff~mv2.png",
@@ -1081,7 +1095,7 @@
    ]
   },
   {
-   "top": 8800,
+   "top": 9112,
    "h": 1787,
    "w": 1440,
    "bg": "rgba(0, 0, 0, 0)",
@@ -1176,6 +1190,55 @@
      "align": "start",
      "fw": "400",
      "ls": "normal"
+    }
+   ]
+  },
+  {
+   "top": 10900,
+   "h": 596,
+   "w": 1440,
+   "bg": "rgb(250, 250, 250)",
+   "bgImg": "",
+   "items": [
+    {
+     "k": "texto",
+     "x": 230,
+     "y": 36,
+     "w": 980,
+     "h": 67,
+     "html": "<h2 data-f=\"40\" data-c=\"rgb(22, 59, 74)\" data-a=\"center\">¿Tienes dudas sobre tu recuperación?</h2>",
+     "fs": 40,
+     "lh": "56px",
+     "color": "rgb(160, 121, 109)",
+     "align": "center",
+     "fw": "400",
+     "ls": "normal"
+    },
+    {
+     "k": "texto",
+     "x": 405,
+     "y": 139,
+     "w": 629,
+     "h": 272,
+     "html": "<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\">Si presentas molestias, tienes dudas sobre el cuidado de tu herida o necesitas orientación después de una cirugía, agenda una valoración médica. </p>\n\n<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\"></p>\n\n<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\">Una revisión oportuna puede ayudarte a identificar posibles complicaciones y favorecer una recuperación segura.</p>\n\n<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\"></p>\n\n<p data-f=\"18\" data-c=\"rgb(82, 79, 79)\" data-a=\"start\" data-b=\"1\">Importante: Si presentas dolor intenso, sangrado abundante, dificultad para respirar o cualquier otro síntoma de alarma, acude inmediatamente a un servicio de urgencias. No esperes a una cita programada.</p>",
+     "fs": 18,
+     "lh": "25.2px",
+     "color": "rgb(82, 79, 79)",
+     "align": "start",
+     "fw": "400",
+     "ls": "normal"
+    },
+    {
+     "k": "img",
+     "x": 532,
+     "y": 419,
+     "w": 374,
+     "h": 133,
+     "src": "1da153_98e11fb3817743698389498ed9efc7d6~mv2.png",
+     "alt": "Imagen de ChatGPT 28 sept 2026, 04_13_52 p.m..png",
+     "fit": "cover",
+     "rad": "0px",
+     "link": ""
     }
    ]
   }
