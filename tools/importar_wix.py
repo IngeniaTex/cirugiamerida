@@ -16,6 +16,7 @@ FFMPEG = os.environ.get('FFMPEG', 'ffmpeg')
 SITIO = json.load(open(os.path.join(RAIZ, 'data', 'sitio.json')))
 WA = 'https://wa.me/' + SITIO['contacto']['whatsapp']
 MAPA = SITIO['contacto']['mapa']
+MAPA_EMBED = SITIO['contacto']['mapaEmbed']
 
 # Página de Wix -> ruta nueva
 PAGINAS = {
@@ -28,7 +29,7 @@ PAGINAS = {
     'copia-de-gastritis': 'colitis-merida', 'copia-de-gastritis-1': 'intestino-irritable-merida', 'copia-de-colitis': 'diarrea-y-estrenimiento-merida',
     'about-6-1': 'dietas-especiales', 'about-6': 'dieta-blanda', 'copia-de-dieta-blanda-1': 'dieta-para-estrenimiento',
     'copia-de-dieta-para-estreñimiento': 'dieta-para-diarrea', 'copia-de-dieta-para-diarrea': 'dieta-para-reflujo-y-gastritis',
-    'copia-de-dieta-blanda': 'dieta-baja-en-fodmap', 'copia-de-inicio': 'pacientes',
+    'copia-de-dieta-blanda': 'dieta-baja-en-fodmap', 'copia-de-inicio': 'pacientes', 'copia-de-dietas-especiales': 'cuidados-postoperatorios',
 }
 OTRAS = {'contact-4': '/#contacto', 's-projects-basic': '/#preguntas-frecuentes'}
 # Textos que en Wix son etiquetas de padecimientos junto a las ilustraciones: se vuelven enlaces
@@ -245,6 +246,17 @@ def ajustar_inicio(secciones):
     ]}]
     # Sección de contacto: destino de la opción "Contacto" del menú (/#contacto)
     secciones[7]['ancla'] = 'contacto'
+    agregar_mapa(secciones[7])
+
+
+def agregar_mapa(contacto):
+    """El extractor no lee el mapa de Google de Wix: se agrega en su misma posición, marcando el consultorio.
+    El pin de Wix (una imagen fija encima del mapa) se quita: el mapa ya trae su marcador y el pin no se movería con él.
+    Es más alto que en Wix (415 px) para que la tarjeta de Google no tape el marcador."""
+    contacto['items'] = [i for i in contacto['items'] if not (i['k'] == 'img' and i.get('href') == MAPA)]
+    contacto['items'].append({'k': 'mapa', 'x': 942, 'y': 830, 'w': 415, 'h': 460, 'src': MAPA_EMBED, 'padre': None,
+                              'titulo': 'Mapa de Google: CEMOM, Calle 18 No. 57, San Antonio Cinta, Mérida',
+                              'id': max(i['id'] for i in contacto['items']) + 1})
 
 
 def ajustar_servicios(secciones):
@@ -316,6 +328,195 @@ def unir_fotos(secciones, slug):
             primera.update(x=x + dx, y=y + dy, w=max(c[0] + c[2] for c in cajas) - x, h=max(c[1] + c[3] for c in cajas) - y,
                            src='/img/' + comp['archivo'] + '.webp', alt=comp['alt'], fit='contain', padre=caja['id'])
             s['items'] = [i for i in s['items'] if i not in fotos or i is primera]
+
+
+def limpiar_cuidados(it):
+    """Texto de cuidados postoperatorios: quita saltos de renglón manuales (en celular cortarían las frases) y deja la
+    estructura como en las demás páginas (un solo h1, sin encabezados dentro de las listas ni como párrafos)."""
+    h = it['html']
+    # Un renglón al final de cada viñeta es su separación: se escribe como en las otras listas
+    h = re.sub(r'<br>\s*</li>\s*(?=<li)', '</li></ul><p class="vacio" style="--f:18"></p><ul>', h)
+    h = re.sub(r'<br>\s*</li>', '</li>', h)
+    h = re.sub(r'(<li[^>]*>)<h[1-6][^>]*>(.*?)</h[1-6]>', r'\1\2', h)
+    h = re.sub(r'<h[1-6]([^>]*)>(.*?)</h[1-6]>', r'<p\1>\2</p>', h)
+    h = re.sub(r'(<p[^>]*>)\s*<br>', r'<p class="vacio" style="--f:18"></p>\1', h)
+    h = re.sub(r'\s*<br>\s*', ' ', h)
+    h = re.sub(r'^(?:<p class="vacio"[^>]*></p>)+|(?:<p class="vacio"[^>]*></p>)+$', '', h)
+    it['html'] = h
+
+
+def negritas(it, *frases):
+    """El extractor no distingue palabras en negrita dentro de un párrafo: se marcan las mismas que en Wix."""
+    for f in frases:
+        assert f in it['html'], f
+        it['html'] = it['html'].replace(f, f'<strong>{f}</strong>', 1)
+
+
+def ajustar_cuidados(secciones):
+    """Cuidados postoperatorios: mismos criterios de las demás páginas sobre la posición de Wix."""
+    por_texto = lambda s, t: next(i for i in s['items'] if i['k'] == 'texto' and t in i['html'])
+    # Encabezado: la foto se ve completa y solo una franja translúcida (como en Wix) va detrás del texto
+    s0 = secciones[0]
+    s0.pop('velo', None)
+    s0['items'].insert(0, {'k': 'caja', 'x': 0, 'y': 137, 'w': ANCHO, 'h': 198, 'bg': 'rgba(255, 255, 255, 0.75)', 'rad': '0px', 'banda': True})
+    anidar(s0['items'])
+    # Erratas evidentes de dedo (las frases con palabras faltantes se dejan como en Wix para que las revise el doctor)
+    for s in secciones:
+        for it in s['items']:
+            if it['k'] == 'texto':
+                for mal, bien in (('Este información', 'Esta información'), ('signos ve alarma', 'signos de alarma'),
+                                  ('después d e cenar', 'después de cenar'), ('quirúrgica(separación', 'quirúrgica (separación')):
+                    it['html'] = it['html'].replace(mal, bien)
+                if it['fs'] <= 22: limpiar_cuidados(it)
+            elif it['k'] == 'img':
+                # Texto alternativo sin extensión (Wix corta algunos nombres a 40 caracteres)
+                it['alt'] = {'pareja-caminando-y-conversando-en-un-sendero-soleado-2': 'Pareja caminando y conversando en un sendero soleado',
+                             'hombre-preocupado-con-pierna-vendada': 'Hombre preocupado con pierna vendada',
+                             'desconexion-de-drenaje-abdominal': 'Desconexión de drenaje abdominal',
+                             'guia-de-conexion-de-tubos-de-drenaje': 'Guía de conexión de tubos de drenaje',
+                             }.get(it['src'][5:-5], re.sub(r'\.\w+$', '', it['alt']))
+
+    # Tarjetas: rejilla pareja, con título y botón compacto arriba de la foto (en Wix el botón queda encimado en ella).
+    # Cada botón lleva a su sección dentro de la misma página. Las fotos conservan su tamaño.
+    s1 = secciones[1]
+    s1['tarjetas'] = True
+    anclas = {'Heridas': 'heridas-quirurgicas', 'Drenajes': 'drenajes-quirurgicos', 'Medicamentos': 'medicamentos',
+              'Actividad': 'actividad-fisica', 'Alimentación': 'alimentacion', 'Trombosis': 'trombosis-venosa'}
+    cajas = sorted([c for c in s1['items'] if c['k'] == 'caja'], key=lambda c: (c['y'] > 300, c['x']))
+    for n, c in enumerate(cajas):
+        titulo, foto, boton = (next(i for i in s1['items'] if i['padre'] == c['id'] and i['k'] == k) for k in ('texto', 'img', 'btn'))
+        c['x'], c['y'] = (14, 495, 976)[n % 3], 34 if n < 3 else 387
+        c['h'] = 118 + foto['h']
+        color = re.search(r'color:(rgb\([^)]*\))', titulo['html']).group(1)
+        plano = re.sub(r'<br>', ' ', titulo['html'])
+        plano = re.sub(r'<[^>]+>', '', plano).strip()
+        titulo.update(x=c['x'], y=c['y'] + 14, w=c['w'], h=40, fs=26, align='center',
+                      html=f'<h2 style="--f:26;color:{color};text-align:center">{plano}</h2>')
+        boton.update(x=c['x'] + (c['w'] - 150) // 2, y=c['y'] + 62, w=150, h=38, t='Conocer más',
+                     href='#' + next(a for t, a in anclas.items() if plano.startswith(t)))
+        foto.update(x=c['x'], y=c['y'] + 118)
+    anidar(s1['items'])
+    for i, a in zip((2, 5, 7, 8, 9, 10), anclas.values()): secciones[i]['ancla'] = a
+
+    # Heridas: título sin invadir la imagen; pasos con las palabras en negrita de Wix; título centrado en la página
+    por_texto(secciones[2], 'Heridas Quirúrgicas')['w'] = 620
+    s3 = secciones[3]
+    por_texto(s3, '¿Cómo cuidar una herida').update(x=230, w=980)
+    negritas(por_texto(s3, '1. Lávese'), 'Lávese')
+    negritas(por_texto(s3, '2. La'), 'herida debe lavarse')
+    negritas(por_texto(s3, '3. Seque'), 'Seque')
+    negritas(por_texto(s3, '4. Cubra'), 'Cubra')
+
+    # Signos de alarma: título alineado con la foto, y lista real (en Wix son viñetas escritas a mano)
+    s4 = secciones[4]
+    por_texto(s4, 'signos de alarma').update(x=253, w=935)
+    lista = por_texto(s4, 'Enrojecimiento')
+    vinetas = [v.strip() for v in re.sub(r'<[^>]+>', '', lista['html']).split('•') if v.strip()]
+    lista.update(y=203, html='<ul>' + ''.join(f'<li style="--f:18;color:rgb(82, 79, 79)">{v}</li>' for v in vinetas) + '</ul>')
+
+    # Drenajes: título alineado con su texto y columnas de la misma altura que la sección
+    s5 = secciones[5]
+    por_texto(s5, 'Drenajes Quirúrgicos').update(x=191, w=500, align='start')
+    por_texto(s5, 'Drenajes Quirúrgicos')['html'] = por_texto(s5, 'Drenajes Quirúrgicos')['html'].replace(';text-align:center', '')
+    for c in s5['items']:
+        if c['k'] == 'caja': c.update(y=0, h=s5['h'])
+
+    # Cómo cuidar un drenaje: en Wix es un solo texto largo; cada paso va en su propio renglón junto a su imagen, para
+    # que no se desalineen y en celular cada imagen quede debajo de su paso
+    s6 = secciones[6]
+    fotos = sorted([i for i in s6['items'] if i['k'] == 'img'], key=lambda f: f['y'])
+    pasos = re.findall(r'<li[^>]*>(.*?)</li>', s6['items'][0]['html'])
+    titulo, pasos = pasos[0], pasos[1:]
+    assert len(pasos) == len(fotos)
+    pasos[-1] = re.sub(r'\s+y\s+Anote', ' y anote', pasos[-1])
+    resaltar = (('Lávese las manos',), ('desabroche',), ('Doble el tubo', 'quite la tapa'), ('vaciando todo el líquido',),
+                ('Haga presión o vacío', 'coloque la tapa'), ('Asegure', 'el drenaje'), ('Lávese las manos', 'anote'))
+    gris = 'rgb(82, 79, 79)'
+    textos = [{'k': 'texto', 'x': 230, 'y': 30, 'w': 800, 'h': 40, 'fs': 26, 'color': 'rgb(49, 90, 107)', 'align': 'start',
+               'html': f'<h3 style="--f:26;color:rgb(49, 90, 107)">{titulo}</h3>'}]
+    for paso, foto, frases in zip(pasos, fotos, resaltar):
+        t = {'k': 'texto', 'x': 230, 'y': foto['y'] + 4, 'w': 500, 'h': foto['h'] - 8, 'fs': 18, 'color': gris, 'align': 'start',
+             'html': f'<ul><li style="--f:18;color:{gris}">{paso}</li></ul>'}
+        negritas(t, *frases)
+        textos.append(t)
+        foto['x'] = 797
+    s6['items'] = textos + fotos
+    anidar(s6['items'])
+
+    # Medicamentos: fotos alineadas con su texto; aviso centrado en su franja
+    s7 = secciones[7]
+    next(i for i in s7['items'] if i['k'] == 'img' and 'relajacion' in i['src'])['x'] = 838
+    franja = next(c for c in s7['items'] if c['k'] == 'caja')
+    aviso = por_texto(s7, 'automedicación')
+    aviso.update(x=franja['x'], w=franja['w'], align='center')
+    aviso['html'] = re.sub(r'style="', 'style="text-align:center;', aviso['html'], count=1)
+
+    # Actividad física: foto alineada con el texto de la viñeta de arriba
+    next(i for i in secciones[8]['items'] if i['k'] == 'img')['x'] = 823
+    # Alimentación: título y columnas a la misma altura y margen
+    s9 = secciones[9]
+    por_texto(s9, '>Alimentación<')['x'] = 255
+    por_texto(s9, 'Evite los mariscos')['y'] = por_texto(s9, 'Realice de cuatro')['y']
+    # El texto queda algo más alto que en Wix: los íconos y la foto bajan para no tocarlo
+    for im in s9['items']:
+        if im['k'] == 'img': im['y'] += 50
+    s9['h'] += 50
+    # Trombosis: título alineado con su texto, y la imagen de la derecha con el suyo
+    s10 = secciones[10]
+    por_texto(s10, 'Trombosis venosa profunda').update(x=125, w=560)
+    next(i for i in s10['items'] if i['k'] == 'img' and 'corte-transversal' in i['src'])['x'] = 848
+
+
+# Faltas de ortografía de los textos de Wix. Las frases a las que les faltan palabras NO se corrigen aquí: las revisa el doctor.
+CORRECCIONES = [
+    ('enfemedad', 'enfermedad'), ('Durazn con', 'Durazno con'), ('consieración', 'consideración'), ('Preperaciones', 'Preparaciones'),
+    ('estreñimieto', 'estreñimiento'), ('indivualizarse', 'individualizarse'), ('enguajadas', 'enjuagadas'), ('VESICULA BILIAR', 'VESÍCULA BILIAR'),
+    ('Whats App', 'WhatsApp'), ('Quistes sebáceo', 'Quiste sebáceo'), ('intestinal.Algun', 'intestinal.'), ('aplicable.)Revisa', 'aplicable.) Revisa'),
+    ('Cuánta fibra debo', '¿Cuánta fibra debo'), ('¿Qué Son los FODMAPS?', '¿Qué son los FODMAPs?'), ('hernia, ¿Necesito', 'hernia, ¿necesito'),
+    ('>·Hernia hiatal', '>Hernia hiatal'), ('>·Sensación de presión', '>Sensación de presión'), ('>·Molestias que afectan', '>Molestias que afectan'),
+    ('Helicobacter Pylori', 'Helicobacter pylori'), ('Lunes a Sábado Previa cita', 'lunes a sábado, previa cita'), ('566388 I 9991', '566388 | 9991'),
+    # Concordancia y puntuación
+    ('Existen una gran variedad', 'Existe una gran variedad'), ('dieta puede causar', 'dieta pueden causar'), ('debe de ser progresiva', 'debe ser progresiva'),
+    ('Evite las comidas abundantes mejor quedarse', 'Evite las comidas abundantes; es mejor quedarse'), ('Sin embargo en la mayoría', 'Sin embargo, en la mayoría'),
+    ('al día, sin embargo la dosis', 'al día; sin embargo, la dosis'),
+    # Mayúsculas a media frase
+    ('Pastas Integrales', 'Pastas integrales'), ('Alimentos a Limitar', 'Alimentos a limitar'), ('Cereales y Tubérculos', 'Cereales y tubérculos'),
+    ('Productos de Trigo y</p><p style="--f:18;color:rgb(82, 79, 79)">Centeno', 'Productos de trigo y</p><p style="--f:18;color:rgb(82, 79, 79)">centeno'),
+    ('diagnóstico de Hernia', 'diagnóstico de hernia'), ('sobre la Hernia', 'sobre la hernia'), ('sobre la Apendicitis aguda', 'sobre la apendicitis aguda'),
+    ('Tratamiento de la Gastritis', 'Tratamiento de la gastritis'), ('Cirujano General certificado', 'Cirujano General Certificado'),
+    ('por cirujano general Certificado', 'por Cirujano General Certificado'), ('Cirujanos, muy', 'cirujanos, muy'), ('*preferentemente', '*Preferentemente'),
+    # Punto o dos puntos que faltan al final
+    ('en pacientes seleccionados</', 'en pacientes seleccionados.</'), ('o cirugía de mínima invasión</', 'o cirugía de mínima invasión.</'),
+    ('alto contenido de fibra</', 'alto contenido de fibra:</'), ('leguminosas y cereales integrales</', 'leguminosas y cereales integrales.</'),
+    ('conviene limitar temporalmente</', 'conviene limitar temporalmente:</'), ('según tu tolerancia</', 'según tu tolerancia.</'),
+    ('tolera el alimento</', 'tolera el alimento.</'), ('favorecer molestias digestivas</', 'favorecer molestias digestivas.</'),
+    ('causa específica del problema<br>', 'causa específica del problema.<br>'), ('en personas sensibles</', 'en personas sensibles.</'),
+    ('si aparecen síntomas nuevos</', 'si aparecen síntomas nuevos.</'), ('si se incrementan las molestias</', 'si se incrementan las molestias.</'),
+    ('Muslos</', 'Muslos.</'), ('o el hombro derecho</', 'o el hombro derecho.</'), ('Identificación oficial<br>', 'Identificación oficial.<br>'),
+]
+# Textos alternativos que en Wix son nombres de archivo o quedaron cortados
+ALTS = {'foto joel solo': 'Dr. Joel Dorantes', 'FOTO HOME -  CIRUGIA laparoscopica - paciente': 'Paciente de cirugía laparoscópica',
+        'Copia de Bulto cutáneo en la espalda superior': 'Bulto cutáneo en la espalda superior',
+        'Torre de endoscopia médica con monitor y': 'Torre de endoscopia médica con monitor y endoscopio'}
+SIN_CORREGIR = {'src', 'href', 'img', 'bimg', 'bgImg'}
+aplicadas = set()
+
+
+def corregir_textos(o):
+    """Aplica CORRECCIONES a todos los textos de una página (recorre secciones, preguntas, diapositivas y opciones)."""
+    if isinstance(o, list):
+        for v in o: corregir_textos(v)
+    elif isinstance(o, dict):
+        for k, v in o.items():
+            if k in SIN_CORREGIR: continue
+            if isinstance(v, str):
+                for mal, bien in CORRECCIONES:
+                    if mal in v: v = v.replace(mal, bien); aplicadas.add(mal)
+                if k == 'alt':
+                    v = re.sub(r'\.(png|jpe?g)$', '', v, flags=re.I)
+                    v = ALTS.get(v, v)
+                o[k] = v
+            else: corregir_textos(v)
 
 
 def alinear_botones_izquierda(secciones):
@@ -418,9 +619,11 @@ if __name__ == '__main__':
         if slug == 'piedras-en-la-vesicula-merida': ajustar_piedras(secciones)
         if slug == 'lipomas-merida': quitar_foto_oculta(secciones[0])
         unir_fotos(secciones, slug)
+        if slug == 'cuidados-postoperatorios': ajustar_cuidados(secciones)
         juntar_botones_finales(secciones)
         alinear_botones_izquierda(secciones)
         if (slug or 'inicio') in CENTROS: centrar_botones(secciones[1], CENTROS[slug or 'inicio'])
+        corregir_textos(secciones)
         with open(os.path.join(SALIDA, (slug or 'inicio') + '.json'), 'w', encoding='utf-8') as fh:
             json.dump({'slug': slug, 'wix': wix_slug, 'secciones': secciones}, fh, ensure_ascii=False)
         print(f'{slug or "inicio":42} {len(secciones):3} secciones {sum(len(s["items"]) for s in secciones):4} elementos')

@@ -63,7 +63,7 @@ function Elemento({ it, todos, fondo, prioridad }) {
     // Decorativa: sin contenido propio ni en sus cajas internas (p. ej. el marco blanco detrás de una ilustración);
     // en tablet y celular no se dibuja, porque quedaría como un bloque vacío
     const conContenido = c => !!c.bimg || todos.some(o => o.padre === c.id && (o.k !== 'caja' || conContenido(o)));
-    const grupo = ['el-grupo', oscura ? 'oscura' : '', !conContenido(it) ? 'decorativa' : ''].join(' ');
+    const grupo = ['el-grupo', oscura ? 'oscura' : '', !conContenido(it) ? 'decorativa' : '', it.banda ? 'banda' : ''].join(' ');
     // Foto en una columna muy alta (p. ej. el doctor en "¿Por qué elegir…?"): se queda fija al bajar para que se le vea la cara
     if (it.bimg && it.h > it.w * 2) clases.push('retrato');
     return (
@@ -115,6 +115,7 @@ function Elemento({ it, todos, fondo, prioridad }) {
     );
   }
   if (it.k === 'linea') return <div className={clases.join(' ')} style={estilo} aria-hidden="true" />;
+  if (it.k === 'mapa') return <div className={clases.join(' ')} style={estilo}><iframe src={it.src} title={it.titulo} loading="lazy" allowFullScreen referrerPolicy="no-referrer-when-downgrade" /></div>;
   if (it.k === 'faq') return <div className={clases.join(' ')} style={estilo}><Faq preguntas={it.preguntas} /></div>;
   if (it.k === 'carrusel') return <Carrusel clase={clases.join(' ')} estilo={estilo} diapositivas={it.diapositivas} />;
   return null;
@@ -124,8 +125,8 @@ export default function Seccion({ s, n }) {
   const conFaq = s.items.some(i => i.k === 'faq');
   // Orden en celular: por renglones de arriba a abajo y, en el mismo renglón, de izquierda a derecha
   [...s.items].sort((a, b) => (Math.abs(a.y - b.y) < 24 ? a.x - b.x : a.y - b.y)).forEach((it, k) => { it.orden = k; });
-  // Tarjetas de padecimientos (las secciones con "Ver padecimientos"): botones compactos y centrados con su texto
-  const tarjetas = s.items.some(i => i.tipo === 'desplegable');
+  // Tarjetas (las secciones con "Ver padecimientos" o marcadas en los datos): botones compactos y centrados con su texto
+  const tarjetas = s.tarjetas || s.items.some(i => i.tipo === 'desplegable');
   const items = agruparBotones(s.items, tarjetas);
   const raiz = items.filter(i => i.padre == null).sort((a, b) => a.id - b.id);
   return (

@@ -79,6 +79,9 @@ Las direcciones son las que propone `METATITULOS.docx`: `/hernias-merida/`, `/ci
 Las páginas de tratamiento (cirugía de vesícula, operación de hernia, cirugía de apendicitis, cirugía para reflujo) no aparecen
 en el menú, igual que en Wix.
 "Ingreso a cirugía" (`/copia-de-inicio` en Wix) está en `/pacientes/`; su título y descripción están en `lib/datos.js`.
+"Cuidados postoperatorios" (`/copia-de-dietas-especiales` en Wix) está en `/cuidados-postoperatorios/`; `METATITULOS.docx` no trae su
+URL ni sus metadatos, así que su título y descripción, en `lib/datos.js`, siguen el patrón de las demás páginas. Sus botones "Conocer más"
+llevan a secciones de la misma página (`#heridas-quirurgicas`, `#drenajes-quirurgicos`, etc.; ver `ajustar_cuidados` en `tools/importar_wix.py`).
 
 ## Pendientes
 
@@ -86,5 +89,7 @@ en el menú, igual que en Wix.
 - **Tipografía:** Wix usa "aether" (licencia solo para sitios de Wix). Se usa Albert Sans, la libre más parecida, con el mismo interlineado.
 - **Gráficos vectoriales de Wix** (palomita y tache dorados de la dieta FODMAP) no se importan. La señal de prohibido roja de los
   alimentos sí está: va dentro de la imagen que arma `tools/componer_imagenes.mjs`.
+- **Mapa de contacto del inicio:** el extractor no lee el mapa de Google de Wix; se agrega en `agregar_mapa` de `tools/importar_wix.py` con la dirección de `mapaEmbed` en `data/sitio.json`. Su pin de Wix (imagen fija encima del mapa) se quitó.
+- **Ortografía:** las faltas de los textos de Wix se corrigen en `CORRECCIONES` de `tools/importar_wix.py`, para que no regresen al volver a importar.
 - **Carrusel de testimonios del inicio:** el extractor no lee los carruseles de Wix; sus tres diapositivas (fondos, citas y autores) están en `ajustar_inicio` de `tools/importar_wix.py` y se dibujan con `components/Carrusel.jsx`.
-- **Páginas no incluidas:** Acerca de, la otra "Ingreso a cirugía" de Wix (`/paciente`: Acerca de tu visita y testimonios), Cuidados postoperatorios, Hospitales, Aviso de privacidad y Blog médico. El botón "Acerca de Mí" se omitió hasta que exista su página.
+- **Páginas no incluidas:** Acerca de, la otra "Ingreso a cirugía" de Wix (`/paciente`: Acerca de tu visita y testimonios), Hospitales, Aviso de privacidad y Blog médico. El botón "Acerca de Mí" se omitió hasta que exista su página.
