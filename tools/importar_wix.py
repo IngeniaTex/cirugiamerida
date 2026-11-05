@@ -467,7 +467,7 @@ def ajustar_cuidados(secciones):
     next(i for i in s10['items'] if i['k'] == 'img' and 'corte-transversal' in i['src'])['x'] = 848
 
 
-# Faltas de ortografía de los textos de Wix. Las frases a las que les faltan palabras NO se corrigen aquí: las revisa el doctor.
+# Faltas de ortografía de los textos de Wix, para que no regresen al volver a importar.
 CORRECCIONES = [
     ('enfemedad', 'enfermedad'), ('Durazn con', 'Durazno con'), ('consieración', 'consideración'), ('Preperaciones', 'Preparaciones'),
     ('estreñimieto', 'estreñimiento'), ('indivualizarse', 'individualizarse'), ('enguajadas', 'enjuagadas'), ('VESICULA BILIAR', 'VESÍCULA BILIAR'),
@@ -475,6 +475,10 @@ CORRECCIONES = [
     ('Cuánta fibra debo', '¿Cuánta fibra debo'), ('¿Qué Son los FODMAPS?', '¿Qué son los FODMAPs?'), ('hernia, ¿Necesito', 'hernia, ¿necesito'),
     ('>·Hernia hiatal', '>Hernia hiatal'), ('>·Sensación de presión', '>Sensación de presión'), ('>·Molestias que afectan', '>Molestias que afectan'),
     ('Helicobacter Pylori', 'Helicobacter pylori'), ('Lunes a Sábado Previa cita', 'lunes a sábado, previa cita'), ('566388 I 9991', '566388 | 9991'),
+    # Frases a las que les faltaban palabras (aprobadas por el cliente)
+    ('A partir de la cuándo y qué tipo', 'A partir de la segunda semana, su médico le indicará cuándo y qué tipo'),
+    ('le permitirán ayuda médica', 'le permitirán solicitar ayuda médica'), ('congestión en encuentra de pie', 'congestión cuando se encuentra de pie'),
+    ('el primer día media tarde', 'el primer día a media tarde'), ('Crecimientos de crecimiento lento', 'Lesiones de crecimiento lento'),
     # Concordancia y puntuación
     ('Existen una gran variedad', 'Existe una gran variedad'), ('dieta puede causar', 'dieta pueden causar'), ('debe de ser progresiva', 'debe ser progresiva'),
     ('Evite las comidas abundantes mejor quedarse', 'Evite las comidas abundantes; es mejor quedarse'), ('Sin embargo en la mayoría', 'Sin embargo, en la mayoría'),
