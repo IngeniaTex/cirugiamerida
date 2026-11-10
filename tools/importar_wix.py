@@ -31,7 +31,7 @@ PAGINAS = {
     'about-6-1': 'dietas-especiales', 'about-6': 'dieta-blanda', 'copia-de-dieta-blanda-1': 'dieta-para-estrenimiento',
     'copia-de-dieta-para-estreñimiento': 'dieta-para-diarrea', 'copia-de-dieta-para-diarrea': 'dieta-para-reflujo-y-gastritis',
     'copia-de-dieta-blanda': 'dieta-baja-en-fodmap', 'copia-de-inicio': 'pacientes', 'copia-de-dietas-especiales': 'cuidados-postoperatorios',
-    'about-9': 'sobre-mi',
+    'about-9': 'sobre-mi', 'copia-de-intestino-irritable': 'escala-de-bristol',
 }
 OTRAS = {'contact-4': '/#contacto', 's-projects-basic': '/#preguntas-frecuentes'}
 # Textos que en Wix son etiquetas de padecimientos junto a las ilustraciones: se vuelven enlaces
@@ -477,6 +477,44 @@ def ajustar_cuidados(secciones):
     negritas(dudas, 'Importante')
 
 
+def ajustar_bristol(secciones):
+    """Escala de Bristol (se llega desde Intestino irritable; no va en el menú, igual que en Wix)."""
+    s0 = secciones[0]
+    textos = [i for i in s0['items'] if i['k'] == 'texto']
+    plano = lambda h: re.sub(r'\s+', ' ', re.sub(r'<[^>]+>', ' ', h)).strip()
+    # Encabezados: un solo h1 (el título); cada tipo es un subtítulo y su descripción, texto normal
+    for t in textos:
+        if '>Escala de Bristol<' in t['html']: t['html'] = re.sub(r'<(/?)h2\b', r'<\1h1', t['html'])
+        elif re.fullmatch(r'Tipo \d', plano(t['html'])): t['html'] = re.sub(r'<(/?)h1\b', r'<\1h2', t['html'])
+        else: t['html'] = re.sub(r'<(/?)h1\b', r'<\1p', t['html'])
+    # Texto alternativo de cada ilustración: su tipo y su descripción (en Wix es el nombre del archivo)
+    for im in (i for i in s0['items'] if i['k'] == 'img'):
+        n = re.search(r'bristol-(\d)', im['src']).group(1)
+        desc = next(plano(t['html']) for t in textos if t['x'] < im['x'] and im['y'] < t['y'] + t['h'] / 2 < im['y'] + im['h']
+                    and not plano(t['html']).startswith('Tipo'))
+        im['alt'] = f'Escala de Bristol, tipo {n}: {desc[0].lower() + desc[1:]}'
+    # Descripción de cada tipo: con la tipografía del sitio (más ancha que la de Wix) en 124 px las más largas se salían
+    # de su tarjeta; ocupa casi todo el ancho de la tarjeta, a 18 px, y el contenido de la tarjeta sube un poco
+    for c in (i for i in s0['items'] if i['k'] == 'caja' and i['w'] == 176):
+        for t in (i for i in s0['items'] if i['padre'] == c['id']):
+            t['y'] -= 8
+            if t['k'] == 'texto' and not plano(t['html']).startswith('Tipo'):
+                t.update(x=c['x'] + 11, w=154, fs=18)
+                t['html'] = re.sub(r'--f:2\d', '--f:18', t['html'])
+    # Qué indica cada tipo: en Wix las etiquetas y su explicación son dos columnas de texto separadas (en celular
+    # quedarían una lista debajo de la otra); van juntas en una sola lista
+    etiquetas = next(t for t in textos if 'Tipos 1' in t['html'])
+    valores = next(t for t in textos if 'Sugieren' in t['html'])
+    nombres = [plano(e) for e in re.findall(r'<li[^>]*>(.*?)</li>', etiquetas['html'])]
+    textos_v = [plano(v) for v in re.findall(r'<p(?! class="vacio")[^>]*>(.*?)</p>', valores['html'])]
+    assert len(nombres) == len(textos_v) == 4, (nombres, textos_v)
+    gris = 'rgb(82, 79, 79)'
+    etiquetas.update(w=1114, html='<ul>' + ''.join(f'<li style="--f:18;color:{gris}"><strong>{n}</strong> {v}</li>'
+                                                     for n, v in zip(nombres, textos_v)) + '</ul>')
+    s0['items'].remove(valores)
+    anidar(s0['items'])
+
+
 def ajustar_sobre_mi(secciones):
     """Formación y experiencia. Posiciones de la línea y los puntos: las de Wix (el extractor no lee esos gráficos)."""
     por_texto = lambda s, t: next(i for i in s['items'] if i['k'] == 'texto' and t in i['html'])
@@ -548,7 +586,7 @@ CORRECCIONES = [
     ('tolera el alimento</', 'tolera el alimento.</'), ('favorecer molestias digestivas</', 'favorecer molestias digestivas.</'),
     ('causa específica del problema<br>', 'causa específica del problema.<br>'), ('en personas sensibles</', 'en personas sensibles.</'),
     ('si aparecen síntomas nuevos</', 'si aparecen síntomas nuevos.</'), ('si se incrementan las molestias</', 'si se incrementan las molestias.</'),
-    ('comuníqueselo a su médico)', 'comuníqueselo a su médico).'), ('Muslos</', 'Muslos.</'), ('o el hombro derecho</', 'o el hombro derecho.</'), ('Identificación oficial<br>', 'Identificación oficial.<br>'),
+    ('comuníqueselo a su médico)', 'comuníqueselo a su médico).'), ('salchicha, lisa y blanca', 'salchicha, lisa y blanda'), ('Muslos</', 'Muslos.</'), ('o el hombro derecho</', 'o el hombro derecho.</'), ('Identificación oficial<br>', 'Identificación oficial.<br>'),
 ]
 # Textos alternativos que en Wix son nombres de archivo o quedaron cortados
 ALTS = {'foto joel solo': 'Dr. Joel Dorantes', 'FOTO HOME -  CIRUGIA laparoscopica - paciente': 'Paciente de cirugía laparoscópica',
@@ -674,6 +712,7 @@ if __name__ == '__main__':
         if slug == 'servicios': ajustar_servicios(secciones)
         if slug == 'pacientes': ajustar_pacientes(secciones)
         if slug == 'sobre-mi': ajustar_sobre_mi(secciones)
+        if slug == 'escala-de-bristol': ajustar_bristol(secciones)
         if slug == 'piedras-en-la-vesicula-merida': ajustar_piedras(secciones)
         if slug == 'lipomas-merida': quitar_foto_oculta(secciones[0])
         unir_fotos(secciones, slug)

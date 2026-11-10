@@ -82,6 +82,9 @@ en el menú, igual que en Wix.
 "Cuidados postoperatorios" (`/copia-de-dietas-especiales` en Wix) está en `/cuidados-postoperatorios/` y "Formación y experiencia"
 (`/about-9` en Wix) en `/sobre-mi/`; sus títulos y descripciones, de `METATITULOS.docx`, están en `lib/datos.js`. Los botones "Conocer más" de Cuidados
 llevan a secciones de la misma página (`#heridas-quirurgicas`, `#drenajes-quirurgicos`, etc.; ver `ajustar_cuidados` en `tools/importar_wix.py`).
+"Escala de Bristol" (`/copia-de-intestino-irritable` en Wix) está en `/escala-de-bristol/`: se llega desde el botón "Conoce la escala de
+Bristol" de Intestino irritable y no va en el menú, igual que en Wix. `METATITULOS.docx` no la incluye; su título y descripción, en
+`lib/datos.js`, siguen el formato de las páginas informativas (dietas, cuidados).
 
 ## Pendientes
 
