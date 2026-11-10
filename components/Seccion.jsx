@@ -86,6 +86,7 @@ function Elemento({ it, todos, fondo, prioridad }) {
   }
   if (it.k === 'img') {
     if (it.rad && it.rad !== '0px') estilo.borderRadius = it.rad;
+    if (it.posMovil) estilo['--pos-movil'] = it.posMovil;
     clases.push('revelar', it.fit === 'contain' ? 'img-contain' : 'img-cover');
     if (it.heroe) clases.push('heroe');
     const img = <img src={it.src} alt={it.alt || ''} loading={carga} decoding="async" />;
