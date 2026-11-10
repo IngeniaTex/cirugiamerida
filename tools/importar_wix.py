@@ -537,6 +537,13 @@ def ajustar_bristol(secciones):
     etiquetas.update(w=1114, html='<ul>' + ''.join(f'<li style="--f:18;color:{gris}"><strong>{n}</strong> {v}</li>'
                                                      for n, v in zip(nombres, textos_v)) + '</ul>')
     s0['items'].remove(valores)
+    # Lista, nota y botones: alineados con la escala, y la nota justo después de la lista (ya no son dos columnas altas)
+    nota = next(t for t in textos if 'La escala describe' in t['html'])
+    dx, dy = izq - nota['x'], etiquetas['y'] + 150 - nota['y']
+    for i in s0['items']:
+        if i['y'] >= nota['y']: i.update(x=i['x'] + dx, y=i['y'] + dy)
+    etiquetas['x'] = izq
+    s0['h'] += dy
     anidar(s0['items'])
 
 
