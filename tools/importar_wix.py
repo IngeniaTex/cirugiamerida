@@ -501,6 +501,31 @@ def ajustar_bristol(secciones):
             if t['k'] == 'texto' and not plano(t['html']).startswith('Tipo'):
                 t.update(x=c['x'] + 11, w=154, fs=18)
                 t['html'] = re.sub(r'--f:2\d', '--f:18', t['html'])
+    # Escala a todo el ancho: sin la columna blanca vacía de la derecha, la caja clara ocupa todo el ancho y los tipos van
+    # en dos columnas (1 y 2, 3 y 4, 5 y 6, y el 7 centrado); lo que sigue sube lo que se acorta la escala
+    oscura = next(c for c in s0['items'] if c['k'] == 'caja' and c['w'] == ANCHO)
+    clara = next(c for c in s0['items'] if c['k'] == 'caja' and c['w'] == 889)
+    s0['items'].remove(next(c for c in s0['items'] if c['k'] == 'caja' and c['w'] == 359))
+    tarjetas = sorted((c for c in s0['items'] if c['k'] == 'caja' and c['w'] == 176), key=lambda c: c['y'])
+    fotos = [i for i in s0['items'] if i['k'] == 'img']
+    ancho_par, separacion, paso, alto = 176 + 407, 40, 262, 237
+    izq = ANCHO // 2 - separacion // 2 - ancho_par
+    for n, c in enumerate(tarjetas):
+        x = izq + (n % 2) * (ancho_par + separacion) if n < 6 else (ANCHO - ancho_par) // 2
+        y = 226 + (n // 2) * paso
+        foto = next(f for f in fotos if abs(f['y'] - c['y']) < 10)
+        dx, dy = x - c['x'], y - c['y']
+        for t in (i for i in s0['items'] if i['padre'] == c['id']): t.update(x=t['x'] + dx, y=t['y'] + dy)
+        c.update(x=x, y=y, h=alto)
+        foto.update(x=x + 176, y=y, w=407, h=alto)
+    next(t for t in textos if '>Escala de Bristol<' in t['html'])['x'] = izq
+    fin_escala = 226 + 3 * paso + alto + 45
+    clara.update(x=60, w=ANCHO - 120, h=fin_escala - clara['y'])
+    recorte = oscura['h'] - (fin_escala + 60)
+    for i in s0['items']:
+        if i['y'] >= oscura['h']: i['y'] -= recorte
+    oscura['h'] -= recorte
+    s0['h'] -= recorte
     # Qué indica cada tipo: en Wix las etiquetas y su explicación son dos columnas de texto separadas (en celular
     # quedarían una lista debajo de la otra); van juntas en una sola lista
     etiquetas = next(t for t in textos if 'Tipos 1' in t['html'])
