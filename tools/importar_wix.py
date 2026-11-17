@@ -611,6 +611,13 @@ FONDOS = {
     'dieta-para-estrenimiento': {'>Importante': BEIGE},
     'dieta-baja-en-fodmap': {'La dieta tiene 3 etapas': BEIGE, 'Recomendaciones prácticas': BEIGE},
 }
+SEGUIMIENTO = ('/img/seguimiento-medico-con-calidez-y-confianza.webp', 'Seguimiento médico con calidez y confianza')
+FOTOS = {   # página: (título del punto, foto, texto alternativo)
+    'cirugia-laparoscopica-merida': ('Experiencia en cirugía digestiva y abdominal', *SEGUIMIENTO),
+    'cirugia-vesicula-merida': ('Atención personalizada', '/img/explicacion-de-piedras-en-la-vesicula.webp',
+                                'Explicación de piedras en la vesícula durante la consulta'),
+    'apendicitis-merida': ('Atención personalizada', *SEGUIMIENTO),
+}
 
 
 def ajustar_revision(secciones, slug):
@@ -650,6 +657,12 @@ def ajustar_revision(secciones, slug):
             orden += [debajo[0], im, debajo[1]]
         orden += [i for i in s['items'] if i not in orden]   # el monograma, al final
         for n, i in enumerate(orden): i['mov'] = n
+    # "¿Por qué atenderte/operarte conmigo?": foto del punto indicado (la que está a la izquierda de su título)
+    if slug in FOTOS:
+        titulo, src, alt = FOTOS[slug]
+        s, t = next((s, t) for s in secciones for t in s['items'] if t['k'] == 'texto' and re.sub(r'<[^>]+>', '', t['html']).strip() == titulo)
+        foto = next(i for i in s['items'] if i['k'] == 'img' and i['x'] + i['w'] <= t['x'] and i['y'] <= t['y'] <= i['y'] + i['h'])
+        foto.update(src=src, alt=alt)
     # Quistes: "Conoce más sobre otros tumores de la piel" llevaba (desde Wix) a cirugía de vesícula; va a lipomas
     if slug == 'quistes-piel-merida':
         boton = next(i for s in secciones for i in s['items'] if i['k'] == 'btn' and 'otros tumores' in i['t'])
