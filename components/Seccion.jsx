@@ -124,8 +124,10 @@ function Elemento({ it, todos, fondo, prioridad }) {
 
 export default function Seccion({ s, n }) {
   const conFaq = s.items.some(i => i.k === 'faq');
-  // Orden en celular: por renglones de arriba a abajo y, en el mismo renglón, de izquierda a derecha
-  [...s.items].sort((a, b) => (Math.abs(a.y - b.y) < 24 ? a.x - b.x : a.y - b.y)).forEach((it, k) => { it.orden = k; });
+  // Orden en celular: por renglones de arriba a abajo y, en el mismo renglón, de izquierda a derecha; o el fijado en los
+  // datos (`mov`, p. ej. columnas que deben quedar juntas)
+  const porMov = s.items.every(i => i.mov != null);
+  [...s.items].sort((a, b) => (porMov ? a.mov - b.mov : Math.abs(a.y - b.y) < 24 ? a.x - b.x : a.y - b.y)).forEach((it, k) => { it.orden = k; });
   // Tarjetas (las secciones con "Ver padecimientos" o marcadas en los datos): botones compactos y centrados con su texto
   const tarjetas = s.tarjetas || s.items.some(i => i.tipo === 'desplegable');
   const items = agruparBotones(s.items, tarjetas);
