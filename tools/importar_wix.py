@@ -290,6 +290,7 @@ def quitar_foto_oculta(seccion):
     en celular sí se vería. Se quita y las franjas quedan de ese gris. La ilustración va dentro de la columna blanca,
     para que en celular quede sobre fondo blanco (se desvanece hacia abajo en blanco)."""
     seccion['bgImg'] = ''
+    seccion.pop('fondoRepetido', None)
     gris = next(c for c in seccion['items'] if c['k'] == 'caja' and c['bimg'])
     blanca = next(c for c in seccion['items'] if c['k'] == 'caja' and c['padre'] == gris['id'])
     gris.update(bimg='', bg='rgb(180, 178, 173)')
@@ -567,10 +568,21 @@ def ajustar_sobre_mi(secciones):
     # El nombre ocupa dos renglones con más interlineado que en Wix: sube para no pegarse al renglón siguiente
     por_texto(s0, 'Dr. Joel Antonio')['y'] = 172
 
-    # Trayectoria: línea vertical con un punto en cada etapa, y título y etiquetas como encabezados
-    for s, y_linea, puntos in ((secciones[1], 208, (208, 511, 663)), (secciones[4], 202, (202, 504, 657))):
+    # "Formación y trayectoria profesional" estaba dos veces en Wix (el doctor quitó la repetida): se deja solo la primera
+    plano = lambda h: re.sub(r'\s+', ' ', re.sub(r'<[^>]+>', ' ', h)).strip()
+    firma = lambda s: tuple(plano(i['html']) for i in s['items'] if i['k'] == 'texto')
+    for s in list(secciones):
+        if [o for o in secciones if o is not s and firma(o) == firma(s) and secciones.index(o) < secciones.index(s)]:
+            secciones.remove(s)
+    seccion = lambda t: next(s for s in secciones if any(i['k'] == 'texto' and t in i['html'] for i in s['items']))
+
+    # Trayectoria: línea vertical con un punto en cada etapa (a la altura de cada etiqueta, como en Wix), y título y
+    # etiquetas como encabezados
+    for s in (s for s in secciones if any('Formación y trayectoria' in i.get('html', '') for i in s['items'])):
+        etiquetas = sorted((por_texto(s, e) for e in ('Preparación profesional', '>Experiencia<', 'Participación académica')), key=lambda t: t['y'])
+        puntos = [t['y'] + 4 for t in etiquetas]
         decorado = lambda x, y, w, h, bg, rad: {'k': 'caja', 'x': x, 'y': y, 'w': w, 'h': h, 'bg': bg, 'bimg': '', 'rad': rad, 'borde': ''}
-        s['items'].append(decorado(516, y_linea, 1, 463, 'rgb(192, 165, 154)', '0px'))
+        s['items'].append(decorado(516, puntos[0], 1, 463, 'rgb(192, 165, 154)', '0px'))
         s['items'].extend(decorado(511, y, 11, 11, 'rgb(160, 121, 109)', '50%') for y in puntos)
         anidar(s['items'])
         for inicio, etiqueta in (('Formación y trayectoria', 'h2'), ('Participación académica', 'h3')):
@@ -578,15 +590,70 @@ def ajustar_sobre_mi(secciones):
             t['html'] = re.sub(r'^<p\b(.*)</p>$', rf'<{etiqueta}\1</{etiqueta}>', t['html'])
 
     # Cierre con cita: centrado en su caja (en Wix el texto queda corrido respecto al botón)
-    s2 = secciones[2]
+    s2 = seccion('Tu salud merece')
     por_texto(s2, 'Tu salud merece')['x'] = 453
     por_texto(s2, 'Conoce las opciones')['x'] = 309
 
     # Semblanza: un solo h1 en la página (el del encabezado) y solo los títulos como encabezados
-    t = por_texto(secciones[3], 'Formación académica')
+    t = por_texto(seccion('Formación académica'), 'Formación académica')
     h = re.sub(r'<h2( [^>]*)>(Medicina General.*?)</h2>', r'<p\1>\2</p>', t['html'])
     h = re.sub(r'<(/?)h2\b', r'<\1h3', h)
     t['html'] = re.sub(r'<(/?)h1\b', r'<\1h2', h)
+
+
+# Revisión del cliente (documento "cambios web"). Fondo de las secciones que en tablet y celular asoma alrededor de sus
+# tarjetas (en escritorio lo tapan las cajas): beige -> blanco en padecimientos y tratamientos (todas las secciones cuyas
+# cajas cubren la sección; ver ajustar_revision), café -> beige en las dietas (las indicadas aquí).
+BLANCO, BEIGE = 'rgb(255, 255, 255)', 'rgb(249, 240, 232)'
+FONDOS = {
+    'dieta-blanda': {'¿Cuánto tiempo debo seguir': BEIGE},
+    'dieta-para-diarrea': {'Recomendaciones prácticas': BEIGE},
+    'dieta-para-estrenimiento': {'>Importante': BEIGE},
+    'dieta-baja-en-fodmap': {'La dieta tiene 3 etapas': BEIGE, 'Recomendaciones prácticas': BEIGE},
+}
+
+
+def ajustar_revision(secciones, slug):
+    """Cambios pedidos en la revisión del cliente que dependen de la página."""
+    con = lambda t: [s for s in secciones if any(i['k'] == 'texto' and t in i['html'] for i in s['items'])]
+    for clave, color in FONDOS.get(slug, {}).items():
+        encontradas = con(clave)
+        assert encontradas, (slug, clave)
+        encontradas[0]['bg'] = color
+    # Fuera de las dietas, el beige solo asoma en celular cuando las cajas tapan la sección en escritorio: pasa a blanco.
+    # Las franjas beige sin cajas (p. ej. la de 40 px antes del pie) se ven igual en escritorio y se quedan.
+    if not slug.startswith('dieta'):
+        for s in secciones:
+            if s['bg'] != BEIGE: continue
+            cajas = [c for c in s['items'] if c['k'] == 'caja' and c.get('padre') is None and (c['bg'] != 'rgba(0, 0, 0, 0)' or c.get('bimg'))]
+            cubierto = sum(min(c['w'], ANCHO - max(c['x'], 0)) * min(c['h'], s['h']) for c in cajas) / (ANCHO * s['h'])
+            if cubierto >= 0.9: s['bg'] = BLANCO
+    # Encabezado de las páginas de tratamiento: el título y su complemento ("para el tratamiento de…", "por Cirujano
+    # General…") son dos textos en Wix; en celular quedaban separados como dos bloques. Van en uno solo.
+    if slug in ('cirugia-vesicula-merida', 'operacion-hernia-merida'):
+        s1 = secciones[1]
+        titulo, complemento = sorted((i for i in s1['items'] if i['k'] == 'texto'), key=lambda t: t['y'])[:2]
+        titulo.update(html=titulo['html'] + complemento['html'], h=complemento['y'] + complemento['h'] - titulo['y'])
+        s1['items'].remove(complemento)
+        anidar(s1['items'])
+    # "¿Por qué elegir al Dr. Joel Dorantes?": en escritorio son columnas (imagen, título y texto); en celular se acomodaban
+    # por renglones (las imágenes juntas, luego los títulos, luego los textos). Cada punto va junto: título, imagen y texto.
+    for s in con('elegir al Dr. Joel Dorantes'):
+        textos = [i for i in s['items'] if i['k'] == 'texto']
+        iconos = sorted((i for i in s['items'] if i['k'] == 'img' and i['w'] == 121), key=lambda i: (round(i['y'] / 100), i['x']))
+        orden = sorted((t for t in textos if t['y'] < iconos[0]['y']), key=lambda t: t['y'])
+        for im in iconos:
+            centro = im['x'] + im['w'] / 2
+            debajo = sorted((t for t in textos if t not in orden and im['y'] < t['y'] < im['y'] + 450
+                             and abs(t['x'] + t['w'] / 2 - centro) < 120), key=lambda t: t['y'])
+            assert len(debajo) == 2, (slug, im['src'])
+            orden += [debajo[0], im, debajo[1]]
+        orden += [i for i in s['items'] if i not in orden]   # el monograma, al final
+        for n, i in enumerate(orden): i['mov'] = n
+    # Quistes: "Conoce más sobre otros tumores de la piel" llevaba (desde Wix) a cirugía de vesícula; va a lipomas
+    if slug == 'quistes-piel-merida':
+        boton = next(i for s in secciones for i in s['items'] if i['k'] == 'btn' and 'otros tumores' in i['t'])
+        boton['href'] = '/lipomas-merida/'
 
 
 # Faltas de ortografía de los textos de Wix, para que no regresen al volver a importar.
@@ -752,6 +819,7 @@ if __name__ == '__main__':
         juntar_botones_finales(secciones)
         alinear_botones_izquierda(secciones)
         if (slug or 'inicio') in CENTROS: centrar_botones(secciones[1], CENTROS[slug or 'inicio'])
+        ajustar_revision(secciones, slug)
         corregir_textos(secciones)
         with open(os.path.join(SALIDA, (slug or 'inicio') + '.json'), 'w', encoding='utf-8') as fh:
             json.dump({'slug': slug, 'wix': wix_slug, 'secciones': secciones}, fh, ensure_ascii=False)
