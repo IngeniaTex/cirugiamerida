@@ -98,6 +98,8 @@ main { padding-top: var(--alto-cab); }
 .el-texto .vacio { min-height: 1.5em; margin: 0; }
 .el-texto ul, .el-texto ol { padding-left: 1.3em; }
 .el-texto li::marker { color: var(--dorado); }
+/* Listas hechas de párrafos (p. ej. Formación y experiencia): separación entre elementos y con su lista anidada */
+.el-texto ul.separada > li + li, .el-texto li > ul { margin-top: .6em; }
 .el-texto strong { font-weight: 600; }
 .el-texto a { text-underline-offset: 3px; }
 /* Etiquetas de padecimientos junto a las ilustraciones: en Wix no se ven; sus enlaces están en "Ver padecimientos" */
