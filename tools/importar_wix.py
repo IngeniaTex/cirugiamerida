@@ -692,7 +692,7 @@ def ajustar_revision(secciones, slug):
 CORRECCIONES = [
     ('enfemedad', 'enfermedad'), ('Durazn con', 'Durazno con'), ('consieración', 'consideración'), ('Preperaciones', 'Preparaciones'),
     ('estreñimieto', 'estreñimiento'), ('indivualizarse', 'individualizarse'), ('enguajadas', 'enjuagadas'), ('VESICULA BILIAR', 'VESÍCULA BILIAR'),
-    ('Whats App', 'WhatsApp'), ('Quistes sebáceo', 'Quiste sebáceo'), ('intestinal.Algun', 'intestinal.'), ('aplicable.)Revisa', 'aplicable.) Revisa'),
+    ('contacto@cirugiamerida.com', 'drjoeldorantes@cirugiamerida.com'), ('Whats App', 'WhatsApp'), ('Quistes sebáceo', 'Quiste sebáceo'), ('intestinal.Algun', 'intestinal.'), ('aplicable.)Revisa', 'aplicable.) Revisa'),
     ('Cuánta fibra debo', '¿Cuánta fibra debo'), ('¿Qué Son los FODMAPS?', '¿Qué son los FODMAPs?'), ('hernia, ¿Necesito', 'hernia, ¿necesito'),
     ('>·Hernia hiatal', '>Hernia hiatal'), ('>·Sensación de presión', '>Sensación de presión'), ('>·Molestias que afectan', '>Molestias que afectan'),
     ('Helicobacter Pylori', 'Helicobacter pylori'), ('Lunes a Sábado Previa cita', 'lunes a sábado, previa cita'), ('566388 I 9991', '566388 | 9991'),
@@ -840,6 +840,9 @@ if __name__ == '__main__':
                     it['color'] = 'rgb(255, 255, 255)'; it['align'] = 'right'; it.pop('fondo', None)   # van sobre la foto del héroe
                 if it.get('padre') is None and it['k'] != 'img': it['padre'] = None
             ajustar_inicio(secciones)
+            # Contacto: el correo (drjoeldorantes@…) es más largo que el de Wix; se ensancha el renglón para que no baje
+            # y se encime con el horario
+            next(i for s in secciones for i in s['items'] if i['k'] == 'texto' and 'Tel. 9999' in i['html'])['w'] = 540
         if slug == 'servicios': ajustar_servicios(secciones)
         if slug == 'pacientes': ajustar_pacientes(secciones)
         if slug == 'sobre-mi': ajustar_sobre_mi(secciones)
