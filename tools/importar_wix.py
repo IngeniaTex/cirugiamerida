@@ -599,9 +599,9 @@ def ajustar_sobre_mi(secciones):
     h = re.sub(r'<h2( [^>]*)>(Medicina General.*?)</h2>', r'<p\1>\2</p>', t['html'])
     h = re.sub(r'<(/?)h2\b', r'<\1h3', h)
     t['html'] = re.sub(r'<(/?)h1\b', r'<\1h2', h)
-    # Experiencia profesional y Certificación: cada elemento con viñeta (revisión del cliente)
+    # Formación académica y Experiencia profesional: cada elemento con viñeta (revisión del cliente)
+    t['html'] = en_lista(t['html'], '>Formación académica</h3>', '<h3')
     t['html'] = en_lista(t['html'], '>Experiencia profesional</h3>', '<h3')
-    t['html'] = en_lista(t['html'], '>Certificación y participación académica</h3>')
 
 
 def en_lista(h, desde, hasta=None):
