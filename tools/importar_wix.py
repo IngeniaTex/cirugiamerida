@@ -599,6 +599,25 @@ def ajustar_sobre_mi(secciones):
     h = re.sub(r'<h2( [^>]*)>(Medicina General.*?)</h2>', r'<p\1>\2</p>', t['html'])
     h = re.sub(r'<(/?)h2\b', r'<\1h3', h)
     t['html'] = re.sub(r'<(/?)h1\b', r'<\1h2', h)
+    # Formación académica y Experiencia profesional: cada elemento con viñeta (revisión del cliente)
+    t['html'] = en_lista(t['html'], '>Formación académica</h3>', '<h3')
+    t['html'] = en_lista(t['html'], '>Experiencia profesional</h3>', '<h3')
+
+
+def en_lista(h, desde, hasta=None):
+    """Párrafos entre el título `desde` y `hasta` (o el final) -> una lista con viñetas. Una lista que ya existía queda
+    anidada en el párrafo anterior (el que la presenta). Los renglones vacíos antes y después de la lista se conservan."""
+    i = h.index(desde) + len(desde)
+    j = h.index(hasta, i) if hasta else len(h)
+    partes = list(re.finditer(r'<p class="vacio"[^>]*></p>|<p( [^>]*)>(.*?)</p>|(<ul>.*?</ul>)', h[i:j]))
+    assert ''.join(m.group(0) for m in partes) == h[i:j], desde
+    llenas = [m for m in partes if not m.group(0).startswith('<p class="vacio"')]
+    elementos = []
+    for m in llenas:
+        if m.group(3): elementos[-1] = elementos[-1][:-len('</li>')] + m.group(3) + '</li>'
+        else: elementos.append(f'<li{m.group(1)}>{m.group(2)}</li>')
+    a, b = i + llenas[0].start(), i + llenas[-1].end()
+    return h[:a] + '<ul class="separada">' + ''.join(elementos) + '</ul>' + h[b:]
 
 
 # Revisión del cliente (documento "cambios web"). Fondo de las secciones que en tablet y celular asoma alrededor de sus
